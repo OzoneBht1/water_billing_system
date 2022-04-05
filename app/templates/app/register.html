@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="utf-8">
+    <title>नेपाल प्यूने पानी संस्था</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'app/register.css' %}"
+    />
+</head>
+
+<body>
+
+    <div>
+        <div id="container">
+            <h2>नेपाल प्यूने पानी संस्था</h2>
+            <div class="form">
+                <form class="signup-form" method = "post"> {% csrf_token %}
+                    <!-- <i class="fa-solid fa-faucet-drip"></i> -->
+                    {% for field in form %}
+                    {{field}}
+                    {% endfor %}
+                    <input class="btn" type="submit" name="" value="Sign Up">
+                    {% for message in messages %}
+                    <p> {{message}}</p>
+                
+                    {% endfor %}
+                    {% for field in form %} {{ field.errors.0 }} {% endfor %}                
+                    <div class="options-02">
+                        <p>Already have an account? <a href="{% url 'userLogin' %}">Sign In</a></p>
+                    </div>
+                    
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

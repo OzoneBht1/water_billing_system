@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Water Billing System</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'app/login.css' %}"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h2>नेपाल प्यूने पानी संस्था</h2>
+      <!-- form area start -->
+      <div class="form">
+        <!-- login form start -->
+        <form class="login-form" action="" method="post">
+          {% csrf_token %}
+          <i class="fa-solid fa-circle-user"></i>
+          <input
+            class="user-input"
+            type="text"
+            name="phone_number"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            class="user-input"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <div class="options-01">
+            <!-- <label class="remember-me"><input type="checkbox" name="">Remember me</label> -->
+            <a href="#">Forgot your password?</a>
+          </div>
+          <input class="btn" type="submit" name="" value="LOGIN" />
+          <div class="options-02">
+            <p>
+              Not Registered?
+              <a href="{% url 'userRegistration' %}">Create an Account</a>
+            </p>
+          </div>
+        </form>
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+
+        <!-- signup-form end -->
+      </div>
+      <!-- form area end -->
+    </div>
+  </body>
+</html>
+<!-- login form end -->
+
+<!-- form area end -->

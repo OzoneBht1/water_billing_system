@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #8dc8e8;
+}
+
+h2 {
+  /*height of नेपाल प्यूने पानी संस्था*/
+  align-items: center;
+  margin-left: 8px;
+  padding-top: 10px;
+  height: 85vh;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  height: 90%;
+  width: 456px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  transform: translate(-50%, -50%);
+  border: 1px transparent;
+  border-radius: 2%;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgb(0, 0, 0, 0.5)
+  );
+}
+
+.form {
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  width: 320px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form i {
+  /*Logo colour*/
+  z-index: 1;
+  color: #ccc;
+  font-size: 37px;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.signup-form .user-input {
+  justify-content: center;
+
+  margin-right: 3px;
+  margin-left: 3px;
+  width: 320px;
+  height: 40px;
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  background: white; /*Box colour*/
+  color: black; /*Input text colour*/
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: border-left, border-right, box-shadow;
+}
+
+.form.options-01 {
+  /*Forget Password*/
+  margin-bottom: 50px;
+}
+
+.form .form.options-01 input {
+  /*Forget Password*/
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.form .options-01 a {
+  /*Forget Password*/
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.form .btn {
+  /*login button*/
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  margin-left: 28%;
+  margin-top: 1px;
+  display: flex;
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 40px;
+  background: #1d4c68;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: border-left, border-right, box-shadow;
+}
+
+.form .options-02 {
+  /*Not registered*/
+  color: black;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.form .options-02 a {
+  /*Create Account*/
+  color: #fff;
+}
+
+.form .option-02 {
+  color: black;
+  font: 14px;
+  margin-top: 30px;
+}
+.form .option-2 a {
+  color: white;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 500px) {
+  /*Fits page according to the screen*/
+  .form {
+    width: 95%;
+  }
+
+  .form .user-input {
+    width: 100%;
+  }
+
+  .form .btn {
+    width: 100%;
+  }
+}
+ol,
+ul,
+li {
+  color: #1d4c68;
+}
