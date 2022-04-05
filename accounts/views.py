@@ -25,7 +25,7 @@ def register(request):
                 )
                 return redirect("userLogin")
 
-        return render(request, "app/register.html", {"form": form})
+        return render(request, "accounts/register.html", {"form": form})
 
 
 def loginPage(request):
@@ -44,7 +44,7 @@ def loginPage(request):
             else:
                 messages.info(request, "Invalid Login")
 
-        return render(request, "app/login.html", {})
+        return render(request, "accounts/login.html", {})
 
 
 def logoutUser(request):
@@ -54,4 +54,4 @@ def logoutUser(request):
 
 @login_required(login_url="userLogin")
 def home(request):
-    return render(request, "app/homepage.html", {})
+    return render(request, "accounts/homepage.html", {})
