@@ -17,6 +17,8 @@ Including another URLconf
 from django.urls import path
 from . import views
 
+app_name = "accounts"
+
 urlpatterns = [
     path("register/", views.register, name="userRegistration"),
     path("login/", views.loginPage, name="userLogin"),

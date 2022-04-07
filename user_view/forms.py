@@ -1,6 +1,6 @@
 from django import forms
 
-from app.models import Person, City
+from user_view.models import Person, City
 
 
 class PersonCreationForm(forms.ModelForm):
