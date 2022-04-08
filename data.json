@@ -1,0 +1,5273 @@
+[
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Aamchowk Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20711
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Aandhikhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70603
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Aarughat Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50308
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Aathabis Municipality",
+    "Type": "Municipality",
+    "Code": 70506
+  },
+  {
+    "Province": "Karnali",
+    "District": "RUKUM WEST",
+    "Local Body": "Aathbiskot Municipality",
+    "Type": "Municipality",
+    "Code": 10609
+  },
+  {
+    "Province": "1",
+    "District": "TERHATHUM",
+    "Local Body": "Aathrai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40710
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Aathrai Tribeni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40903
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Aaurahi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40105
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Adanchuli Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60801
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Adarshkotwal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10801
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Adharsha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10105
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Agnisair Krishna Savaran Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60605
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Ainselukhark Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60306
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Ajaymeru Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20103
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Ajirkot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10502
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Alital Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70503
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RASUWA",
+    "Local Body": "Amachodingmo Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40102
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Amargadhi Municipality",
+    "Type": "Municipality",
+    "Code": 70502
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Anbukhaireni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40401
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MYAGDI",
+    "Local Body": "Annapurna Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40503
+  },
+  {
+    "Province": "Gandaki",
+    "District": "KASKI",
+    "Local Body": "Annapurna Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70305
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Apihimal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40904
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Arjunchaupari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11103
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Arjundhara Municipality",
+    "Type": "Municipality",
+    "Code": 20209
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Arnama Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10605
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Arun Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20404
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Aurahi Municipality",
+    "Type": "Municipality",
+    "Code": 20216
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Aurahi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20314
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Ayirabati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51005
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Babai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51208
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Badhaiyatal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70608
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Badigad Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41107
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Badikedar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70106
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Badimalika Municipality",
+    "Type": "Municipality",
+    "Code": 60905
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Bagchaur Municipality",
+    "Type": "Municipality",
+    "Code": 50604
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Baglung Municipality",
+    "Type": "Municipality",
+    "Code": 41101
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Bagmati Municipality",
+    "Type": "Municipality",
+    "Code": 20503
+  },
+  {
+    "Province": "Bagmati",
+    "District": "LALITPUR",
+    "Local Body": "Bagmati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30806
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Bagmati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31210
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Bagnaskali Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30209
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Bahudaramai Municipality",
+    "Type": "Municipality",
+    "Code": 40303
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Baijanath Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20808
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Baiteshwor Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51103
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Bakaiya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30104
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Balan Bihul Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31209
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Balara Municipality",
+    "Type": "Municipality",
+    "Code": 20108
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Balefi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20516
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Balwa Municipality",
+    "Type": "Municipality",
+    "Code": 20407
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Bandipur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30208
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Banepa Municipality",
+    "Type": "Municipality",
+    "Code": 60903
+  },
+  {
+    "Province": "Karnali",
+    "District": "RUKUM WEST",
+    "Local Body": "Banfikot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40709
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Bangad Kupinde Municipality",
+    "Type": "Municipality",
+    "Code": 30904
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Banganga Municipality",
+    "Type": "Municipality",
+    "Code": 51001
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Banglachuli Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50901
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Bannigadhi Jayagadh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70707
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Bansagadhi Municipality",
+    "Type": "Municipality",
+    "Code": 60803
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Baragadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51201
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Barahapokhari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20710
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Barahathawa Municipality",
+    "Type": "Municipality",
+    "Code": 11302
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Barahchhetra Municipality",
+    "Type": "Municipality",
+    "Code": 10510
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Barahtal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 61007
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Barbardiya Municipality",
+    "Type": "Municipality",
+    "Code": 20504
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Bardaghat Municipality",
+    "Type": "Municipality",
+    "Code": 51202
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Bardagoriya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50701
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Bardibas Municipality",
+    "Type": "Municipality",
+    "Code": 70806
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Barekot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20401
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Bareng Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60701
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Barhabise Municipality",
+    "Type": "Municipality",
+    "Code": 41109
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Barhadashi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11111
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Bariyarpatti Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20215
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Barju Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11312
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Barpak Sulikot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20513
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Basbariya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20304
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Bateshwor Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70903
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Baudeekali Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11401
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Baudhimai Municipality",
+    "Type": "Municipality",
+    "Code": 11205
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Bedkot Municipality",
+    "Type": "Municipality",
+    "Code": 70909
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Belaka Municipality",
+    "Type": "Municipality",
+    "Code": 20111
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Belauri Municipality",
+    "Type": "Municipality",
+    "Code": 30508
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Belbari Municipality",
+    "Type": "Municipality",
+    "Code": 70908
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Beldandi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40406
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Belkotgadhi Municipality",
+    "Type": "Municipality",
+    "Code": 30409
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MYAGDI",
+    "Local Body": "Beni Municipality",
+    "Type": "Municipality",
+    "Code": 40605
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Benighat Rorang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30910
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Besishahar Municipality",
+    "Type": "Municipality",
+    "Code": 11114
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Bethanchowk Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20213
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Bhadrapur Municipality",
+    "Type": "Municipality",
+    "Code": 60609
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Bhagawanpur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70504
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Bhagawatimai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60603
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Bhageshwar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70811
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Bhairabi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30702
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Bhajani Municipality",
+    "Type": "Municipality",
+    "Code": 20405
+  },
+  {
+    "Province": "Bagmati",
+    "District": "BHAKTAPUR",
+    "Local Body": "Bhaktapur Municipality",
+    "Type": "Municipality",
+    "Code": 40701
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Bhangaha Municipality",
+    "Type": "Municipality",
+    "Code": 31304
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Bhanu Municipality",
+    "Type": "Municipality",
+    "Code": 60706
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Bharatpur Metropolitian City",
+    "Type": "Metropolitian City",
+    "Code": 61005
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Bheri Municipality",
+    "Type": "Municipality",
+    "Code": 40705
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Bheriganga Municipality",
+    "Type": "Municipality",
+    "Code": 70904
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Bhimad Municipality",
+    "Type": "Municipality",
+    "Code": 30109
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Bhimdatta Municipality",
+    "Type": "Municipality",
+    "Code": 31207
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Bhimeshwor Municipality",
+    "Type": "Municipality",
+    "Code": 40106
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Bhimphedi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40905
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Bhimsenthapa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10604
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Bhirkot Municipality",
+    "Type": "Municipality",
+    "Code": 11304
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Bhojpur Municipality",
+    "Type": "Municipality",
+    "Code": 50103
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Bhokraha Narsing Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30201
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Bhotekoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10201
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Bhotkhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50503
+  },
+  {
+    "Province": "5",
+    "District": "RUKUM EAST",
+    "Local Body": "Bhume Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30902
+  },
+  {
+    "Province": "5",
+    "District": "ARGHAKHANCHI",
+    "Local Body": "Bhumekasthan Municipality",
+    "Type": "Municipality",
+    "Code": 20313
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Bhumlu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30504
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Bideha Municipality",
+    "Type": "Municipality",
+    "Code": 30102
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Bidur Municipality",
+    "Type": "Municipality",
+    "Code": 41006
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Bigu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50904
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Bihadi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40808
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Bijayanagar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20814
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Binayee Tribeni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11214
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Bindabasini Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 61006
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Biratnagar Metropolitian City",
+    "Type": "Metropolitian City",
+    "Code": 20807
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Birendranagar Municipality",
+    "Type": "Municipality",
+    "Code": 11112
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Birgunj Metropolitian City",
+    "Type": "Metropolitian City",
+    "Code": 40906
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Birtamod Municipality",
+    "Type": "Municipality",
+    "Code": 20518
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Biruwa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20112
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Bishnu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20208
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Bishnupur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20706
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Bishnupur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70210
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Bishrampur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20109
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Bithadchir Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70607
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Bode Barsain Municipality",
+    "Type": "Municipality",
+    "Code": 20611
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Bogtan Foodsil Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20509
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Bramhapuri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20605
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Brindaban Municipality",
+    "Type": "Municipality",
+    "Code": 50902
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Buddhabhumi Municipality",
+    "Type": "Municipality",
+    "Code": 11102
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Buddhashanti Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30604
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Budhanilakantha Municipality",
+    "Type": "Municipality",
+    "Code": 70108
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Budhiganga Municipality",
+    "Type": "Municipality",
+    "Code": 11213
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Budhiganga Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70103
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Budhinanda Municipality",
+    "Type": "Municipality",
+    "Code": 40802
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Bulingtar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70202
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Bungal Municipality",
+    "Type": "Municipality",
+    "Code": 40803
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Butwal Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 50802
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Byas Municipality",
+    "Type": "Municipality",
+    "Code": 40702
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Byas Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70301
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Chabispathivera Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10208
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Chainpur Municipality",
+    "Type": "Municipality",
+    "Code": 20512
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Chakraghatta Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40203
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MANANG",
+    "Local Body": "Chame Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10406
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Champadevi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60606
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Chamunda Bindrasaini Municipality",
+    "Type": "Municipality",
+    "Code": 60404
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Chandannath Municipality",
+    "Type": "Municipality",
+    "Code": 30610
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Chandragiri Municipality",
+    "Type": "Municipality",
+    "Code": 50403
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Chandrakot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20510
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Chandranagar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20601
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Chandrapur Municipality",
+    "Type": "Municipality",
+    "Code": 30701
+  },
+  {
+    "Province": "Bagmati",
+    "District": "BHAKTAPUR",
+    "Local Body": "Changunarayan Municipality",
+    "Type": "Municipality",
+    "Code": 60301
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Chankheli Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40908
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Chapakot Municipality",
+    "Type": "Municipality",
+    "Code": 10707
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Chatrakot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11402
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Chaubise Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 61009
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Chaudandigadhi Municipality",
+    "Type": "Municipality",
+    "Code": 30901
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Chaukune Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60806
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Chaurideurali Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70705
+  },
+  {
+    "Province": "Karnali",
+    "District": "RUKUM WEST",
+    "Local Body": "Chaurjahari Municipality",
+    "Type": "Municipality",
+    "Code": 70207
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Chaurpati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60108
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Chautara SangachokGadhi Municipality",
+    "Type": "Municipality",
+    "Code": 10703
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Chharka Tangsong Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10806
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Chhathar Jorpati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50501
+  },
+  {
+    "Province": "1",
+    "District": "TERHATHUM",
+    "Local Body": "Chhathar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50411
+  },
+  {
+    "Province": "5",
+    "District": "ARGHAKHANCHI",
+    "Local Body": "Chhatradev Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60906
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Chhatreshwori Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60202
+  },
+  {
+    "Province": "Karnali",
+    "District": "MUGU",
+    "Local Body": "Chhayanath Rara Municipality",
+    "Type": "Municipality",
+    "Code": 60704
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Chhedagad Municipality",
+    "Type": "Municipality",
+    "Code": 70107
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Chhinnamasta Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20118
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Chhipaharmai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20812
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Chhireshwornath Municipality",
+    "Type": "Municipality",
+    "Code": 20305
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Chichila Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10204
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Chingad Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 61002
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Chisankhugadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10401
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Chulachuli Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30207
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Chum Nubri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11007
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Chure Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40101
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Dakneshwori Municipality",
+    "Type": "Municipality",
+    "Code": 70802
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Dakshinkali Municipality",
+    "Type": "Municipality",
+    "Code": 20110
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Damak Municipality",
+    "Type": "Municipality",
+    "Code": 30611
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Dangisharan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40301
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Darma Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11107
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Dasharathchanda Municipality",
+    "Type": "Municipality",
+    "Code": 51006
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Deumai Municipality",
+    "Type": "Municipality",
+    "Code": 60901
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Devchuli Municipality",
+    "Type": "Municipality",
+    "Code": 70405
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Devdaha Municipality",
+    "Type": "Municipality",
+    "Code": 11004
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Devghat Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40805
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Devtal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50801
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Dewahhi Gonahi Municipality",
+    "Type": "Municipality",
+    "Code": 40708
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Dewanganj Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20715
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Dhakari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20609
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Dhanauji Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11311
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Dhangadhi Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 70709
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Dhangadhimai Municipality",
+    "Type": "Municipality",
+    "Code": 20514
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Dhankaul Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11216
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Dhankuta Municipality",
+    "Type": "Municipality",
+    "Code": 20316
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Dhanpalthan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70813
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Dhanusadham Municipality",
+    "Type": "Municipality",
+    "Code": 20202
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Dharan Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 10704
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Dharche Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20302
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Dharmadevi Municipality",
+    "Type": "Municipality",
+    "Code": 11301
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MYAGDI",
+    "Local Body": "Dhaulagiri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40104
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Dhobini Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10210
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Dhorpatan Municipality",
+    "Type": "Municipality",
+    "Code": 40403
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Dhulikhel Municipality",
+    "Type": "Municipality",
+    "Code": 20811
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Dhunibesi Municipality",
+    "Type": "Municipality",
+    "Code": 60904
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Dhurkot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41105
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Diktel Rupakot Majhuwagadhi Municipality",
+    "Type": "Municipality",
+    "Code": 10305
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Dilasaini Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10304
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Dipayal Silgadi Municipality",
+    "Type": "Municipality",
+    "Code": 30905
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Diprung Chuichumma Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30413
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Dogadakedar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50408
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Dolpo Buddha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70401
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Doramba Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70605
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Dordi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10507
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Dudhouli Municipality",
+    "Type": "Municipality",
+    "Code": 70402
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Dudhpokhari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60101
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Duduwa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31007
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Duhabi Municipality",
+    "Type": "Municipality",
+    "Code": 40601
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Dullu Municipality",
+    "Type": "Municipality",
+    "Code": 40608
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Dungeshwor Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31101
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Dunhu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51107
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Dupcheshwar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11307
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Durga Bhagwati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70302
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Durgathali Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50203
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Ekdanra Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60607
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Fakphokthum Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60610
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Falelung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30501
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Falgunanda Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20615
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Gadhawa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70208
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Gadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20411
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Gadhimai Municipality",
+    "Type": "Municipality",
+    "Code": 11005
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Gaidahawa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10903
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Gaidakot Municipality",
+    "Type": "Municipality",
+    "Code": 10905
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Gajuri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51009
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Galchi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11308
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Galkot Municipality",
+    "Type": "Municipality",
+    "Code": 20606
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Galyang Municipality",
+    "Type": "Municipality",
+    "Code": 50805
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Ganayapdhura Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40801
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Gandaki Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30410
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Ganeshman Charnath Municipality",
+    "Type": "Municipality",
+    "Code": 30411
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Gangadev Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41108
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Gangajamuna Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40910
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Garuda Municipality",
+    "Type": "Municipality",
+    "Code": 40111
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Gaumukhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20301
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Gaumul Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30403
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Gaur Municipality",
+    "Type": "Municipality",
+    "Code": 70507
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Gauradhaha Municipality",
+    "Type": "Municipality",
+    "Code": 20608
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Gauriganga Municipality",
+    "Type": "Municipality",
+    "Code": 50301
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Gauriganj Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70102
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Gaurishankar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20617
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Gaushala Municipality",
+    "Type": "Municipality",
+    "Code": 11108
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Geruwa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70804
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Ghanglekh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11109
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MUSTANG",
+    "Local Body": "Gharapjhong Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30101
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Ghiring Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20402
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Ghodaghodi Municipality",
+    "Type": "Municipality",
+    "Code": 51204
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Ghorahi Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 40302
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Godaita Municipality",
+    "Type": "Municipality",
+    "Code": 40706
+  },
+  {
+    "Province": "Bagmati",
+    "District": "LALITPUR",
+    "Local Body": "Godawari Municipality",
+    "Type": "Municipality",
+    "Code": 70805
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Godawari Municipality",
+    "Type": "Municipality",
+    "Code": 51002
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Gokarneshwor Municipality",
+    "Type": "Municipality",
+    "Code": 31107
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Gokulganga Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20517
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Golanjor Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30803
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Golbazar Municipality",
+    "Type": "Municipality",
+    "Code": 70803
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Gorkha Municipality",
+    "Type": "Municipality",
+    "Code": 30603
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RASUWA",
+    "Local Body": "Gosaikunda Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31002
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Gramthan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31104
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Gujara Municipality",
+    "Type": "Municipality",
+    "Code": 20203
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Gulariya Municipality",
+    "Type": "Municipality",
+    "Code": 40109
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Gulmidarbar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30301
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Gurans Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11212
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Gurbhakot Municipality",
+    "Type": "Municipality",
+    "Code": 20602
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Guthichaur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51207
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Haldibari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50410
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Halesi Tuwachung Municipality",
+    "Type": "Municipality",
+    "Code": 60611
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Hansapur Municipality",
+    "Type": "Municipality",
+    "Code": 61004
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Hanumannagar Kankalini Municipality",
+    "Type": "Municipality",
+    "Code": 60405
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Hariharpurgadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11113
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Harinagar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10504
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Harinas Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20308
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Haripur Municipality",
+    "Type": "Municipality",
+    "Code": 20116
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Haripurwa Municipality",
+    "Type": "Municipality",
+    "Code": 31109
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Hariwan Municipality",
+    "Type": "Municipality",
+    "Code": 11310
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Hatuwagadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40907
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Helambu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20505
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Hetauda Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 20507
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Hilihang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20502
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Hima Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10608
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Himali Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30204
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Hupsekot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31206
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Ichchhyakamana Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10902
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Illam Municipality",
+    "Type": "Municipality",
+    "Code": 60408
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Inaruwa Municipality",
+    "Type": "Municipality",
+    "Code": 70101
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Indrasarowar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40804
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Indrawati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31303
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Ishanath Municipality",
+    "Type": "Municipality",
+    "Code": 11003
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Ishworpur Municipality",
+    "Type": "Municipality",
+    "Code": 11309
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Isma Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31201
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Itahari Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 30206
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Jagadulla Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20618
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Jagannath Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20506
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Jagarnathpur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50405
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Jahada Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11306
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Jaimuni Municipality",
+    "Type": "Municipality",
+    "Code": 60103
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Jaleswor Municipality",
+    "Type": "Municipality",
+    "Code": 20803
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Jaljala Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11217
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Janaki Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41110
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Janaknandani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20415
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Janakpurdham Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 41002
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Janki Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20312
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Jantedhunga Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51105
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "JayaPrithivi Municipality",
+    "Type": "Municipality",
+    "Code": 70808
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Jhapa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20315
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Jhimruk Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10509
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Jirabhawani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70206
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Jiri Municipality",
+    "Type": "Municipality",
+    "Code": 11110
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Jitpur Simara Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 50303
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Jorayal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20802
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Joshipur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30105
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Jugal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20703
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Junichande Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70609
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Jwalamukhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70809
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "K I Singh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30202
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Kabilasi Municipality",
+    "Type": "Municipality",
+    "Code": 60703
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Kachankawal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30407
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Kageshwori Manahora Municipality",
+    "Type": "Municipality",
+    "Code": 70606
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Kaike Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20511
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Kailari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11115
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Kailash Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30602
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Kakani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60107
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Kalaiya Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 70812
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Kaligandagi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31203
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Kaligandaki Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30512
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Kalika Municipality",
+    "Type": "Municipality",
+    "Code": 20708
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RASUWA",
+    "Local Body": "Kalika Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50401
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Kalikamai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40911
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Kalimati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31302
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Kalinchok Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30304
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Kalyanpur Municipality",
+    "Type": "Municipality",
+    "Code": 60509
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Kamal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20810
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Kamala Municipality",
+    "Type": "Municipality",
+    "Code": 60908
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Kamalamai Municipality",
+    "Type": "Municipality",
+    "Code": 30103
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Kamalbazar Municipality",
+    "Type": "Municipality",
+    "Code": 20206
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Kanakasundari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70708
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Kanchan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11106
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Kanchanrup Municipality",
+    "Type": "Municipality",
+    "Code": 20311
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Kanepokhari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31105
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Kankai Municipality",
+    "Type": "Municipality",
+    "Code": 60402
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Kanthekhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50804
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Kapilbastu Municipality",
+    "Type": "Municipality",
+    "Code": 20102
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Kapurkot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70201
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Karaiyamai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11206
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Karjanha Municipality",
+    "Type": "Municipality",
+    "Code": 11104
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Katahari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50907
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Katahariya Municipality",
+    "Type": "Municipality",
+    "Code": 60910
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Katari Municipality",
+    "Type": "Municipality",
+    "Code": 20709
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Kathmandu Metropolitian City",
+    "Type": "Metropolitian City",
+    "Code": 20205
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Kaudena Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11215
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Kawasoti Municipality",
+    "Type": "Municipality",
+    "Code": 20604
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Kedarseu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11407
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Kepilasagadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41102
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Kerabari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30608
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Khadadevi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20519
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Khadak Municipality",
+    "Type": "Municipality",
+    "Code": 40806
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Khairahani Municipality",
+    "Type": "Municipality",
+    "Code": 70209
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Khajura Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10501
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Khandachakra Municipality",
+    "Type": "Municipality",
+    "Code": 11203
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Khandbari Municipality",
+    "Type": "Municipality",
+    "Code": 20106
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Khanikhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31306
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Khaniyabash Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51104
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Khaptad Chhededaha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10705
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Khaptadchhanna Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10206
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Kharpunath Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60506
+  },
+  {
+    "Province": "Karnali",
+    "District": "MUGU",
+    "Local Body": "Khatyad Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31006
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Khijidemba Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30913
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Khotehang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30402
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Khumbupasanglahmu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70212
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Kirtipur Municipality",
+    "Type": "Municipality",
+    "Code": 60302
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Kispang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60204
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Kohalpur Municipality",
+    "Type": "Municipality",
+    "Code": 10404
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Kolhabi Municipality",
+    "Type": "Municipality",
+    "Code": 10508
+  },
+  {
+    "Province": "Bagmati",
+    "District": "LALITPUR",
+    "Local Body": "Konjyosom Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10301
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Koshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30609
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Kotahimai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30505
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Krishnanagar Municipality",
+    "Type": "Municipality",
+    "Code": 51102
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Krishnapur Municipality",
+    "Type": "Municipality",
+    "Code": 20702
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Kumakh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30804
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Kummayak Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11303
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Kuse Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50814
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Kushma Municipality",
+    "Type": "Municipality",
+    "Code": 50905
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Kwholasothar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70901
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Lahan Municipality",
+    "Type": "Municipality",
+    "Code": 60902
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Lakshminiya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10906
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Lalbandi Municipality",
+    "Type": "Municipality",
+    "Code": 60702
+  },
+  {
+    "Province": "1",
+    "District": "TERHATHUM",
+    "Local Body": "Laligurans Municipality",
+    "Type": "Municipality",
+    "Code": 41003
+  },
+  {
+    "Province": "Bagmati",
+    "District": "LALITPUR",
+    "Local Body": "Lalitpur Metropolitian City",
+    "Type": "Metropolitian City",
+    "Code": 40603
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Laljhadi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20201
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Lamahi Municipality",
+    "Type": "Municipality",
+    "Code": 20501
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Lamkichuha Municipality",
+    "Type": "Municipality",
+    "Code": 10805
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Laxmipur Patari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30802
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Lekam Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70906
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Lekbeshi Municipality",
+    "Type": "Municipality",
+    "Code": 51007
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Letang Municipality",
+    "Type": "Municipality",
+    "Code": 10503
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Likhu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70807
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Likhu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20306
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Likhu Tamakoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20211
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Likhupike Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 61003
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Limchungbung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70309
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Lisangkhu Pakhar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11202
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MUSTANG",
+    "Local Body": "Lo-Ghekar Damodarkunda Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10308
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Loharpatti Municipality",
+    "Type": "Municipality",
+    "Code": 10405
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MUSTANG",
+    "Local Body": "Lomanthang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30509
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Lumbini Sanskritik Municipality",
+    "Type": "Municipality",
+    "Code": 31003
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Lungri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30211
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Maapya Dudhkoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20406
+  },
+  {
+    "Province": "Gandaki",
+    "District": "KASKI",
+    "Local Body": "Machhapuchchhre Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40304
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Madane Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50813
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Madhav Narayan Municipality",
+    "Type": "Municipality",
+    "Code": 50210
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Madhuwan Municipality",
+    "Type": "Municipality",
+    "Code": 40502
+  },
+  {
+    "Province": "Gandaki",
+    "District": "NAWALPARASI EAST",
+    "Local Body": "Madhyabindu Municipality",
+    "Type": "Municipality",
+    "Code": 50407
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "MadhyaNepal Municipality",
+    "Type": "Municipality",
+    "Code": 20607
+  },
+  {
+    "Province": "Bagmati",
+    "District": "BHAKTAPUR",
+    "Local Body": "Madhyapur Thimi Municipality",
+    "Type": "Municipality",
+    "Code": 51206
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Madi Municipality",
+    "Type": "Municipality",
+    "Code": 40807
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Madi Municipality",
+    "Type": "Municipality",
+    "Code": 40604
+  },
+  {
+    "Province": "Gandaki",
+    "District": "KASKI",
+    "Local Body": "Madi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30703
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Madi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10209
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Mahabharat Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31307
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Mahabu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40501
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Mahadeva Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50205
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Mahagadhimai Municipality",
+    "Type": "Municipality",
+    "Code": 30912
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Mahakali Municipality",
+    "Type": "Municipality",
+    "Code": 60602
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Mahakali Municipality",
+    "Type": "Municipality",
+    "Code": 20114
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Mahakulung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20714
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Mahalaxmi Municipality",
+    "Type": "Municipality",
+    "Code": 70303
+  },
+  {
+    "Province": "Bagmati",
+    "District": "LALITPUR",
+    "Local Body": "Mahalaxmi Municipality",
+    "Type": "Municipality",
+    "Code": 70905
+  },
+  {
+    "Province": "Bagmati",
+    "District": "LALITPUR",
+    "Local Body": "Mahankal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10302
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Maharajgunj Municipality",
+    "Type": "Municipality",
+    "Code": 10701
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Mahashila Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30801
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Mahawai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30805
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Mahottari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50906
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Mai Municipality",
+    "Type": "Municipality",
+    "Code": 41005
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Maijogmai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60508
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Maiwakhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20412
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Makalu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11001
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Makawanpurgadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11008
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Malangawa Municipality",
+    "Type": "Municipality",
+    "Code": 10104
+  },
+  {
+    "Province": "5",
+    "District": "ARGHAKHANCHI",
+    "Local Body": "Malarani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10202
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MYAGDI",
+    "Local Body": "Malika Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31208
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Malika Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20520
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Malikaarjun Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50502
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Mallarani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40404
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Manahari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50406
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MANANG",
+    "Local Body": "Manang Ingshyang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70308
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Mandandeupur Municipality",
+    "Type": "Municipality",
+    "Code": 50307
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Mandavi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31205
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Manebhanjyang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20410
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MYAGDI",
+    "Local Body": "Mangala Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30903
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Mangalsen Municipality",
+    "Type": "Municipality",
+    "Code": 50306
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Mangsebung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10408
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Manra Siswa Municipality",
+    "Type": "Municipality",
+    "Code": 40405
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Manthali Municipality",
+    "Type": "Municipality",
+    "Code": 70706
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Marchawari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11006
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Marin Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31005
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Marma Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50816
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Marsyangdi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31108
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Masta Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70306
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Mathagadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40602
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Matihani Municipality",
+    "Type": "Municipality",
+    "Code": 70205
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Maulapur Municipality",
+    "Type": "Municipality",
+    "Code": 50609
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Mayadevi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20414
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Mayadevi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20610
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Mechinagar Municipality",
+    "Type": "Municipality",
+    "Code": 50812
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Melamchi Municipality",
+    "Type": "Municipality",
+    "Code": 50909
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Melauli Municipality",
+    "Type": "Municipality",
+    "Code": 11101
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Mellekh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30506
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Melung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30205
+  },
+  {
+    "Province": "1",
+    "District": "TERHATHUM",
+    "Local Body": "Menchayam Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70408
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Meringden Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70703
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Miklajung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30107
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Miklajung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10803
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Mikwakhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10103
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Mirchaiya Municipality",
+    "Type": "Municipality",
+    "Code": 10908
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Mithila Bihari Municipality",
+    "Type": "Municipality",
+    "Code": 11201
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Mithila Municipality",
+    "Type": "Municipality",
+    "Code": 10102
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Modi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20204
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Mohanyal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20307
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Molung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20303
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Mudkechula Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41001
+  },
+  {
+    "Province": "Karnali",
+    "District": "MUGU",
+    "Local Body": "Mugum Karmarong Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70801
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Mukhiyapatti Musarmiya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10403
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Musikot Municipality",
+    "Type": "Municipality",
+    "Code": 60104
+  },
+  {
+    "Province": "Karnali",
+    "District": "RUKUM WEST",
+    "Local Body": "Musikot Municipality",
+    "Type": "Municipality",
+    "Code": 60201
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Myagang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20318
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Myagde Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50404
+  },
+  {
+    "Province": "1",
+    "District": "TERHATHUM",
+    "Local Body": "Myanglung Municipality",
+    "Type": "Municipality",
+    "Code": 60804
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Nagarain Municipality",
+    "Type": "Municipality",
+    "Code": 40703
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Nagarjun Municipality",
+    "Type": "Municipality",
+    "Code": 10804
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Nalagad Municipality",
+    "Type": "Municipality",
+    "Code": 20317
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Namkha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30607
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Namobuddha Municipality",
+    "Type": "Municipality",
+    "Code": 60304
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Naraha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30908
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Naraharinath Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20207
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Narainapur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60505
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Narayan Municipality",
+    "Type": "Municipality",
+    "Code": 51108
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MANANG",
+    "Local Body": "Narpa Bhumi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40201
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MANANG",
+    "Local Body": "Narshon Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60608
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Naubahini Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40204
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Naugad Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50302
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RASUWA",
+    "Local Body": "Naukunda Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70304
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Naumule Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30305
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Nawadurga Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60601
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Nawarajpur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70501
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Nechasalyan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20214
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Nepalgunj Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 10306
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Netrawati Dabjong Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51106
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Nijgadh Municipality",
+    "Type": "Municipality",
+    "Code": 40202
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Nilakantha Municipality",
+    "Type": "Municipality",
+    "Code": 30405
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Nisdi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20701
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Nisikhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30406
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Omsatiya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50610
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Pachaljharana Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41106
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Pacharauta Municipality",
+    "Type": "Municipality",
+    "Code": 50809
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Painyu Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60502
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Pakahamainpur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20713
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Pakhribas Municipality",
+    "Type": "Municipality",
+    "Code": 41007
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Palata Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20813
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Palhi Nandan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10702
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Palungtar Municipality",
+    "Type": "Municipality",
+    "Code": 60501
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Panauti Municipality",
+    "Type": "Municipality",
+    "Code": 50704
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Panchadewal Binayak Municipality",
+    "Type": "Municipality",
+    "Code": 40108
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Panchakanya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30909
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Panchakhapan Municipality",
+    "Type": "Municipality",
+    "Code": 30510
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Pancheshwar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10207
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Panchkhal Municipality",
+    "Type": "Municipality",
+    "Code": 61008
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Panchpokhari Thangpal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70701
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Panchpuri Municipality",
+    "Type": "Municipality",
+    "Code": 70406
+  },
+  {
+    "Province": "5",
+    "District": "ARGHAKHANCHI",
+    "Local Body": "Panini Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30906
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DADELDHURA",
+    "Local Body": "Parashuram Municipality",
+    "Type": "Municipality",
+    "Code": 30203
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Pariwartan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70105
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Paroha Municipality",
+    "Type": "Municipality",
+    "Code": 50505
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Parsa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70505
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Parsagadhi Municipality",
+    "Type": "Municipality",
+    "Code": 20704
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Parwanipur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30302
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Patahrishanishchare Municipality",
+    "Type": "Municipality",
+    "Code": 20612
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Patan Municipality",
+    "Type": "Municipality",
+    "Code": 20508
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Paterwasugauli Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20806
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Pathivara Yangwarak Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70409
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Patrasi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60401
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Pauwadungma Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20804
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Phaktanglung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11207
+  },
+  {
+    "Province": "Gandaki",
+    "District": "PARBAT",
+    "Local Body": "Phalebas Municipality",
+    "Type": "Municipality",
+    "Code": 10606
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Phatuwa Bijayapur Municipality",
+    "Type": "Municipality",
+    "Code": 10101
+  },
+  {
+    "Province": "1",
+    "District": "TERHATHUM",
+    "Local Body": "Phedap Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41004
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Phedikhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20603
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Pheta Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10802
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Phidim Municipality",
+    "Type": "Municipality",
+    "Code": 40902
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Phikkal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20707
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Phungling Municipality",
+    "Type": "Municipality",
+    "Code": 10904
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Pipra Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31102
+  },
+  {
+    "Province": "Gandaki",
+    "District": "KASKI",
+    "Local Body": "Pokhara Metropolitian City",
+    "Type": "Metropolitian City",
+    "Code": 10106
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Pokhariya Municipality",
+    "Type": "Municipality",
+    "Code": 20413
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Prasauni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40504
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Pratappur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20809
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Punarbas Municipality",
+    "Type": "Municipality",
+    "Code": 20705
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Purbakhola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50706
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Purbichauki Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70403
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Purchaudi Municipality",
+    "Type": "Municipality",
+    "Code": 70907
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Putalibazar Municipality",
+    "Type": "Municipality",
+    "Code": 50602
+  },
+  {
+    "Province": "5",
+    "District": "RUKUM EAST",
+    "Local Body": "Putha Uttarganga Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70601
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Pyuthan Municipality",
+    "Type": "Municipality",
+    "Code": 40901
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MYAGDI",
+    "Local Body": "Raghuganga Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50101
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Rainadevi Chhahara Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50304
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Rainas Municipality",
+    "Type": "Municipality",
+    "Code": 40402
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Rajapur Municipality",
+    "Type": "Municipality",
+    "Code": 50607
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Rajbiraj Municipality",
+    "Type": "Municipality",
+    "Code": 40607
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Rajdevi Municipality",
+    "Type": "Municipality",
+    "Code": 51205
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Rajgadh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20113
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Rajpur Municipality",
+    "Type": "Municipality",
+    "Code": 20616
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Rajpur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20613
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Raksirang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51010
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Ramaroshan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31204
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Rambha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20408
+  },
+  {
+    "Province": "1",
+    "District": "SUNSARI",
+    "Local Body": "Ramdhuni Municipality",
+    "Type": "Municipality",
+    "Code": 70702
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Ramechhap Municipality",
+    "Type": "Municipality",
+    "Code": 50603
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Ramgopalpur Municipality",
+    "Type": "Municipality",
+    "Code": 11305
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Ramgram Municipality",
+    "Type": "Municipality",
+    "Code": 31004
+  },
+  {
+    "Province": "2",
+    "District": "SARLAHI",
+    "Local Body": "Ramnagar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50703
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Ramprasad Rai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20515
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Rampur Municipality",
+    "Type": "Municipality",
+    "Code": 10607
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Rangeli Municipality",
+    "Type": "Municipality",
+    "Code": 50601
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Rapti Municipality",
+    "Type": "Municipality",
+    "Code": 11211
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Rapti Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31301
+  },
+  {
+    "Province": "5",
+    "District": "BANKE",
+    "Local Body": "Rapti Sonari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51008
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Raskot Municipality",
+    "Type": "Municipality",
+    "Code": 51101
+  },
+  {
+    "Province": "Bagmati",
+    "District": "CHITAWAN",
+    "Local Body": "Ratnanagar Municipality",
+    "Type": "Municipality",
+    "Code": 60503
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Ratuwamai Municipality",
+    "Type": "Municipality",
+    "Code": 31305
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Rautamai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11209
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Rawa Besi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11404
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Resunga Municipality",
+    "Type": "Municipality",
+    "Code": 50409
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Rhishing Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40707
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Ribdikot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50606
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Rohini Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50810
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Rolpa Municipality",
+    "Type": "Municipality",
+    "Code": 50207
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Rong Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11010
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Roshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30911
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Rubi Valley Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30401
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Runtigadi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50208
+  },
+  {
+    "Province": "Gandaki",
+    "District": "KASKI",
+    "Local Body": "Rupa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40505
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Rupani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10505
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Ruru Rural Municipality",
+    "Type": "Rural Municipalit",
+    "Code": 20104
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Sabaila Municipality",
+    "Type": "Municipality",
+    "Code": 50412
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Sabhapokhari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20309
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Sahid Lakhan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10205
+  },
+  {
+    "Province": "2",
+    "District": "DHANUSA",
+    "Local Body": "Sahidnagar Municipality",
+    "Type": "Municipality",
+    "Code": 50803
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Sailung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10506
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Sainamaina Municipality",
+    "Type": "Municipality",
+    "Code": 20212
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "SaiPaal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20805
+  },
+  {
+    "Province": "1",
+    "District": "KHOTANG",
+    "Local Body": "Sakela Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10602
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Sakhuwanankarkatti Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50815
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "SakhuwaPrasauni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20409
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Salpasilichho Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11002
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Sammarimai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50504
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Samsi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10706
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Sandakpur Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60802
+  },
+  {
+    "Province": "5",
+    "District": "ARGHAKHANCHI",
+    "Local Body": "Sandhikharka Municipality",
+    "Type": "Municipality",
+    "Code": 60504
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Sangurigadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70704
+  },
+  {
+    "Province": "Karnali",
+    "District": "RUKUM WEST",
+    "Local Body": "Sani Bheri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20101
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Sanni Tribeni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50705
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Sanphebagar Municipality",
+    "Type": "Municipality",
+    "Code": 60305
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Saptakoshi Rural Municipality",
+    "Type": "Municipality",
+    "Code": 50309
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Sarawal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50402
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Sarkegad Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70602
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Sarumarani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10601
+  },
+  {
+    "Province": "5",
+    "District": "GULMI",
+    "Local Body": "Satyawati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40110
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Sayal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20310
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Shadananda Municipality",
+    "Type": "Municipality",
+    "Code": 30108
+  },
+  {
+    "Province": "1",
+    "District": "DHANKUTA",
+    "Local Body": "Shahidbhumi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70307
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DARCHULA",
+    "Local Body": "Shailyashikhar Municipality",
+    "Type": "Municipality",
+    "Code": 20105
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Shambhunath Municipality",
+    "Type": "Municipality",
+    "Code": 30601
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Shankharapur Municipality",
+    "Type": "Municipality",
+    "Code": 51004
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Shantinagar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60907
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Sharada Municipality",
+    "Type": "Municipality",
+    "Code": 60102
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Shey Phoksundo Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70604
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "DOTI",
+    "Local Body": "Shikhar Municipality",
+    "Type": "Municipality",
+    "Code": 50506
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Shivanath Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60705
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Shivapuri Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70407
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Shivaraj Municipality",
+    "Type": "Municipality",
+    "Code": 30511
+  },
+  {
+    "Province": "1",
+    "District": "JHAPA",
+    "Local Body": "Shivasataxi Municipality",
+    "Type": "Municipality",
+    "Code": 50903
+  },
+  {
+    "Province": "Karnali",
+    "District": "JAJARKOT",
+    "Local Body": "Shiwalaya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11105
+  },
+  {
+    "Province": "Gandaki",
+    "District": "TANAHU",
+    "Local Body": "Shuklagandaki Municipality",
+    "Type": "Municipality",
+    "Code": 50910
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KANCHANPUR",
+    "Local Body": "Shuklaphanta Municipality",
+    "Type": "Municipality",
+    "Code": 40704
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Siddha Kumakh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70902
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Siddhalek Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30408
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Siddharthanagar Municipality",
+    "Type": "Municipality",
+    "Code": 50811
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Siddhicharan Municipality",
+    "Type": "Municipality",
+    "Code": 10402
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Sidingba Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10109
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Sigas Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70410
+  },
+  {
+    "Province": "1",
+    "District": "SANKHUWASABHA",
+    "Local Body": "Silichong Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10203
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Simkot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60303
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Simraungadh Municipality",
+    "Type": "Municipality",
+    "Code": 20712
+  },
+  {
+    "Province": "Karnali",
+    "District": "SURKHET",
+    "Local Body": "Simta Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 61001
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Sinja Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60403
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Siraha Municipality",
+    "Type": "Municipality",
+    "Code": 20217
+  },
+  {
+    "Province": "Gandaki",
+    "District": "GORKHA",
+    "Local Body": "Siranchok Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40107
+  },
+  {
+    "Province": "1",
+    "District": "TAPLEJUNG",
+    "Local Body": "Sirijangha Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10108
+  },
+  {
+    "Province": "5",
+    "District": "RUKUM EAST",
+    "Local Body": "Sisne Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50102
+  },
+  {
+    "Province": "5",
+    "District": "ARGHAKHANCHI",
+    "Local Body": "Sitganga Municipality",
+    "Type": "Municipality",
+    "Code": 50807
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Siyari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10307
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Solududhakunda Municipality",
+    "Type": "Municipality",
+    "Code": 20403
+  },
+  {
+    "Province": "2",
+    "District": "MAHOTTARI",
+    "Local Body": "Sonama Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60203
+  },
+  {
+    "Province": "Karnali",
+    "District": "MUGU",
+    "Local Body": "Soru Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10303
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Sotang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20716
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Subha Kalika Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50209
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Suddhodhan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50806
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Sudhdhodhan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20210
+  },
+  {
+    "Province": "2",
+    "District": "SIRAHA",
+    "Local Body": "Sukhipur Municipality",
+    "Type": "Municipality",
+    "Code": 50204
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Sunapati Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40103
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Sunchhahari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31008
+  },
+  {
+    "Province": "Gandaki",
+    "District": "LAMJUNG",
+    "Local Body": "Sundarbazar Municipality",
+    "Type": "Municipality",
+    "Code": 50702
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Sundarharaicha Municipality",
+    "Type": "Municipality",
+    "Code": 50201
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Sunil Smriti Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40606
+  },
+  {
+    "Province": "1",
+    "District": "OKHALDHUNGA",
+    "Local Body": "Sunkoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11204
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Sunkoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10407
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Sunkoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11405
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Sunwal Municipality",
+    "Type": "Municipality",
+    "Code": 30212
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Sunwarshi Municipality",
+    "Type": "Municipality",
+    "Code": 31106
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Surma Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11210
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAITADI",
+    "Local Body": "Surnaya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70203
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Surunga Municipality",
+    "Type": "Municipality",
+    "Code": 70404
+  },
+  {
+    "Province": "Bagmati",
+    "District": "BHAKTAPUR",
+    "Local Body": "Suryabinayak Municipality",
+    "Type": "Municipality",
+    "Code": 20107
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Suryagadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30704
+  },
+  {
+    "Province": "1",
+    "District": "ILAM",
+    "Local Body": "Suryodaya Municipality",
+    "Type": "Municipality",
+    "Code": 30503
+  },
+  {
+    "Province": "5",
+    "District": "NAWALPARASI WEST",
+    "Local Body": "Susta Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11009
+  },
+  {
+    "Province": "2",
+    "District": "BARA",
+    "Local Body": "Suwarna Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50707
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Swami Kartik Khaapar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70104
+  },
+  {
+    "Province": "5",
+    "District": "PYUTHAN",
+    "Local Body": "Sworgadwary Municipality",
+    "Type": "Municipality",
+    "Code": 50305
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Tadi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30502
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Talkot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70204
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DOLAKHA",
+    "Local Body": "Tamakoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30106
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Taman Khola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41104
+  },
+  {
+    "Province": "Karnali",
+    "District": "HUMLA",
+    "Local Body": "Tanjakot Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60307
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Tansen Municipality",
+    "Type": "Municipality",
+    "Code": 50605
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Tapli Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11406
+  },
+  {
+    "Province": "Gandaki",
+    "District": "BAGLUNG",
+    "Local Body": "Tara Khola Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30606
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Tarakeshwor Municipality",
+    "Type": "Municipality",
+    "Code": 30507
+  },
+  {
+    "Province": "Bagmati",
+    "District": "NUWAKOT",
+    "Local Body": "Tarkeshwar Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 41103
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Tatopani Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60406
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KAVREPALANCHOK",
+    "Local Body": "Temal Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30907
+  },
+  {
+    "Province": "1",
+    "District": "BHOJPUR",
+    "Local Body": "Temkemaiyung Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31202
+  },
+  {
+    "Province": "Bagmati",
+    "District": "MAKWANPUR",
+    "Local Body": "Thaha Municipality",
+    "Type": "Municipality",
+    "Code": 30412
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Thakre Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 51203
+  },
+  {
+    "Province": "5",
+    "District": "BARDIYA",
+    "Local Body": "Thakurbaba Municipality",
+    "Type": "Municipality",
+    "Code": 70211
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJHANG",
+    "Local Body": "Thalara Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60604
+  },
+  {
+    "Province": "Karnali",
+    "District": "DAILEKH",
+    "Local Body": "Thantikandh Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 40305
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MUSTANG",
+    "Local Body": "Thasang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50202
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Thawang Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20801
+  },
+  {
+    "Province": "2",
+    "District": "PARSA",
+    "Local Body": "Thori Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60106
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Thuli Bheri Municipality",
+    "Type": "Municipality",
+    "Code": 70810
+  },
+  {
+    "Province": "1",
+    "District": "SOLUKHUMBU",
+    "Local Body": "Thulung Dudhkoshi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60407
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "KAILALI",
+    "Local Body": "Tikapur Municipality",
+    "Type": "Municipality",
+    "Code": 60507
+  },
+  {
+    "Province": "Karnali",
+    "District": "JUMLA",
+    "Local Body": "Tila Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20117
+  },
+  {
+    "Province": "Karnali",
+    "District": "KALIKOT",
+    "Local Body": "Tilagufa Municipality",
+    "Type": "Municipality",
+    "Code": 50808
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Tilathi Koiladi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50608
+  },
+  {
+    "Province": "5",
+    "District": "RUPANDEHI",
+    "Local Body": "Tillotama Municipality",
+    "Type": "Municipality",
+    "Code": 31103
+  },
+  {
+    "Province": "5",
+    "District": "PALPA",
+    "Local Body": "Tinau Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20115
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHULI",
+    "Local Body": "Tinpatan Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30605
+  },
+  {
+    "Province": "2",
+    "District": "SAPTARI",
+    "Local Body": "Tirahut Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70109
+  },
+  {
+    "Province": "Bagmati",
+    "District": "KATHMANDU",
+    "Local Body": "Tokha Municipality",
+    "Type": "Municipality",
+    "Code": 60707
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "BAJURA",
+    "Local Body": "Tribeni Municipality",
+    "Type": "Municipality",
+    "Code": 50206
+  },
+  {
+    "Province": "5",
+    "District": "ROLPA",
+    "Local Body": "Tribeni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60805
+  },
+  {
+    "Province": "Karnali",
+    "District": "RUKUM WEST",
+    "Local Body": "Tribeni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60909
+  },
+  {
+    "Province": "Karnali",
+    "District": "SALYAN",
+    "Local Body": "Tribeni Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 60105
+  },
+  {
+    "Province": "Bagmati",
+    "District": "DHADING",
+    "Local Body": "Tripura Sundari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30210
+  },
+  {
+    "Province": "Karnali",
+    "District": "DOLPA",
+    "Local Body": "Tripurasundari Municipality",
+    "Type": "Municipality",
+    "Code": 30404
+  },
+  {
+    "Province": "Bagmati",
+    "District": "SINDHUPALCHOK",
+    "Local Body": "Tripurasundari Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11403
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Triyuga Municipality",
+    "Type": "Municipality",
+    "Code": 51003
+  },
+  {
+    "Province": "5",
+    "District": "DANG",
+    "Local Body": "Tulsipur Sub-Metropolitian City",
+    "Type": "Sub-Metropolitian City",
+    "Code": 10907
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Tumbewa Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 70710
+  },
+  {
+    "Province": "Sudurpaschim",
+    "District": "ACHHAM",
+    "Local Body": "Turmakhad Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10603
+  },
+  {
+    "Province": "1",
+    "District": "UDAYAPUR",
+    "Local Body": "Udayapurgadhi Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 11408
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RAMECHHAP",
+    "Local Body": "Umakunda Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 31001
+  },
+  {
+    "Province": "1",
+    "District": "MORANG",
+    "Local Body": "Uralabari Municipality",
+    "Type": "Municipality",
+    "Code": 11208
+  },
+  {
+    "Province": "Bagmati",
+    "District": "RASUWA",
+    "Local Body": "Uttargaya Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 30303
+  },
+  {
+    "Province": "Gandaki",
+    "District": "SYANGJA",
+    "Local Body": "Waling Municipality",
+    "Type": "Municipality",
+    "Code": 40909
+  },
+  {
+    "Province": "Gandaki",
+    "District": "MUSTANG",
+    "Local Body": "Waragung Muktikhsetra Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 20614
+  },
+  {
+    "Province": "1",
+    "District": "PANCHTHAR",
+    "Local Body": "Yangwarak Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10901
+  },
+  {
+    "Province": "5",
+    "District": "KAPILBASTU",
+    "Local Body": "Yashodhara Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 10107
+  },
+  {
+    "Province": "2",
+    "District": "RAUTAHAT",
+    "Local Body": "Yemunamai Rural Municipality",
+    "Type": "Rural Municipality",
+    "Code": 50908
+  }
+]
