@@ -1,4 +1,3 @@
-from audioop import reverse
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
@@ -12,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 
 def register(request):
     if request.user.is_authenticated:
-        return reverse_lazy("users:home")
+        return redirect(reverse_lazy("users:home"))
         # restrict autheticated user to access login and register
     else:
         form = CreateUserForm()
@@ -32,7 +31,7 @@ def register(request):
 
 def loginPage(request):
     if request.user.is_authenticated:
-        return reverse_lazy("users:home")
+        return redirect(reverse_lazy("users:home"))
     else:
         if request.method == "POST":
             phone_number = request.POST.get("phone_number")
@@ -43,7 +42,7 @@ def loginPage(request):
             if user is not None:
                 login(request, user)
 
-                return redirect("users:home")
+                return redirect(reverse_lazy("users:home"))
             else:
                 messages.info(request, "Invalid Login")
 
@@ -57,4 +56,4 @@ def logoutUser(request):
 
 @login_required(login_url="accounts:userLogin")
 def home(request):
-    return render(request, reverse_lazy("users:home"), {})
+    return render(request, "user_view/home.html", {})
