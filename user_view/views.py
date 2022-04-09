@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 
 
 def home(request):
-    return render(request, "user_view/home.html", {})
+    return render(request, "user_view/homepage.html", {})
 
 
 def payment(request):

@@ -56,4 +56,4 @@ def logoutUser(request):
 
 @login_required(login_url="accounts:userLogin")
 def home(request):
-    return render(request, "user_view/home.html", {})
+    return render(request, "user_view/homepage.html", {})
