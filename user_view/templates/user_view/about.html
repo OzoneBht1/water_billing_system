@@ -1,0 +1,455 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css links -->
+    <link rel="stylesheet" href="{% static 'user_view/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'user_view/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'user_view/css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'user_view/css/all_min.css' %}">
+    <!-- fontawesome link -->
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous"
+    />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300&display=swap"
+    rel="stylesheet"
+    />
+
+    <!-- add icon link -->
+    <link rel = "icon" href = 
+    "../PHOTOS/logo.png" 
+            type = "image/x-icon">
+    <title>Water Billing System</title>
+</head>
+
+<body>
+ <!--skip to main content-->
+ <a class="sr-only sr-only-focusable" href="#content-search">Skip to main content</a>
+ 
+
+
+    <!--modal for signin -->
+    <div class="modal fade body" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1  class="modal-title h5 " id="exampleModalLabel1">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-2">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-md-7 col-lg-12 mx-auto">
+                        <div class="card card-signin my-5">
+                            <div class="card-body">
+                                <form class="form-signin">
+                                    <div class="form-label-group"> <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> <label for="inputEmail"></label> </div>
+                                    <div class="form-label-group"> <input type="password" id="inputPassword" class="form-control" placeholder="Password" required> <label for="inputPassword"></label> </div>
+                                    <div class="custom-control custom-checkbox mb-3"> <input type="checkbox" class="custom-control-input" id="customCheck1"> <label class="custom-control-label" for="customCheck1">Remember password?</label> </div> 
+                                    <button class="btn btn-md btn-primary btn-block text-uppercase" type="submit">Login</button>
+                                    <hr class="my-2">
+                                    <div class="text-center text-muted mb-4">or login with</div>
+                                </form>
+                                <div class="text-center"> <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> </button> <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> </button></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>    
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--end of modal form for login-->
+
+    <!--model form for registration-->
+    <div class="modal fade body" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title " id="exampleModalLabel">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 col-md-7 col-lg-12 mx-auto">
+                        <div class="card card-signin my-5">
+                            <div class="card-body">
+                                <form class="form-signin">
+                                    <div class="form-label-group"> <input type="email" id="inputEmail2" class="form-control" placeholder="Email address" required autofocus> <label for="inputEmail2"></label> </div>
+                                    <div class="form-label-group"> <input type="password" id="inputPassword2" class="form-control" placeholder="Password" required> <label for="inputPassword2"></label> </div>
+                                    <div class="form-label-group"> <input type="password" id="inputPassword3" class="form-control" placeholder=" Conform Password" required> <label for="inputPassword3"></label> </div>
+                                    <div class="custom-control custom-checkbox mb-3"> <input type="checkbox" class="custom-control-input" id="customCheck12"> <label class="custom-control-label" for="customCheck12">Remember password?</label> </div> 
+                                    <button class="btn btn-md btn-primary btn-block text-uppercase" type="submit">Register</button>
+                                    <hr class="my-2">
+    
+                                    <div class="text-center text-muted mb-4">or login with</div>
+                                </form>
+                            
+                                <div class="text-center"> <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> </button> 
+                                <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> </button>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!--end of modal for registration-->
+
+    
+
+<h1 class="water">Water Billing System</h1>
+
+
+<!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <!-- Logo Image -->
+            <img src="{% static 'user_view/images/img1.jpeg' %}" width="45" alt="" class="d-inline-block align-middle mr-2">
+            <!-- Logo Text -->
+            <span class="text-uppercase font-weight-bold">Water Billing System</span>
+          </a>
+
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+          <!-- <div id="navbarSupportedContent" class="collapse navbar-collapse"> -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Payment</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Apply</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+            </ul>
+          <!-- </div> -->
+        </div>
+      </nav>
+      
+      <!-- End of Navbar -->
+
+<!--start of why choosing us section-->
+<div class="container body">
+  <p class="line1">
+    <h2 class="text-center">Why choose us?</h2>
+  </p>
+  <!--why choosing us details-->
+  <div class="container mt-5">
+   <div class="row justify-content-center">
+      
+       <div class="col-md-8 mt-2">
+           <div class="content"> <a href="#">
+                   <div class="content-overlay"></div> <img class="content-image" src="{% static 'user_view/images/water2.jpg' %}" alt="award">
+               </a> </div>
+       </div>
+   </div>
+</div>
+<p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae itaque explicabo eius non exercitationem nesciunt voluptates optio amet nemo molestias, ad consequuntur, deleniti nam a delectus quidem dicta inventore harum.
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit consequuntur accusamus, amet asperiores natus corrupti non dolorum quasi odit autem aspernatur voluptas mollitia illum. Provident, adipisci earum voluptates omnis labore dolores perferendis aliquam amet vero facere nulla, ipsa unde!
+</p>
+</div>
+<!--end of why choosing us section-->
+
+
+<!--meet our team-->
+<div class="container mb-5 my-5 body" id="content-search">
+  <h2 class="  text-center mb-3">Meet our Team <i class="fas fa-chevron-circle-down" ></i> </h2>
+
+  <section id="team">
+    <div class="container">
+        <div class="section-header">  
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <div class="member"> <img src="{% static 'user_view/images/meet3.png' %}" class="img-fluid" alt="">
+                <div class="member-info">
+                    <div class="member-info-content">
+                        <p class="h4  text-white cursor-pointer">Rajkumar Sapkota</p> <span>Project Manager</span>
+                        <div class="social">  <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-google-plus-g"></i> <i class="fab fa-twitter"></i>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="member"> <img src="{% static 'user_view/images/meet5.png' %}" class="img-fluid" alt="">
+                <div class="member-info">
+                    <div class="member-info-content">
+                        <p  class="h4  text-white cursor-pointer">Atit Basnet</p> <span>Business Analyst</span>
+                       
+                        <div class="social">  <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-google-plus-g"></i> <i class="fab fa-twitter"></i>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+            <div class="col-lg-3 col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="member"> <img src="{% static 'user_view/images/meet1.jpg' %}" class="img-fluid" alt="">
+                    <div class="member-info">
+                        <div class="member-info-content">
+                            <p  class="h4  text-white cursor-pointer">Siddhartha Gurung</p> <span>Developer</span>
+                           
+                            <div class="social">  <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-google-plus-g"></i> <i class="fab fa-twitter"></i>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <div class="member"> <img src="{% static 'user_view/images/meet2.jpg' %}" class="img-fluid" alt="meet-team">
+                    <div class="member-info">
+                        <div class="member-info-content">
+                            <p class="h4  text-white cursor-pointer">Ashray Prajapati</p> <span>Developer</span>
+                            <div class="social"> <i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-google-plus-g"></i> <i class="fab fa-twitter"></i>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="member"> <img src="{% static 'user_view/images/meet4.png' %}" class="img-fluid" alt="">
+                    <div class="member-info">
+                        <div class="member-info-content">
+                            <p class="h4  text-white cursor-pointer">Ozone Bhattarai</p> <span>Developer</span>
+                           <div class="social"><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-google-plus-g"></i> <i class="fab fa-twitter"></i>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</div>
+<!--end of meet our team-->
+
+
+<!--our location-->
+
+<div class="container body">
+  <h3 class="text-center my-5">Our Location</h3>
+<div class="row">
+        <div class="col-md-6 span8">
+        	<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.222862678781!2d85.33026571493829!3d27.71040448279062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190b6cfae8cd%3A0xb54327d56a797ef6!2sGyaneshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1649262303760!5m2!1sen!2snp" style="border: 3px solid brown; padding: 5px;" title="location"></iframe>
+    	</div>
+      <div class="col-md-6 d-flex flex-column mt-3 mt-md-0 justify-content-center">
+        <p>
+          We are located in Gyaneshwor, Kathmandu near Herald College Kathmandu just opposite to Naxal Bhagwati Mandir.
+        </p>
+      </div>
+    	
+      
+    </div>
+</div>
+<!--end of our location-->
+
+
+<!--news side part-->
+<div class="offcanvas offcanvas-end body" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel"><strong>Trending News</strong><button type="button" class="btn btn-danger btn-sm">
+      New <span class="badge badge-light">4</span>
+    </button></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+
+      <ul class="list-unstyled">
+        <li class="media  ">
+          <div class="text-center">
+            <iframe width="250" height="120" src="https://www.youtube.com/embed/P-4K16Pd9KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="media-body">
+            <p class="text-center my-0"><i class="far fa-clock"></i>Jan 20,2020</p>
+            <h5 class="mt-0 mb-1  text-center "><a href="news.html" class="bg-link">The Biggest Opportunities in Commercial Real Estate Right Now</a><a href="news.html"><i class="fa fa-share share"></i></a></h5>
+            <p >Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. <p class="text-truncate"> Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus
+            </p>
+              </p>
+            
+          </div>
+        </li>
+       
+        <
+        
+        <li class="media  ">
+          <div class="text-center">
+          <img class="mr-3 " src="{% static 'user_view/images/new1.png' %}" alt="Generic placeholder image" height="120" width="250"></div>
+          <div class="media-body">
+            <p class="text-center my-0"><i class="far fa-clock"></i>Jan 20,2020</p>
+            <h5 class="mt-0 mb-1  text-center "><a href="news.html" class="bg-link">6,000 flats in Jaypee Wish Town</a><a href="news.html"><i class="fa fa-share share"></i></a></h5>
+            <p >Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. <p class="text-truncate"> Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus
+            </p>
+              </p>
+            
+          </div>
+        </li>
+
+        
+
+        <li class="media  ">
+          <div class="text-center">
+          <img class="mr-3 " src="{% static 'user_view/images/news1.png' %}" alt="Generic placeholder image" height="120" width="250"></div>
+          <div class="media-body">
+            <p class="text-center my-0"><i class="far fa-clock"></i>Jan 20,2020</p>
+            <h5 class="mt-0 mb-1  text-center "><a href="news.html" class="bg-link">6,000 flats in Jaypee Wish Town</a><a href="news.html"><i class="fa fa-share share"></i></a></h5>
+            <p >Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. <p class="text-truncate"> Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus
+            </p>
+              </p>
+            
+          </div>
+        </li>
+
+      </ul>
+
+
+    </div>
+  </div>
+</div>
+<!--end of news side part-->
+
+
+
+<!--Take a Virtual Tour-->
+<div class="container my-5 body">
+  <h2 class="text-center my-5">Take a Virtual Tour</h2>
+  <div class="row">
+    
+    <div class="col-md-6">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid iusto at corrupti beatae explicabo. Cumque totam sit iure vel iste laborum. Quae dolores illo nihil? Blanditiis exercitationem facere quibusdam?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sunt praesentium neque mollitia excepturi ipsum fuga! Dolorum esse earum id doloribus. Rem labore mollitia beatae saepe nisi quos rerum consequatur architecto reprehenderit. Sint autem quia nobis! Eius et, atque fugiat non dolore impedit aliquid eveniet voluptatum facere voluptatibus nulla iste doloribus? Quia eveniet alias quaerat earum quam fuga vero est.</p>
+    </div>
+    <div class="col-md-6">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium ipsam, nemo accusamus fuga reprehenderit, impedit ducimus sequi laborum delectus, odio tempora. Vitae aspernatur libero in officia quod repudiandae dolor, illum eaque sequi error blanditiis cumque sed minus, corrupti tenetur voluptate alias obcaecati esse, adipisci architecto ipsa voluptates. Aut, doloribus?</p>
+    </div>
+  </div>
+</div>
+<!--end of Take a Virtual Tour-->
+
+
+<!--Check what our Customers are Saying-->
+<div class="container mb-5 mt-5 body">
+  <div class=" text-center">
+    <p class="my-5 h2">Check what our Customers are Saying</p>
+    <p class="subtitle font-weight-normal text-muted my-2 h6">You can relay on our amazing features list and also our customer services will be great experience for you without doubt</p>
+  </div>
+<div class="overflow-auto p-3 mb-3 mb-md-0 mr-md-3 bg-light " style="max-width: 100%; max-height: 60vh;">
+  
+
+<div class="testimonial1 py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      
+    </div>
+    <!-- Row  -->
+    <div class="owl-carousel owl-theme testi1 mt-4">
+      <!-- item -->
+      <div class="item">
+        <div class="card card-shadow border-0 mb-4">
+          <div class="card-body">
+            <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="{% static 'user_view/images/puri.jpg' %}" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
+            <p class="font-weight-light h5 text-dark">Great service.Very reliable and easy to use.</p>
+            <span class="devider d-inline-block my-3"></span>
+            <p class="font-weight-normal h6 text-dark">Agent</p>
+          </div>
+        </div>
+      </div>
+      <!-- item -->
+
+        <!-- item -->
+        <div class="item">
+          <div class="card card-shadow border-0 mb-4">
+            <div class="card-body">
+              <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="{% static 'user_view/images/puri.jpg' %}" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
+              <p class="font-weight-light h5 text-dark">Great service.Very reliable and easy to use.</p>
+              <span class="devider d-inline-block my-3"></span>
+              <p class="font-weight-normal h6 text-dark">Agent</p>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+
+          <!-- item -->
+      <div class="item">
+        <div class="card card-shadow border-0 mb-4">
+          <div class="card-body">
+            <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="{% static 'user_view/images/puri.jpg' %}" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
+            <p class="font-weight-light h5 text-dark">Great service.Very reliable and easy to use.</p>
+            <span class="devider d-inline-block my-3"></span>
+            <p class="font-weight-normal h6 text-dark">Agent</p>
+          </div>
+        </div>
+      </div>
+      <!-- item -->
+
+      
+     
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--end of Check what our Customers are Saying-->
+
+
+    <!--end of content page-->
+   
+    <!--footer start-->
+
+    <footer class="bg-dark text-center text-white body">
+        <!-- Grid container -->
+        
+        <!-- Grid container -->
+  
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+         
+          © 2022 Copyright:
+          WaterBillingSystem
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <!--end of footer-->
+
+     <!--loading-->
+     <div class="loading hidden">
+      <img src="{% static 'user_view/images/loading.gif' %}" alt="loading...">
+    </div>
+      <!--end of loading-->
+
+    
+</body>
+</html>

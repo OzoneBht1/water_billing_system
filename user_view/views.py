@@ -9,3 +9,7 @@ def home(request):
 
 def payment(request):
     return render(request, "user_view/payment.html", {})
+
+
+def about(request):
+    return render(request, "user_view/about.html", {})

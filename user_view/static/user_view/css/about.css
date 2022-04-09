@@ -1,0 +1,330 @@
+.con {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  /* background:black;
+    opacity: 0.7; */
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 730px) {
+  .con {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 518px) {
+  .con {
+    font-size: 15px;
+  }
+}
+
+/* why choosing us part about us  */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/* body {
+          background: #f9f9f9;
+          font-size: 16px;
+          font-family: 'Raleway', sans-serif
+      } */
+
+/* .container {
+          margin-top: 200px
+      } */
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+img {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+/* end of choosing us  */
+
+/* meet our team */
+#team {
+  background: #fff;
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section-header h3 {
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#team .member .member-info {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center; */
+  justify-content: center;
+  /* -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center; */
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#team .member .member-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+/* end of meet our team */
+
+/* what our clint says */
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.testimonial1 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.testimonial1 h1,
+.testimonial1 h2,
+.testimonial1 h3,
+.testimonial1 h4,
+.testimonial1 h5,
+.testimonial1 h6 {
+  color: #3e4555;
+}
+
+.testimonial1 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.testimonial1 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+}
+
+.testimonial1 .testi1 .card-body {
+  padding: 35px;
+}
+
+.testimonial1 .testi1 .thumb {
+  padding: 10px 20px 10px;
+  padding-left: 90px;
+  margin-left: -35px;
+}
+
+.testimonial1 .testi1 .thumb .thumb-img {
+  width: 60px;
+  left: 20px;
+  top: -10px;
+}
+
+.testimonial1 .testi1 h5 {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.testimonial1 .testi1 .devider {
+  height: 1px;
+  background: rgba(120, 130, 140, 0.13);
+  width: 100px;
+}
+
+.testimonial1 .bg-success-gradiant {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(
+    legacy-direction(to right),
+    #2cdd9b 0%,
+    #1dc8cc 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#2cdd9b),
+    to(#1dc8cc)
+  );
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.testimonial1 .card.card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.testimonial1 .owl-theme .owl-dots .owl-dot.active span,
+.testimonial1 .owl-theme .owl-dots .owl-dot:hover span {
+  background: #316ce8;
+}
+
+/* end of our clint says */
+
+/*news portal*/
+.news-card {
+  border-radius: 8px;
+}
+
+.news-feed-image {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.username {
+  color: blue;
+}
+
+.share {
+  color: blue;
+}
+
+/*css for breadcrumbs colour*/
+.breadcrumns-font-color {
+  color: #4a17a6;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
