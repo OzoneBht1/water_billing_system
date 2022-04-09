@@ -7,4 +7,5 @@ app_name = "user_view"
 urlpatterns = [
     path("", views.home, name="home"),
     path("payment/", views.payment, name="payment"),
+    path("about/", views.about, name="about"),
 ]

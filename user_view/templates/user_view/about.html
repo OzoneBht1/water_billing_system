@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css links -->
-    <link rel="stylesheet" href="../CSS/bootstrap.css" />
-    <link rel="stylesheet" href="../CSS/index.css" />
-    <link rel="stylesheet" href="../CSS/about.css" />
-    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="{% static 'user_view/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'user_view/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'user_view/css/about.css' %}" />
+    <link rel="stylesheet" href="{% static 'user_view/css/all_min.css' %}">
     <!-- fontawesome link -->
     <link
     rel="stylesheet"
@@ -130,7 +131,7 @@
         <div class="container">
           <a href="#" class="navbar-brand">
             <!-- Logo Image -->
-            <img src="../PHOTOS/img1.jpeg" width="45" alt="" class="d-inline-block align-middle mr-2">
+            <img src="{% static 'user_view/images/img1.jpeg' %}" width="45" alt="" class="d-inline-block align-middle mr-2">
             <!-- Logo Text -->
             <span class="text-uppercase font-weight-bold">Water Billing System</span>
           </a>
@@ -161,7 +162,7 @@
       
        <div class="col-md-8 mt-2">
            <div class="content"> <a href="#">
-                   <div class="content-overlay"></div> <img class="content-image" src="../PHOTOS/water2.jpg" alt="award">
+                   <div class="content-overlay"></div> <img class="content-image" src="{% static 'user_view/images/water2.jpg' %}" alt="award">
                </a> </div>
        </div>
    </div>
@@ -184,7 +185,7 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-            <div class="member"> <img src="../PHOTOS/meet3.png" class="img-fluid" alt="">
+            <div class="member"> <img src="{% static 'user_view/images/meet3.png' %}" class="img-fluid" alt="">
                 <div class="member-info">
                     <div class="member-info-content">
                         <p class="h4  text-white cursor-pointer">Rajkumar Sapkota</p> <span>Project Manager</span>
@@ -196,7 +197,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="member"> <img src="../PHOTOS/meet5.png" class="img-fluid" alt="">
+            <div class="member"> <img src="{% static 'user_view/images/meet5.png' %}" class="img-fluid" alt="">
                 <div class="member-info">
                     <div class="member-info-content">
                         <p  class="h4  text-white cursor-pointer">Atit Basnet</p> <span>Business Analyst</span>
@@ -210,7 +211,7 @@
           </div>
           
             <div class="col-lg-3 col-md-6 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                <div class="member"> <img src="../PHOTOS/meet1.jpg" class="img-fluid" alt="">
+                <div class="member"> <img src="{% static 'user_view/images/meet1.jpg' %}" class="img-fluid" alt="">
                     <div class="member-info">
                         <div class="member-info-content">
                             <p  class="h4  text-white cursor-pointer">Siddhartha Gurung</p> <span>Developer</span>
@@ -223,7 +224,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                <div class="member"> <img src="../PHOTOS/meet2.jpg" class="img-fluid" alt="meet-team">
+                <div class="member"> <img src="{% static 'user_view/images/meet2.jpg' %}" class="img-fluid" alt="meet-team">
                     <div class="member-info">
                         <div class="member-info-content">
                             <p class="h4  text-white cursor-pointer">Ashray Prajapati</p> <span>Developer</span>
@@ -236,7 +237,7 @@
             </div>
             
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-                <div class="member"> <img src="../PHOTOS/meet4.png" class="img-fluid" alt="">
+                <div class="member"> <img src="{% static 'user_view/images/meet4.png' %}" class="img-fluid" alt="">
                     <div class="member-info">
                         <div class="member-info-content">
                             <p class="h4  text-white cursor-pointer">Ozone Bhattarai</p> <span>Developer</span>
@@ -305,7 +306,7 @@
         
         <li class="media  ">
           <div class="text-center">
-          <img class="mr-3 " src="/PHOTOS/news1.png" alt="Generic placeholder image" height="120" width="250"></div>
+          <img class="mr-3 " src="{% static 'user_view/images/new1.png' %}" alt="Generic placeholder image" height="120" width="250"></div>
           <div class="media-body">
             <p class="text-center my-0"><i class="far fa-clock"></i>Jan 20,2020</p>
             <h5 class="mt-0 mb-1  text-center "><a href="news.html" class="bg-link">6,000 flats in Jaypee Wish Town</a><a href="news.html"><i class="fa fa-share share"></i></a></h5>
@@ -320,7 +321,7 @@
 
         <li class="media  ">
           <div class="text-center">
-          <img class="mr-3 " src="/PHOTOS/news1.png" alt="Generic placeholder image" height="120" width="250"></div>
+          <img class="mr-3 " src="{% static 'user_view/images/news1.png' %}" alt="Generic placeholder image" height="120" width="250"></div>
           <div class="media-body">
             <p class="text-center my-0"><i class="far fa-clock"></i>Jan 20,2020</p>
             <h5 class="mt-0 mb-1  text-center "><a href="news.html" class="bg-link">6,000 flats in Jaypee Wish Town</a><a href="news.html"><i class="fa fa-share share"></i></a></h5>
@@ -378,7 +379,7 @@
       <div class="item">
         <div class="card card-shadow border-0 mb-4">
           <div class="card-body">
-            <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="../PHOTOS/puri.jpg" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
+            <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="{% static 'user_view/images/puri.jpg' %}" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
             <p class="font-weight-light h5 text-dark">Great service.Very reliable and easy to use.</p>
             <span class="devider d-inline-block my-3"></span>
             <p class="font-weight-normal h6 text-dark">Agent</p>
@@ -391,7 +392,7 @@
         <div class="item">
           <div class="card card-shadow border-0 mb-4">
             <div class="card-body">
-              <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="../PHOTOS/puri.jpg" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
+              <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="{% static 'user_view/images/puri.jpg' %}" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
               <p class="font-weight-light h5 text-dark">Great service.Very reliable and easy to use.</p>
               <span class="devider d-inline-block my-3"></span>
               <p class="font-weight-normal h6 text-dark">Agent</p>
@@ -404,7 +405,7 @@
       <div class="item">
         <div class="card card-shadow border-0 mb-4">
           <div class="card-body">
-            <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="../PHOTOS/puri.jpg" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
+            <div class="position-relative thumb bg-success-gradiant d-inline-block text-white mb-4"><img src="{% static 'user_view/images/puri.jpg' %}" alt="pic" class="thumb-img position-absolute rounded-circle" /> Prashant Puri</div>
             <p class="font-weight-light h5 text-dark">Great service.Very reliable and easy to use.</p>
             <span class="devider d-inline-block my-3"></span>
             <p class="font-weight-normal h6 text-dark">Agent</p>
@@ -445,7 +446,7 @@
 
      <!--loading-->
      <div class="loading hidden">
-      <img src="../PHOTOS/loading.gif" alt="loading...">
+      <img src="{% static 'user_view/images/loading.gif' %}" alt="loading...">
     </div>
       <!--end of loading-->
 
