@@ -8,3 +8,6 @@ local_settings.py
 db.sqlite3
 media/
 staticfiles/
+sqldiff.exe
+sqlite3_analyzer.exe
+sqlite3.exe
