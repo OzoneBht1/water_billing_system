@@ -1,0 +1,19 @@
+from django.db import models
+
+
+class Payment(models.Model):
+    province = models.CharField(max_length=50)
+    district = models.CharField(max_length=50)
+    municipality = models.CharField(max_length=90)
+    customer_id = models.CharField(max_length=30, primary_key=True)
+    customer_name = models.CharField(max_length=100)
+    previous_unit = models.CharField(max_length=30)
+    current_unit = models.CharField(max_length=30)
+    saving_unit = models.CharField(max_length=30)
+    meter_status = models.BooleanField(default=True)
+    bill_amount = models.CharField(max_length=30)
+    penalty = models.CharField(max_length=30)
+    total_unit = models.CharField(max_length=30)
+
+    def __str__(self) -> str:
+        return f"{self.customer_id}: {self.customer_name}"

@@ -16,8 +16,16 @@
     {{ data|json_script:'name' }}
 
     <br /><br />
-    <div class="container" style="width: 600px">
-      <h2 align="center">Payment</h2>
+
+    <form class="signup-form" method="post">
+      {% csrf_token %}
+      <!-- <i class="fa-solid fa-faucet-drip"></i> -->
+      <!-- {% for field in form %} {{field.label}} {{field}} {% endfor %} -->
+      {{form.as_p}}
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    <!-- <h2 align="center">Payment</h2>
       <br /><br />
       <select name="province" id="province" class="form-control input-lg">
         <option value="">Select province</option>
@@ -33,8 +41,8 @@
         class="form-control input-lg"
       >
         <option value="">Select municipality</option>
-      </select>
-    </div>
+      </select> -->
+
     <script src="{% static 'user_view/js/payment.js' %}"></script>
   </body>
 </html>

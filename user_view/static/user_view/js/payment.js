@@ -6,7 +6,8 @@ var lookup2 = {};
 // console.log(js_variable);
 var e = document.getElementById("province");
 var f = document.getElementById("district");
-console.log("working?");
+var g = document.getElementById("municipality");
+
 e.addEventListener("click", function () {
   for (var i = 0; i < js_variable.length; i++) {
     var currentProvince = js_variable[i]["Province"];
