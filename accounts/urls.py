@@ -19,6 +19,7 @@ from . import views
 
 app_name = "accounts"
 
+# These are the URLS for the accounts app. They are used to direct the user to the correct page.
 urlpatterns = [
     path("register/", views.register, name="userRegistration"),
     path("login/", views.loginPage, name="userLogin"),

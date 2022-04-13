@@ -4,6 +4,7 @@ from django.forms import ModelForm, Textarea
 from django.forms import ModelForm
 
 
+# Providing labels, classes and error handling for the bill payment form
 class PaymentForm(ModelForm):
 
     labels = {

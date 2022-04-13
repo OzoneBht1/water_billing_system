@@ -14,6 +14,7 @@ def payment(request):
 
     with open("data.json") as f:
         data = json.load(f)
+        # Loading the data from Json file containing details of provinces, districts and local bodies of Nepal
 
     if request.method == "POST":
         form = PaymentForm(request.POST)
@@ -25,6 +26,7 @@ def payment(request):
         return render(request, "user_view/payment.html", {})
 
     form = PaymentForm()
+    # Passing the form from forms.py to the template, and also the data from the json file
     return render(request, "user_view/payment.html", {"data": data, "form": form})
 
 

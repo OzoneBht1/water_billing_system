@@ -8,21 +8,10 @@ from django.utils.translation import gettext_lazy
 from django.contrib.auth import password_validation
 
 
+# This is form created for the user to sign up. It uses the UserCreationForm from Django.
 class CreateUserForm(UserCreationForm):
 
-    # username = forms.RegexField(
-    #     label=("Email"),
-    #     max_length=30,
-    #     regex=r"^[\w.@+-]+$",
-    #     help_text=(
-    #         "Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only."
-    #     ),
-    #     error_messages={
-    #         "invalid": (
-    #             "This value may contain only letters, numbers and @/./+/-/_ characters."
-    #         )
-    #     },
-    # )
+   
     first_name = forms.CharField(
         max_length=12,
         min_length=4,

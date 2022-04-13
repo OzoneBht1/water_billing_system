@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# These are the database models for the bill payment part. The models are created using the ORM.
 class Payment(models.Model):
     province = models.CharField(max_length=50)
     district = models.CharField(max_length=50)
