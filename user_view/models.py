@@ -20,4 +20,14 @@ class Payment(models.Model):
         return f"{self.customer_id}: {self.customer_name}"
 
 
-# class Tap(models.Model):
+class NewTap(models.Model):
+    province = models.CharField(max_length=100)
+    district = models.CharField(max_length=100)
+    municipality = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
+    middle_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    house_no = models.CharField(max_length=100)
+    contact_no = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+    citizenship = models.ImageField()
