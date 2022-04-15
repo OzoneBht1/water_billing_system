@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.box {
+    border: 3px solid rgb(255, 0, 0);
+    position: absolute;
+    background-color: white;
+}
+
+.form{
+    position: absolute;
+}
+  
+/* .heading {
+    text-align: center;
+} */
