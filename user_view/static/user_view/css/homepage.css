@@ -1,5 +1,6 @@
 body {
-  background-image: url("user_view/images/bg.png") 50% 0 no-repeat fixed;
+  background-image: url("../images/bg.png");
+
   background-repeat: no-repeat;
   height: 80%;
   width: 100%;
