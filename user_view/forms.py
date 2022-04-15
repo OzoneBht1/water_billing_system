@@ -23,7 +23,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{10}",
                 "id": "customer_id",
             }
@@ -32,7 +32,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[a-zA-Z]{,}",
                 "id": "customer_name",
             }
@@ -41,7 +41,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{,}",
                 "id": "previous_unit",
             }
@@ -50,7 +50,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{,}",
                 "id": "current_unit",
             }
@@ -59,19 +59,19 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{,}",
                 "id": "saving_unit",
             }
         ),
         "meter_status": Textarea(
-            attrs={"cols": 40, "rows": 1, "class": "form-control input-lg"}
+            attrs={"cols": 40, "rows": 1, "class": "form-control"}
         ),
         "bill_amount": Textarea(
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{,}",
                 "id": "bill_amount",
             }
@@ -80,7 +80,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{,}",
                 "id": "penalty",
             }
@@ -89,7 +89,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control input-lg",
+                "class": "form-control",
                 "pattern": "[0-9]{,}",
                 "id": "total_unit",
             }
@@ -99,7 +99,7 @@ class PaymentForm(ModelForm):
         #     attrs={
         #         "cols": 40,
         #         "rows": 1,
-        #         "class": "form-control input-lg",
+        #         "class": "form-control",
         #         "pattern": "[0-9]{,}",
         #         "id": "province",
         #     }
@@ -108,7 +108,7 @@ class PaymentForm(ModelForm):
         #     attrs={
         #         "cols": 40,
         #         "rows": 1,
-        #         "class": "form-control input-lg",
+        #         "class": "form-control",
         #         "pattern": "[0-9]{,}",
         #         "id": "district",
         #     }
@@ -117,7 +117,7 @@ class PaymentForm(ModelForm):
         #     attrs={
         #         "cols": 40,
         #         "rows": 1,
-        #         "class": "form-control input-lg",
+        #         "class": "form-control",
         #         "pattern": "[0-9]{,}",
         #         "id": "municipality",
         #     }
