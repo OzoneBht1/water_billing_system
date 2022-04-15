@@ -1,7 +1,12 @@
 {% extends "base.html" %} {% load static %}
 {% block title %} Bill Payment {% endblock %}
  
+{% block css_files %} 
+<link rel="stylesheet" type=""text/css" href="{% static 'user_view/css/payment.css' %}">
+{% endblock %}
+ 
 {% block content %}
+
     {{ data|json_script:'name' }}
 
     <br /><br />
@@ -25,7 +30,15 @@
 
       <!-- <i class="fa-solid fa-faucet-drip"></i> -->
       <!-- {% for field in form %} {{field.label}} {{field}} {% endfor %} -->
-      {{form.as_p}}
+      {% for field in form %}
+      <div class="form-group">
+          {{ field.errors }}
+          {{ field.label_tag }} {{ field }}
+          {% if field.help_text %}
+          <p class="help">{{ field.help_text|safe }}</p>
+          {% endif %}
+      </div>
+  {% endfor %}
       <input type="submit" name="submit" value="Submit" />
     </form>
 
