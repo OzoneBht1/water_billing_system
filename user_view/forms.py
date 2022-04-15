@@ -1,5 +1,5 @@
 from cProfile import label
-from user_view.models import Payment
+from user_view.models import Payment, NewTap
 from django.forms import ModelForm, Textarea
 from django.forms import ModelForm
 
@@ -157,4 +157,21 @@ class PaymentForm2(ModelForm):
             "bill_amount",
             "penalty",
             "total_unit",
+        )
+
+
+class NewTapForm(ModelForm):
+    class Meta:
+        model = NewTap
+
+        fields = (
+            "province",
+            "district",
+            "municipality",
+            "first_name",
+            "last_name",
+            "house_no",
+            "contact_no",
+            "email",
+            "citizenship",
         )

@@ -15,7 +15,10 @@ class Payment(models.Model):
     bill_amount = models.CharField(max_length=30)
     penalty = models.CharField(max_length=30)
     total_unit = models.CharField(max_length=30)
-
+    # kun mahina samma ko bill ako
+    # previous unit bhaneko pahila mahina kati uthyo
+    # current unit bhaneko ahile kati uthyo
+    # saving unit bhaneko chai kati uthyo
     def __str__(self) -> str:
         return f"{self.customer_id}: {self.customer_name}"
 

@@ -1,15 +1,13 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- css links -->
+    {% block css_files %}
     <link rel="stylesheet" href="{% static 'user_view/css/bootstrap.css' %}" />
     <link rel="stylesheet" href="{% static 'user_view/css/index.css' %}" />
     <link rel="stylesheet" href="{% static 'user_view/css/about.css' %}" />
     <link rel="stylesheet" href="{% static 'user_view/css/all_min.css' %}">
+
     <!-- fontawesome link -->
     <link
     rel="stylesheet"
@@ -30,15 +28,18 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300&display=swap"
     rel="stylesheet"
     />
+   
 
     <!-- add icon link -->
-    <link rel = "icon" href = 
+    <!-- <link rel = "icon" href = 
     "../PHOTOS/logo.png" 
-            type = "image/x-icon">
-    <title>Water Billing System</title>
-</head>
+            type = "image/x-icon"> -->
+            {% endblock %}
+    {% block title %} About Us{% endblock %}
+    
 
-<body>
+
+{% block content %}
  <!--skip to main content-->
  <a class="sr-only sr-only-focusable" href="#content-search">Skip to main content</a>
  
@@ -126,30 +127,7 @@
 <h1 class="water">Water Billing System</h1>
 
 
-<!-- Start of Navbar -->
-    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
-        <div class="container">
-          <a href="#" class="navbar-brand">
-            <!-- Logo Image -->
-            <img src="{% static 'user_view/images/img1.jpeg' %}" width="45" alt="" class="d-inline-block align-middle mr-2">
-            <!-- Logo Text -->
-            <span class="text-uppercase font-weight-bold">Water Billing System</span>
-          </a>
 
-          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-
-          <!-- <div id="navbarSupportedContent" class="collapse navbar-collapse"> -->
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Payment</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Apply</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-            </ul>
-          <!-- </div> -->
-        </div>
-      </nav>
-      
-      <!-- End of Navbar -->
 
 <!--start of why choosing us section-->
 <div class="container body">
@@ -428,19 +406,7 @@
    
     <!--footer start-->
 
-    <footer class="bg-dark text-center text-white body">
-        <!-- Grid container -->
-        
-        <!-- Grid container -->
-  
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-         
-          © 2022 Copyright:
-          WaterBillingSystem
-        </div>
-        <!-- Copyright -->
-      </footer>
+   
 
     <!--end of footer-->
 
@@ -450,6 +416,7 @@
     </div>
       <!--end of loading-->
 
+        {% endblock %}
     
 </body>
 </html>
