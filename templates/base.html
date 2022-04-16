@@ -57,13 +57,13 @@
               <a class="dropdown-item" href="#">Report</a>
             </div>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link"><i><u>Logout</u></i></a></li>
-          </li>
+          <li class="nav-item active"><a href="{% url 'accounts:logout' %}" class="nav-link"><i><u>Logout</u><span class="sr-only">(current)</span></i></a></li> 
+        </li>
         </ul>
       </div>
     </div>
   </nav>
-  <button><a href="{% url 'accounts:logout' %}">Logout</a></button>
+  <!-- <button><a href="{% url 'accounts:logout' %}">Logout</a></button> -->
   {% block content %}
   {% endblock %}
   <footer class="bg-dark text-center text-white body">
@@ -73,7 +73,7 @@
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" bis_skin_checked="1">
-
+      Gyaneshwor, Kathmandu, Phone number: 01-5970120 <br>
       © 2022 Copyright:
       WaterBillingSystem
     </div>
