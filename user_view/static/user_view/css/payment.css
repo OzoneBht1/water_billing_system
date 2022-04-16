@@ -1,6 +1,19 @@
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .form-group label {
-  color: green;
+  display: block;
+  text-align: left;
+  align-items: flex-start;
 }
 .form-group input {
-  color: red;
+  width: 150%;
+}
+
+.form-control {
+  width: 25%;
 }
