@@ -1,8 +1,14 @@
 from django.db import models
-
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # These are the database models for the bill payment part. The models are created using the ORM.
 class Payment(models.Model):
+    reading_month = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(12)]
+    )
+    reading_date = models.IntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(31)]
+    )
     province = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
     municipality = models.CharField(max_length=100)
@@ -11,7 +17,7 @@ class Payment(models.Model):
     previous_unit = models.CharField(max_length=30)
     current_unit = models.CharField(max_length=30)
     saving_unit = models.CharField(max_length=30)
-    meter_status = models.BooleanField(default=True)
+    meter_status = models.CharField(max_length=100, default="green")
     bill_amount = models.CharField(max_length=30)
     penalty = models.CharField(max_length=30)
     total_unit = models.CharField(max_length=30)

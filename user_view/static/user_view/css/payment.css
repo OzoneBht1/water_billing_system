@@ -1,8 +1,26 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.form {
+  border: 10px solid red;
+  width: 63%;
+  /* margin: auto; */
+  /* ^yesle bich ma lancha */
+}
+h2 {
+  padding: 8px;
+  /* text-align: center; */
+  margin-left: 20px;
+}
+
 .signup-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  margin-left: 10px;
+
+  /* align-items: center;
+  text-align: center; */
 }
 
 .form-group label {
@@ -11,9 +29,20 @@
   align-items: flex-start;
 }
 .form-group input {
-  width: 150%;
+  width: 25%;
+  margin-top: 7px;
+  height: 2.1rem;
 }
 
 .form-control {
   width: 25%;
+}
+.row .form-control {
+  width: 52%;
+}
+
+.row input {
+  width: 52%;
+  margin-top: 7px;
+  height: 2.1rem;
 }

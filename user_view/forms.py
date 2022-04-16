@@ -2,12 +2,16 @@ from cProfile import label
 from user_view.models import Payment, NewTap
 from django.forms import ModelForm, Textarea
 from django.forms import ModelForm
-
+from django import forms
 
 # Providing labels, classes and error handling for the bill payment form
 class PaymentForm(ModelForm):
+    CHOICES = [("Green", "Green"), ("Red", "Red")]
 
+    meter_status = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect)
     labels = {
+        "reading_date": "Reading Date",
+        "reading_month": "Reading Month",
         "customer_id": "Customer ID",
         "customer_name": "Customer Name",
         "previous_unit": "Previous Unit",
@@ -18,13 +22,15 @@ class PaymentForm(ModelForm):
         "penalty": "Penalty",
         "total_unit": "Total Unit",
     }
+
     widgets = {
         "customer_id": Textarea(
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[0-9]{10}",
+                "title": "Enter numbers Only ",
                 "id": "customer_id",
             }
         ),
@@ -32,8 +38,9 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[a-zA-Z]{,}",
+                "title": "Enter your name(string only)",
                 "id": "customer_name",
             }
         ),
@@ -41,8 +48,9 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
-                "pattern": "[0-9]{,}",
+                "class": "form-control input",
+                "pattern": "[0-9]+",
+                "title": "Enter numbers Only ",
                 "id": "previous_unit",
             }
         ),
@@ -50,7 +58,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[0-9]{,}",
                 "id": "current_unit",
             }
@@ -59,19 +67,19 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[0-9]{,}",
                 "id": "saving_unit",
             }
         ),
         "meter_status": Textarea(
-            attrs={"cols": 40, "rows": 1, "class": "form-control"}
+            attrs={"cols": 40, "rows": 1, "class": "form-control input"}
         ),
         "bill_amount": Textarea(
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[0-9]{,}",
                 "id": "bill_amount",
             }
@@ -80,7 +88,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[0-9]{,}",
                 "id": "penalty",
             }
@@ -89,7 +97,7 @@ class PaymentForm(ModelForm):
             attrs={
                 "cols": 40,
                 "rows": 1,
-                "class": "form-control",
+                "class": "form-control input",
                 "pattern": "[0-9]{,}",
                 "id": "total_unit",
             }
@@ -99,7 +107,7 @@ class PaymentForm(ModelForm):
         #     attrs={
         #         "cols": 40,
         #         "rows": 1,
-        #         "class": "form-control",
+        #         "class": "form-control input",
         #         "pattern": "[0-9]{,}",
         #         "id": "province",
         #     }
@@ -108,7 +116,7 @@ class PaymentForm(ModelForm):
         #     attrs={
         #         "cols": 40,
         #         "rows": 1,
-        #         "class": "form-control",
+        #         "class": "form-control input",
         #         "pattern": "[0-9]{,}",
         #         "id": "district",
         #     }
@@ -117,7 +125,7 @@ class PaymentForm(ModelForm):
         #     attrs={
         #         "cols": 40,
         #         "rows": 1,
-        #         "class": "form-control",
+        #         "class": "form-control input",
         #         "pattern": "[0-9]{,}",
         #         "id": "municipality",
         #     }
@@ -128,6 +136,8 @@ class PaymentForm(ModelForm):
         model = Payment
 
         fields = (
+            "reading_month",
+            "reading_date",
             "customer_id",
             "customer_name",
             "previous_unit",
@@ -145,6 +155,8 @@ class PaymentForm2(ModelForm):
         model = Payment
 
         fields = (
+            "reading_month",
+            "reading_date",
             "province",
             "district",
             "municipality",

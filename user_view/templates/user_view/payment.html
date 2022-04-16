@@ -13,35 +13,81 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div class = "form">
+      <h2> Bill Payment</h2>
+      {% for field in form %} {{ field.errors.0 }} {% endfor %}   
     <form class="signup-form" method="post">
       {% csrf_token %}
+      <div class="row">
+      <div class="col" class="form-label">
+        <label for="province">Province:</label>
+        
+        <select name="province" id="province" class="form-control input">
+          <option value="">Select province</option>
+        </select>
+        <br />
 
-      <select name="province" id="province" class="form-control input">
-        <option value="">Select province</option>
-      </select>
-      <br />
-      <select name="district" id="district" class="form-control input">
-        <option value="">Select district</option>
-      </select>
-      <br />
+      </div>
+      <div class="col">
+       {{form.reading_month.label}}<br>
+        {{form.reading_month}}
+        
+      </div>     
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label for="district"  class="form-label">District:</label>
+        <select name="district" id="district" class="form-control input">
+          <option value="">Select district</option>
+        </select>
+        <br />
+
+      </div>
+      <div class="col">
+       {{form.reading_date.label}}<br>
+        {{form.reading_date}}
+        
+      </div>     
+
+    </div>
+   
+    <label for="province" class="form-label">Municipality:</label>
       <select name="municipality" id="municipality" class="form-control input">
         <option value="">Select municipality</option>
       </select>
-
+      
+      
+      <hr style="width:100%", size="3", color=black>  
       <!-- <i class="fa-solid fa-faucet-drip"></i> -->
       <!-- {% for field in form %} {{field.label}} {{field}} {% endfor %} -->
       {% for field in form %}
+      {% if field != form.reading_date %}
+      {% if field != form.reading_month %}
       <div class="form-group">
           {{ field.errors }}
           {{ field.label_tag }} {{ field }}
+          {% if field is form.saving_unit %}          
+          <hr style="width:100%", size="3", color=black>  
+         {% endif %}
+         {% if field is form.customer_name %}
+          <hr style="width:100%", size="3", color=black>  
+         {% endif %}
+         
           {% if field.help_text %}
           <p class="help">{{ field.help_text|safe }}</p>
+          
           {% endif %}
-      </div>
+      </div>  
+      {% endif %}
+      {% endif %}
+      
+      
   {% endfor %}
       <input type="submit" name="submit" value="Submit" />
     </form>
-
+  </div>
     <!-- <h2 align="center">Payment</h2>
       <br /><br />
       <select name="province" id="province" class="form-control input-lg">
