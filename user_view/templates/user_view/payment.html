@@ -3,6 +3,7 @@
  
 {% block css_files %} 
 <link rel="stylesheet" type=""text/css" href="{% static 'user_view/css/payment.css' %}">
+<link rel="stylesheet" href="{% static 'user_view/css/bootstrap.css' %}" />
 {% endblock %}
  
 {% block content %}
@@ -22,6 +23,8 @@
       <div class="col" class="form-label">
         <label for="province">Province:</label>
         
+
+
         <select name="province" id="province" class="form-control input">
           <option value="">Select province</option>
         </select>
@@ -35,8 +38,8 @@
       </div>     
 
     </div>
-
-    <div class="row">
+    
+    <div class="row container">
       <div class="col">
         <label for="district"  class="form-label">District:</label>
         <select name="district" id="district" class="form-control input">

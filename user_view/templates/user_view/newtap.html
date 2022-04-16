@@ -1,3 +1,11 @@
-{% extends 'base.html' %} {% block title %} {% endblock %} {% block content %}
-<form method="post">{{form.as_p}}</form>
+{% extends 'base.html' %}{% load static %} {% block title %} {% endblock %}
+{% block css_files %} 
+<link rel="stylesheet" href="{% static 'user_view/css/bootstrap.css' %}" />
+<link rel="stylesheet" href="{% static 'user_view/css/newpayment.css'%}"/>"
+
+{% endblock %}
+ 
+{% block content %}
+
+<form method="post" class="container"> {{form.as_p}}</form>
 {% endblock %}
