@@ -1,0 +1,15 @@
+<<<<<<< Updated upstream
+=======
+.form-group label {
+  
+  color: green;
+}
+.form-group input {
+  color: black;
+  
+}
+.form-control {
+  width: 300px;
+  
+}
+>>>>>>> Stashed changes
