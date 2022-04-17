@@ -21,7 +21,7 @@ body {
   text-align: center;
   font-weight: bolder;
   font-family: "Times New Roman", Times, serif;
-  color: rgb(100, 100, 100);
+  color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -34,12 +34,13 @@ body {
   padding: 10px;
   height: 786px;
   margin: 0;
-  background-color: rgb(0, 60, 255);
-  color: rgb(255, 255, 255);
+  background-color: #0c4f9d;
+  
 }
 .notices {
   top: 129%;
   position: absolute;
+  background-color: yellowgreen;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -66,7 +67,7 @@ body {
 
 /* Add a card effect for articles */
 .card {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
@@ -89,12 +90,18 @@ body {
   align-content: center;
 }
 
+/* 3 DOTS starts */
+/* .container-fluid bg-primary my-5 py-5 text-center{
+  margin-top: 120px;
+} */
+/* 3 DOTS ends */
+
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  /* margin-top: 120px; */
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
