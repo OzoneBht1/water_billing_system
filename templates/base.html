@@ -20,10 +20,10 @@
     {% block css_files %} {% endblock %}
   </head>
   <body>
-    <h1 class="water">Water Billing System</h1>
+    <h1 class="water"><p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Water Billing System</p></h1>
     <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
         <div class="container">
-          <a href="#" class="navbar-brand">
+          <a href="{% url 'users:home' %}" class="navbar-brand">
             <!-- Logo Image -->
             <img src="{% static 'user_view/images/img1.jpeg' %}" width="45" alt="" class="d-inline-block align-middle mr-2">
             <!-- Logo Text -->
@@ -70,7 +70,7 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)" bis_skin_checked="1">
-
+        
         © 2022 Copyright:
         WaterBillingSystem
       </div>
