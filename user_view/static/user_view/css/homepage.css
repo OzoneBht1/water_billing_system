@@ -89,6 +89,11 @@ body {
   align-content: center;
 }
 
+.calendar {
+  text-align:center;
+  margin: 0 auto;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
