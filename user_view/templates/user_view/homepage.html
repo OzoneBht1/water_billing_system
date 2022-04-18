@@ -15,10 +15,7 @@
     <link rel="stylesheet" href="{% static 'user_view/css/homepage.css' %}" />
     {% endblock %}
 
-    {% block title %} Water Billing System {% endblock %}
-   
-      {% block content %}
-
+    {% block title %} Water Billing System {% block content %} 
 
     <!-- Notices part starts -->
   
@@ -182,6 +179,56 @@
         </div>
       </div>
     </section>
+    <!-- Facts Start, i.e. 3 NUMBERS-->
+    <div class="container-fluid bg-primary my-5 py-5 text-center">
+      <div class="row pt-5">
+        <div class="col-lg-3 col-sm-6 mb-5">
+          <h5
+            class="fa fa-user-shield mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
+            style="width: 50px; height: 50px"
+          ></h5>
+          <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
+            5
+          </h4>
+          <h6 class="text-white m-0">Employee Number</h6>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5">
+          <h5
+            class="fa fa-users mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
+            style="width: 50px; height: 50px"
+          ></h5>
+          <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
+            5
+          </h4>
+          <h6 class="text-white m-0">Total Users</h6>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-5">
+          <h5
+            class="fa fa-shield-alt mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
+            style="width: 50px; height: 50px"
+          ></h5>
+          <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
+            5
+          </h4>
+          <h6 class="text-white m-0">Total Officers</h6>
+        </div>
+      </div>
+      
+      <!-- <div class="carousel-item">
+        <img src="..." alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>...AAA</h5>
+          <p>...</p>
+        </div>
+      </div> -->
+
+    </div>
+    <!-- Facts End -->
+
+
+
+    {% endblock %}
+    
   </div>
 
   <!-- Notices part ends -->
@@ -236,43 +283,6 @@
     </div>
   </div> -->
 
-      <!-- Facts Start, i.e. 3 NUMBERS-->
-      <div class="container-fluid bg-primary my-5 py-5 text-center">
-        <div class="row pt-5">
-          <div class="col-lg-3 col-sm-6 mb-5">
-            <h5
-              class="fa fa-user-shield mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
-              style="width: 50px; height: 50px"
-            ></h5>
-            <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
-              5
-            </h4>
-            <h6 class="text-white m-0">Employee Number</h6>
-          </div>
-          <div class="col-lg-3 col-sm-6 mb-5">
-            <h5
-              class="fa fa-users mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
-              style="width: 50px; height: 50px"
-            ></h5>
-            <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
-              5
-            </h4>
-            <h6 class="text-white m-0">Total Users</h6>
-          </div>
-          <div class="col-lg-3 col-sm-6 mb-5">
-            <h5
-              class="fa fa-shield-alt mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
-              style="width: 50px; height: 50px"
-            ></h5>
-            <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
-              5
-            </h4>
-            <h6 class="text-white m-0">Total Officers</h6>
-          </div>
-        </div>
-      </div>
-      <!-- Facts End -->
-
       <!-- News Carousel starts -->
 
       <!-- <div class="home-demo">
@@ -319,6 +329,7 @@
         </div>
       </div>
     </div>
+    
     <script>
       var crs = $('.crs-carousel');
       crs.owlCarousel({
@@ -339,8 +350,7 @@
     </script> -->
 
       <!-- News Carousel ends -->
-
-
+      
 </div>
       
 <!-- calendar ends -->
@@ -359,6 +369,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script> -->
 
-    {% endblock %}
+    {% endblock %} 
   </body>
 </html>
