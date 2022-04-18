@@ -3,30 +3,26 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 # These are the database models for the bill payment part. The models are created using the ORM.
 class Payment(models.Model):
-    reading_month = models.IntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(12)]
-    )
-    reading_date = models.IntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(31)]
-    )
+    reading_month = models.IntegerField()
+    reading_date = models.IntegerField()
     province = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
     municipality = models.CharField(max_length=100)
-    customer_id = models.CharField(max_length=30, primary_key=True)
+    customer_id = models.IntegerField(primary_key=True)
     customer_name = models.CharField(max_length=100)
-    previous_unit = models.CharField(max_length=30)
-    current_unit = models.CharField(max_length=30)
-    saving_unit = models.CharField(max_length=30)
+    previous_unit = models.IntegerField()
+    current_unit = models.IntegerField()
+    saving_unit = models.IntegerField()
     meter_status = models.CharField(max_length=100, default="green")
-    bill_amount = models.CharField(max_length=30)
-    penalty = models.CharField(max_length=30)
-    total_unit = models.CharField(max_length=30)
+    bill_amount = models.IntegerField()
+    penalty = models.IntegerField()
+    total_unit = models.IntegerField()
     # kun mahina samma ko bill ako
     # previous unit bhaneko pahila mahina kati uthyo
     # current unit bhaneko ahile kati uthyo
     # saving unit bhaneko chai kati uthyo
     def __str__(self) -> str:
-        return f"{self.customer_id}: {self.customer_name}"
+        return f"{self.customer_name}"
 
 
 class NewTap(models.Model):
