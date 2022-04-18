@@ -16,8 +16,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <div class = "form container">
       <h2> Bill Payment</h2>
-      {% for field in form %} {{ field.errors.0 }} {% endfor %}   
+         
+      
+
+
     <form class="signup-form" method="post">
+
+      
       {% csrf_token %}
       <div class="row">
       <div class="col" class="form-label">
@@ -39,7 +44,7 @@
 
     </div>
     
-    <div class="row container">
+    <div class="row">
       <div class="col">
         <label for="district"  class="form-label">District:</label>
         <select name="district" id="district" class="form-control input">
@@ -55,14 +60,17 @@
       </div>     
 
     </div>
-   
+    <div class="row">
+      <div class="col">
     <label for="province" class="form-label">Municipality:</label>
       <select name="municipality" id="municipality" class="form-control input">
         <option value="">Select municipality</option>
       </select>
+    </div>
+    </div>
+    
       
-      
-      <hr style="width:100%", size="3", color=black>  
+      <hr>
       <!-- <i class="fa-solid fa-faucet-drip"></i> -->
       <!-- {% for field in form %} {{field.label}} {{field}} {% endfor %} -->
       {% for field in form %}
@@ -72,10 +80,10 @@
           {{ field.errors }}
           {{ field.label_tag }} {{ field }}
           {% if field is form.saving_unit %}          
-          <hr style="width:100%", size="3", color=black>  
+          <hr>  
          {% endif %}
          {% if field is form.customer_name %}
-          <hr style="width:100%", size="3", color=black>  
+          <hr>  
          {% endif %}
          
           {% if field.help_text %}

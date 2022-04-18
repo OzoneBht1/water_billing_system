@@ -1,12 +1,21 @@
 from cProfile import label
 from user_view.models import Payment, NewTap
-from django.forms import ModelForm, Textarea
+from django.forms import ModelForm, NumberInput, Textarea
 from django.forms import ModelForm
 from django import forms
 
 # Providing labels, classes and error handling for the bill payment form
 class PaymentForm(ModelForm):
     CHOICES = [("Green", "Green"), ("Red", "Red")]
+    customer_id = forms.IntegerField()
+    previous_unit = forms.IntegerField()
+    current_unit = forms.IntegerField()
+    saving_unit = forms.IntegerField()
+    bill_amount = forms.IntegerField()
+    penalty = forms.IntegerField()
+    total_unit = forms.IntegerField()
+    reading_date = forms.IntegerField()
+    reading_month = forms.IntegerField()
 
     meter_status = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect)
     labels = {
@@ -16,7 +25,7 @@ class PaymentForm(ModelForm):
         "customer_name": "Customer Name",
         "previous_unit": "Previous Unit",
         "current_unit": "Current Unit",
-        "saving_unit": "Saving Unit",
+        "saving_unit": "Consumed Unit",
         "meter_status": "Meter Status",
         "bill_amount": "Bill Amount",
         "penalty": "Penalty",
@@ -24,14 +33,43 @@ class PaymentForm(ModelForm):
     }
 
     widgets = {
-        "customer_id": Textarea(
+        "reading_date": NumberInput(
             attrs={
+                "type": "number",
+                "max": 31,
+                "min": 1,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",
-                "pattern": "[0-9]{10}",
+                "pattern": "[0-9]",
+                "title": "Enter date(1-31) ",
+                "id": "customer_id123",
+            }
+        ),
+        "reading_month": NumberInput(
+            attrs={
+                "type": "number",
+                "max": 12,
+                "min": 1,
+                "cols": 40,
+                "rows": 1,
+                "class": "form-control input",
+                "pattern": "[0-9]",
+                "title": "Enter month(1-12) ",
+                "id": "customer_id123",
+            }
+        ),
+        "customer_id": NumberInput(
+            attrs={
+                "type": "number",
+                "max": 999999,
+                "min": 0,
+                "cols": 40,
+                "rows": 1,
+                "class": "form-control input",
+                "pattern": "[0-9]",
                 "title": "Enter numbers Only ",
-                "id": "customer_id",
+                "id": "customer_id123",
             }
         ),
         "customer_name": Textarea(
@@ -46,6 +84,9 @@ class PaymentForm(ModelForm):
         ),
         "previous_unit": Textarea(
             attrs={
+                "type": "number",
+                "max": 9999999,
+                "min": 0,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",
@@ -56,6 +97,9 @@ class PaymentForm(ModelForm):
         ),
         "current_unit": Textarea(
             attrs={
+                "type": "number",
+                "max": 999999,
+                "min": 0,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",
@@ -65,6 +109,9 @@ class PaymentForm(ModelForm):
         ),
         "saving_unit": Textarea(
             attrs={
+                "type": "number",
+                "max": 999999,
+                "min": 0,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",
@@ -77,6 +124,9 @@ class PaymentForm(ModelForm):
         ),
         "bill_amount": Textarea(
             attrs={
+                "type": "number",
+                "max": 999999,
+                "min": 0,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",
@@ -86,6 +136,9 @@ class PaymentForm(ModelForm):
         ),
         "penalty": Textarea(
             attrs={
+                "type": "number",
+                "max": 999999,
+                "min": 0,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",
@@ -95,6 +148,9 @@ class PaymentForm(ModelForm):
         ),
         "total_unit": Textarea(
             attrs={
+                "type": "number",
+                "max": 9999999,
+                "min": 0,
                 "cols": 40,
                 "rows": 1,
                 "class": "form-control input",

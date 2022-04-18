@@ -27,6 +27,8 @@ def payment(request):
         # user_type = login_data.get("district")
         # print(user_type, username, password)
         if form.is_valid():
+            temp = form.cleaned_data.get("customer_id")
+            print(temp)
             # obj = form.save()
             # obj.province = login_data.get("province")
             # obj.save()
@@ -34,7 +36,7 @@ def payment(request):
             messages.success(request, "Data saved successfully")
             return redirect("accounts:userLogin")
         else:
-            messages.info(request, "Invalid Login")
+            messages.info(request, "Invalid Fields")
 
     form = PaymentForm()
 
