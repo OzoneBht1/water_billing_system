@@ -7,95 +7,34 @@ from django import forms
 # Providing labels, classes and error handling for the bill payment form
 class PaymentForm(ModelForm):
     CHOICES = [("Green", "Green"), ("Red", "Red")]
-    customer_id = forms.IntegerField()
-    previous_unit = forms.IntegerField()
-    current_unit = forms.IntegerField()
-    saving_unit = forms.IntegerField()
-    bill_amount = forms.IntegerField()
-    penalty = forms.IntegerField()
-    total_unit = forms.IntegerField()
-    reading_date = forms.IntegerField()
-    reading_month = forms.IntegerField()
+    # For meter status
 
-    meter_status = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect)
-    labels = {
-        "reading_date": "Reading Date",
-        "reading_month": "Reading Month",
-        "customer_id": "Customer ID",
-        "customer_name": "Customer Name",
-        "previous_unit": "Previous Unit",
-        "current_unit": "Current Unit",
-        "saving_unit": "Consumed Unit",
-        "meter_status": "Meter Status",
-        "bill_amount": "Bill Amount",
-        "penalty": "Penalty",
-        "total_unit": "Total Unit",
-    }
-
-    widgets = {
-        "reading_date": NumberInput(
+    customer_id = forms.IntegerField(
+        label="Customer ID",
+        widget=NumberInput(
             attrs={
-                "type": "number",
-                "max": 31,
-                "min": 1,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]",
-                "title": "Enter date(1-31) ",
-                "id": "customer_id123",
-            }
-        ),
-        "reading_month": NumberInput(
-            attrs={
-                "type": "number",
-                "max": 12,
-                "min": 1,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]",
-                "title": "Enter month(1-12) ",
-                "id": "customer_id123",
-            }
-        ),
-        "customer_id": NumberInput(
-            attrs={
-                "type": "number",
+                "class": "form-control",
+                "min": 000000,
                 "max": 999999,
-                "min": 0,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]",
-                "title": "Enter numbers Only ",
-                "id": "customer_id123",
+                "title": "The 6 digit Customer ID provided.",
             }
         ),
-        "customer_name": Textarea(
+    )
+    previous_unit = forms.IntegerField(
+        label="Previous Unit",
+        widget=NumberInput(
             attrs={
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[a-zA-Z]{,}",
-                "title": "Enter your name(string only)",
-                "id": "customer_name",
-            }
-        ),
-        "previous_unit": Textarea(
-            attrs={
-                "type": "number",
-                "max": 9999999,
-                "min": 0,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]+",
-                "title": "Enter numbers Only ",
+                "class": "form-control",
+                "min": 1,
+                "max": 999999,
+                "title": "The previous meter reading ",
                 "id": "previous_unit",
             }
         ),
-        "current_unit": Textarea(
+    )
+    current_unit = forms.IntegerField(
+        label="Current Unit",
+        widget=NumberInput(
             attrs={
                 "type": "number",
                 "max": 999999,
@@ -107,7 +46,10 @@ class PaymentForm(ModelForm):
                 "id": "current_unit",
             }
         ),
-        "saving_unit": Textarea(
+    )
+    saving_unit = forms.IntegerField(
+        label="Consumed Unit",
+        widget=NumberInput(
             attrs={
                 "type": "number",
                 "max": 999999,
@@ -116,77 +58,70 @@ class PaymentForm(ModelForm):
                 "rows": 1,
                 "class": "form-control input",
                 "pattern": "[0-9]{,}",
-                "id": "saving_unit",
+                "id": "consumed_unit",
+                "readonly": True,
             }
         ),
-        "meter_status": Textarea(
-            attrs={"cols": 40, "rows": 1, "class": "form-control input"}
-        ),
-        "bill_amount": Textarea(
+    )
+    bill_amount = forms.IntegerField(
+        label="Bill Amount",
+        widget=NumberInput(
             attrs={
-                "type": "number",
-                "max": 999999,
+                "class": "form-control",
                 "min": 0,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]{,}",
-                "id": "bill_amount",
+                "max": 99999,
+                "title": "The bill amount to be paid",
+                "readonly": True,
             }
         ),
-        "penalty": Textarea(
+    )
+    penalty = forms.IntegerField(
+        label="Penalty",
+        widget=NumberInput(
             attrs={
-                "type": "number",
-                "max": 999999,
+                "class": "form-control",
                 "min": 0,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]{,}",
+                "max": 99999,
                 "id": "penalty",
+                "readonly": True,
             }
         ),
-        "total_unit": Textarea(
+    )
+    total_unit = forms.IntegerField(
+        label="Total Amount",
+        widget=NumberInput(
             attrs={
-                "type": "number",
-                "max": 9999999,
+                "class": "form-control",
                 "min": 0,
-                "cols": 40,
-                "rows": 1,
-                "class": "form-control input",
-                "pattern": "[0-9]{,}",
-                "id": "total_unit",
+                "readonly": True,
             }
-        )
-        # ),
-        # "province": Textarea(
-        #     attrs={
-        #         "cols": 40,
-        #         "rows": 1,
-        #         "class": "form-control input",
-        #         "pattern": "[0-9]{,}",
-        #         "id": "province",
-        #     }
-        # ),
-        # "district": Textarea(
-        #     attrs={
-        #         "cols": 40,
-        #         "rows": 1,
-        #         "class": "form-control input",
-        #         "pattern": "[0-9]{,}",
-        #         "id": "district",
-        #     }
-        # ),
-        # "municipality": Textarea(
-        #     attrs={
-        #         "cols": 40,
-        #         "rows": 1,
-        #         "class": "form-control input",
-        #         "pattern": "[0-9]{,}",
-        #         "id": "municipality",
-        #     }
-        # ),
-    }
+        ),
+    )
+    reading_date = forms.IntegerField(
+        label="Reading Date",
+        widget=NumberInput(
+            attrs={"class": "form-control", "min": 1, "max": 31, "id": "date"}
+        ),
+    )
+    reading_month = forms.IntegerField(
+        label="Reading Month",
+        widget=NumberInput(
+            attrs={"class": "form-control", "min": 1, "max": 12, "id": "month"}
+        ),
+    )
+    customer_name = forms.CharField(
+        label="Customer Name",
+        widget=Textarea(
+            attrs={
+                "class": "form-control",
+                "rows": 1,
+                "cols": 40,
+                "pattern": "[a-zA-Z]{,}",
+            }
+        ),
+    )
+
+    meter_status = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect)
 
     class Meta:
         model = Payment
@@ -226,6 +161,9 @@ class PaymentForm2(ModelForm):
             "penalty",
             "total_unit",
         )
+
+        def clean(self):
+            data = self.cleaned_data
 
 
 class NewTapForm(ModelForm):

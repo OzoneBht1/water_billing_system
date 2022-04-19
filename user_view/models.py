@@ -15,7 +15,7 @@ class Payment(models.Model):
     saving_unit = models.IntegerField()
     meter_status = models.CharField(max_length=100, default="green")
     bill_amount = models.IntegerField()
-    penalty = models.IntegerField()
+    penalty = models.IntegerField(blank=True, null=True)
     total_unit = models.IntegerField()
     # kun mahina samma ko bill ako
     # previous unit bhaneko pahila mahina kati uthyo

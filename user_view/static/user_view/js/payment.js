@@ -82,3 +82,57 @@ f.addEventListener("change", function () {
     }
   }
 });
+
+// ********************************************************************
+
+var today = new Date();
+var penalty = document.getElementById("penalty");
+var read_month = document.getElementById("month");
+var read_date = document.getElementById("date");
+var month = document.getElementById("month").value;
+var date = document.getElementById("date").value;
+// These are used for setting the penalty if paid late
+
+var prevUnit = document.getElementById("previous_unit");
+var currUnit = document.getElementById("current_unit");
+var consumedUnit = document.getElementById("consumed_unit");
+
+var today = new Date();
+
+read_month.addEventListener("change", function () {
+  console.log(read_month.value);
+  setPenalty();
+});
+
+read_date.addEventListener("change", function () {
+  console.log(read_date.value);
+  setPenalty();
+});
+
+prevUnit.addEventListener("change", function () {
+  console.log(prevUnit.value);
+  currUnit.setAttribute("min", prevUnit.value);
+  setConsumedUnit();
+});
+
+currUnit.addEventListener("change", function () {
+  console.log(currUnit.value);
+  setConsumedUnit();
+});
+
+// var payDate = newDate(2002, )
+
+function setPenalty() {
+  let payDate = new Date(2022, month, date);
+  let currentDate = new Date(2022, today.getMonth() + 1, today.getDate());
+  var diff = Math.abs(currentDate - payDate);
+  console.log(diff);
+  var diffDays = Math.ceil(diff / (1000 * 3600 * 24));
+  console.log(diffDays);
+  penalty.value = diffDays;
+}
+function penaltyCalc() {}
+
+function setConsumedUnit() {
+  consumedUnit.value = currUnit.value - prevUnit.value;
+}
