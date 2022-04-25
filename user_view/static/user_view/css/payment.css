@@ -1,48 +1,143 @@
 * {
-  padding: 0%;
-  margin: 0%;
-}
-.form {
-  border: 1px solid rgb(0, 0, 0);
-  width: 63%;
-  /* margin: auto; */
-  /* ^yesle bich ma lancha */
-}
-h2 {
-  padding: 8px;
-  /* text-align: center; */
-  margin-left: 20px;
+  box-sizing: border-box;
 }
 
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-
-  /* align-items: center;
-  text-align: center; */
+/* Form  box starts here */
+.box {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  border: 3px solid;
+  width: 90%;
+  height: auto;
+  left: 4%;
+  box-shadow: 5px 7px;
+  padding-left: 20px;
 }
 
-.form-group label {
+label {
+  float: left;
+  width: 150px;
+  padding-top: 5px;
+}
+
+input,
+.combo-box {
+  width: calc(80% - 150px);
+  height: 32px;
+  margin-bottom: 35px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+
+  height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Radio Button starts */
+/* The container */
+.container {
   display: block;
-  text-align: left;
-  align-items: flex-start;
-}
-.form-group input {
-  width: 25%;
-  margin-top: 7px;
-  height: 2.1rem;
-}
-
-.form-control {
-  width: 25%;
-}
-.row .form-control {
-  width: 52%;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.row input {
-  width: 52%;
-  margin-top: 7px;
-  height: 2.1rem;
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/* Radio Button starts */
+
+/* button{
+background-color: lightblue;
+margin-top: 5px;
+margin-bottom: 20px;
+width: 70px;
+padding: 5px;
+border-radius: 12px;
+} */
+
+hr {
+  width: 95%;
+  margin-bottom: 40px;
+}
+
+/* submit button starts */
+.button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* submit button starts */
+.container label {
+  padding-bottom: 20px;
 }

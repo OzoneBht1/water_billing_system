@@ -27,7 +27,7 @@ def register(request):
                     request, "Account was successfully created for " + fn + " " + ln
                 )
                 return redirect("accounts:userLogin")
-
+        
         return render(request, "accounts/register.html", {"form": form})
 
 

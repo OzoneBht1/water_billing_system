@@ -50,6 +50,7 @@ def about(request):
 
 def newtap(request):
     if request.method == "POST":
+        print(request.POST)
         form = NewTapForm(request.POST)
         print(form)
 
