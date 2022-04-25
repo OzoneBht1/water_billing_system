@@ -3,8 +3,21 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 # These are the database models for the bill payment part. The models are created using the ORM.
 class Payment(models.Model):
-    reading_month = models.IntegerField()
-    reading_date = models.IntegerField()
+    MONTH_CHOICES = {
+        ("January", "January"),
+        ("February", "February"),
+        ("March", "March"),
+        ("April", "April"),
+        ("May", "May"),
+        ("June", "June"),
+        ("July", "July"),
+        ("August", "August"),
+        ("September", "September"),
+        ("October", "October"),
+        ("November", "November"),
+        ("December", "December"),
+    }
+    reading_month = models.CharField(max_length=10, choices=MONTH_CHOICES)
     province = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
     municipality = models.CharField(max_length=100)
@@ -13,10 +26,13 @@ class Payment(models.Model):
     previous_unit = models.IntegerField()
     current_unit = models.IntegerField()
     saving_unit = models.IntegerField()
-    meter_status = models.CharField(max_length=100, default="green")
-    bill_amount = models.IntegerField()
-    penalty = models.IntegerField(blank=True, null=True)
-    total_unit = models.IntegerField()
+    meter_status = models.CharField(
+        max_length=100, default="green", blank=True, null=True
+    )
+    bill_amount = models.DecimalField(max_digits=10, decimal_places=2)
+    discount_amount = models.DecimalField(max_digits=10, decimal_places=2)
+    penalty = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     # kun mahina samma ko bill ako
     # previous unit bhaneko pahila mahina kati uthyo
     # current unit bhaneko ahile kati uthyo

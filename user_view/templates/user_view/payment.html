@@ -2,103 +2,163 @@
 {% block title %} Bill Payment {% endblock %}
  
 {% block css_files %} 
-<link rel="stylesheet" type="text/css" href="{% static 'user_view/css/payment.css' %}">
+
 <link rel="stylesheet" href="{% static 'user_view/css/bootstrap.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'user_view/css/payment.css' %}">
 {% endblock %}
  
 {% block content %}
 
     {{ data|json_script:'name' }}
 
-    <br /><br />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <div class = "form container">
-      <h2> Bill Payment</h2>
+    <br /><br />     
          
       
 
 
-    <form class="signup-form" method="post">
+    
 
-      
+      <form class="signup-form" method="post">
       {% csrf_token %}
-      <div class="row">
-      <div class="col" class="form-label">
-        <label for="province">Province:</label>
+      <div class="box">
+        <h1>Bill Payment</h1>
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+    
+              <label for="province">Province:</label>
         
 
 
-        <select name="province" id="province" class="form-control input">
+        <select name="province" id="province" class= "combo-box">
           <option value="">Select province</option>
         </select>
-        <br />
-
-      </div>
-      <div class="col">
-       {{form.reading_month.label}}<br>
-        {{form.reading_month}}
-        
-      </div>     
-
-    </div>
     
-    <div class="row">
-      <div class="col">
-        <label for="district"  class="form-label">District:</label>
-        <select name="district" id="district" class="form-control input">
+              <br><br>
+    
+              <label for="district"  >District:</label>
+        <select name="district" id="district" class= "combo-box" >
           <option value="">Select district</option>
         </select>
-        <br />
-
-      </div>
-      <div class="col">
-       {{form.reading_date.label}}<br>
-        {{form.reading_date}}
-        
-      </div>     
-
-    </div>
-    <div class="row">
-      <div class="col">
-    <label for="province" class="form-label">Municipality:</label>
-      <select name="municipality" id="municipality" class="form-control input">
+    
+              <br><br>
+    
+              <label for="municipality" >Municipality:</label>
+      <select name="municipality" id="municipality" class= "combo-box">
         <option value="">Select municipality</option>
       </select>
-    </div>
-    </div>
     
-      
-      <hr>
-      <!-- <i class="fa-solid fa-faucet-drip"></i> -->
-      <!-- {% for field in form %} {{field.label}} {{field}} {% endfor %} -->
-      {% for field in form %}
-      {% if field != form.reading_date %}
-      {% if field != form.reading_month %}
-      <div class="form-group">
-          {{ field.errors }}
-          {{ field.label_tag }} {{ field }}
-          {% if field is form.saving_unit %}          
-          <hr>  
-         {% endif %}
-         {% if field is form.customer_name %}
-          <hr>  
-         {% endif %}
-         
-          {% if field.help_text %}
-          <p class="help">{{ field.help_text|safe }}</p>
-          
-          {% endif %}
-      </div>  
-      {% endif %}
-      {% endif %}
-      
-      
-  {% endfor %}
-      <input type="submit" name="submit" value="Submit" />
-    </form>
-  </div>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="form-group">
+             
+              {{form.reading_month.label_tag}}
+              {{form.reading_month}}
+    
+              <br><br>
+    
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+              {{form.customer_id.label_tag}}
+              {{form.customer_id}}
+    
+              <br><br>
+    
+              {{form.customer_name.label_tag}}
+              {{form.customer_name}}
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+              {{form.previous_unit.label_tag}}
+              {{form.previous_unit}}
+    
+              <br><br>
+    
+              {{form.current_unit.label_tag}}
+              {{form.current_unit}}
+    
+              <br><br>
+    
+              {{form.saving_unit.label_tag}}
+              {{form.saving_unit}}
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+    
+        <div class="row">
+          <div class="column">                    
+            <label class="container">Green
+              <input type="radio" checked="checked" name="radio" class = "radio-button">
+              <span class="checkmark"></span>
+            </label><br> <br><br>
+            
+            <label class="container">Red
+              <input type="radio" checked="checked" name="radio" class = "radio-button">
+              <span class="checkmark"></span>
+            </label>
+            <!-- <label class="container">Green
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label><br> <br><br>
+            
+            <label class="container">Red
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label><br><br> -->
+          </div>
+        </div>
+        <br>
+        <hr>
+    
+        <div class="row">
+          <div class="column">
+            <div class="form-group">
+              {{form.bill_amount.label_tag}}
+              {{form.bill_amount}}
+    
+              <br><br>
+    
+              {{form.discount_amount.label_tag}}
+              {{form.discount_amount}}
+              
+    
+              <br><br>
+    
+              {{form.penalty.label_tag}}
+              {{form.penalty}}
+    
+              <br><br>
+    
+              {{form.total_amount.label_tag}}
+              {{form.total_amount}}
+    
+              <div class="column">
+                <div class="form-group">
+    
+                  <button class="button" name="submit" value="Submit" />Submit</button>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
     <!-- <h2 align="center">Payment</h2>
       <br /><br />
       <select name="province" id="province" class="form-control input-lg">
