@@ -1,9 +1,14 @@
 from django.http import JsonResponse
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.urls import reverse_lazy
 import json
 from .forms import PaymentForm, NewTapForm, PaymentForm2
 from django.contrib import messages
+import io
+from django.http import FileResponse
+from reportlab.pdfgen import canvas
+from .process import html_to_pdf
+from django.views.generic import View
 
 
 def home(request):
@@ -27,14 +32,37 @@ def payment(request):
         # user_type = login_data.get("district")
         # print(user_type, username, password)
         if form.is_valid():
-            temp = form.cleaned_data.get("customer_id")
-            print(temp)
+            form.save()
+
+            office = form.cleaned_data["municipality"]
+            month = form.cleaned_data["reading_month"]
+            customer_id = form.cleaned_data["customer_id"]
+            customer_name = form.cleaned_data["customer_name"]
+            consumed_unit = form.cleaned_data["consumed_unit"]
+            bill_amount = form.cleaned_data["bill_amount"]
+            discount_amount = form.cleaned_data["discount_amount"]
+            penalty_amount = form.cleaned_data["penalty"]
+            total_amount = form.cleaned_data["total_amount"]
+            context = {
+                "office": office,
+                "month": month,
+                "customer_id": customer_id,
+                "customer_name": customer_name,
+                "consumed_unit": consumed_unit,
+                "bill_amount": bill_amount,
+                "discount_amount": discount_amount,
+                "penalty_amount": penalty_amount,
+                "total_amount": total_amount,
+            }
+            # request.session["form_data"] = context
+            # return redirect("generate/")
             # obj = form.save()
             # obj.province = login_data.get("province")
             # obj.save()
-            form.save()
+
+            # request.session["form_data"] = context
             messages.success(request, "Data saved successfully")
-            return redirect("accounts:userLogin")
+            return generate(request, context)
         else:
             messages.info(request, "Invalid Fields")
 
@@ -61,12 +89,19 @@ def newtap(request):
         # user_type = login_data.get("district")
         # print(user_type, username, password)
         if form.is_valid():
+
             # obj = form.save()
             # obj.province = login_data.get("province")
             # obj.save()
             form.save()
-            messages.success(request, "Data saved successfully")
-            return redirect("accounts:userLogin")
 
-    form = NewTapForm()
-    return render(request, "user_view/newtap.html", {"form": form})
+            messages.success(request, "Data saved successfully")
+
+        form = NewTapForm()
+        return render(request, "user_view/newtap.html", {"form": form})
+
+
+def generate(request, context):
+    return html_to_pdf(
+        "user_view/result.html", {"pagesize": "A4", "form_data": context}
+    )

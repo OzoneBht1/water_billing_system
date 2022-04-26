@@ -1,4 +1,5 @@
 from cProfile import label
+from calendar import c
 
 from typing import Text
 from user_view.models import Payment, NewTap
@@ -12,7 +13,7 @@ class PaymentForm(ModelForm):
     reading_month = forms.CharField(
         label="Reading Month",
         widget=forms.Select(
-            attrs={"class": "combo-box", "id": "month"},
+            attrs={"class": "combo-box", "id": "month", "name": "reading_month"},
             choices=Payment.MONTH_CHOICES,
         ),
     )
@@ -24,6 +25,7 @@ class PaymentForm(ModelForm):
                 "min": 000000,
                 "max": 999999,
                 "title": "The 6 digit Customer ID provided.",
+                "name": "customer_id",
             }
         ),
     )
@@ -50,7 +52,7 @@ class PaymentForm(ModelForm):
             }
         ),
     )
-    saving_unit = forms.IntegerField(
+    consumed_unit = forms.IntegerField(
         label="Consumed Unit",
         widget=NumberInput(
             attrs={
@@ -60,6 +62,7 @@ class PaymentForm(ModelForm):
                 "pattern": "[0-9]{,}",
                 "id": "consumed_unit",
                 "readonly": True,
+                "name": "consumed_unit",
             }
         ),
     )
@@ -72,6 +75,7 @@ class PaymentForm(ModelForm):
                 "title": "The bill amount to be paid",
                 "readonly": True,
                 "id": "bill_amount",
+                "name": "bill_amount",
             }
         ),
     )
@@ -83,6 +87,7 @@ class PaymentForm(ModelForm):
                 "max": 99999,
                 "id": "discount",
                 "readonly": True,
+                "name": "discount_amount",
             }
         ),
     )
@@ -94,17 +99,23 @@ class PaymentForm(ModelForm):
                 "max": 99999,
                 "id": "penalty",
                 "readonly": True,
+                "name": "penalty",
             }
         ),
     )
     total_amount = forms.FloatField(
         label="Total Amount",
-        widget=NumberInput(attrs={"min": 0, "readonly": True, "id": "final_bill"}),
+        widget=NumberInput(
+            attrs={
+                "min": 0,
+                "readonly": True,
+                "id": "final_bill",
+                "name": "total_amount",
+            }
+        ),
     )
 
-    customer_name = forms.CharField(
-        label="Customer Name",
-    )
+    customer_name = forms.CharField(label="Customer Name")
 
     def __init__(self, *args, **kwargs):
         super(PaymentForm, self).__init__(*args, **kwargs)
@@ -121,8 +132,9 @@ class PaymentForm(ModelForm):
             "customer_name",
             "previous_unit",
             "current_unit",
-            "saving_unit",
+            "consumed_unit",
             "bill_amount",
+            "discount_amount",
             "penalty",
             "total_amount",
         )
@@ -141,9 +153,10 @@ class PaymentForm2(ModelForm):
             "customer_name",
             "previous_unit",
             "current_unit",
-            "saving_unit",
+            "consumed_unit",
             "meter_status",
             "bill_amount",
+            "discount_amount",
             "penalty",
             "total_amount",
         )

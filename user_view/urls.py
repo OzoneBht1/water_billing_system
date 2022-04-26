@@ -10,4 +10,5 @@ urlpatterns = [
     path("payment/", views.payment, name="payment"),
     path("about/", views.about, name="about"),
     path("newtap/", views.newtap, name="newtap"),
+    path("generate/", views.generate, name="generate"),
 ]
