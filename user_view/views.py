@@ -1,3 +1,5 @@
+from datetime import datetime
+import re
 from django.http import JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.urls import reverse_lazy
@@ -32,6 +34,11 @@ def payment(request):
         # user_type = login_data.get("district")
         # print(user_type, username, password)
         if form.is_valid():
+            timestamp = datetime.now()
+            dt_string = timestamp.strftime("%d/%m/%Y %H:%M:%S")
+            phone_num = request.user.username
+            email = request.user.email
+
             form.save()
 
             office = form.cleaned_data["municipality"]
@@ -44,6 +51,9 @@ def payment(request):
             penalty_amount = form.cleaned_data["penalty"]
             total_amount = form.cleaned_data["total_amount"]
             context = {
+                "phone_num": phone_num,
+                "email": email,
+                "time": dt_string,
                 "office": office,
                 "month": month,
                 "customer_id": customer_id,
@@ -101,7 +111,27 @@ def newtap(request):
         return render(request, "user_view/newtap.html", {"form": form})
 
 
-def generate(request, context):
-    return html_to_pdf(
-        "user_view/result.html", {"pagesize": "A4", "form_data": context}
-    )
+def result(request, context=None):
+    context = {
+        "phone_num": "phone_num",
+        "email": "email",
+        "time": "dt_string",
+        "office": "office",
+        "month": "month",
+        "customer_id": "customer_id",
+        "customer_name": "customer_name",
+        "consumed_unit": "consumed_unit",
+        "bill_amount": "bill_amount",
+        "discount_amount": "discount_amount",
+        "penalty_amount": "penalty_amount",
+        "total_amount": "total_amount",
+    }
+    print(context)
+    # return html_to_pdf(
+    #     "user_view/result.html", {"pagesize": "auto", "context": context}
+    # )
+    return render(request, "user_view/result.html", {"context": context})
+
+
+def gateway(request):
+    return render(request, "user_view/gateway.html", {})

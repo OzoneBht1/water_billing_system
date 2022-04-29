@@ -33,6 +33,7 @@ class Payment(models.Model):
     discount_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True)
     penalty = models.DecimalField(max_digits=10, decimal_places=2, default=0, null=True)
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
+
     # kun mahina samma ko bill ako
     # previous unit bhaneko pahila mahina kati uthyo
     # current unit bhaneko ahile kati uthyo
