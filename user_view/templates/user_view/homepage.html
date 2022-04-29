@@ -1,374 +1,111 @@
 {% extends 'base.html' %} {% load static %}
 {% block css_files %}
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="{% static 'user_view/css/homepage.css' %}" />
-    {% endblock %}
 
-    {% block title %} Water Billing System {% block content %} 
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="{% static 'user_view/css/homepage.css' %}" />
+{% endblock %}
 
-    <!-- Notices part starts -->
-  
-    <div class="notices">
-      <div class="Bx">
-        <section class="text-white-600 body-font">
-          <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap w-full mb-20">
-              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-                <h1
-                  class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white-900"
-                >
-                  Notices
-                </h1>
-                <div class="h-1 w-20 bg-indigo-500 rounded"></div>
-              </div>
-              <p class="lg:w-1/2 w-full leading-relaxed text-'hite'-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Impedit ab autem labore aliquid, cum maxime.
+{% block title %} Water Billing System {% block content %}
+
+<!-- Notices part starts -->
+
+<div class="bg" style="background: url('/static/user_view/images/bg.jpg') ; 
+background-size: cover; height:100vh;"></div>
+
+<div class="notices">
+  <div class="Bx">
+    <section class="text-white-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white-900">
+              Notices
+            </h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-'hite'-500">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Impedit ab autem labore aliquid, cum maxime.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6"
+                src="{% static 'user_view/images/not1.jpg' %}" alt="content" />
+              <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                Notice 1
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Sub-Title
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum, minima incidunt? Sapiente incidunt iste animi?
               </p>
             </div>
-            <div class="flex flex-wrap -m-4">
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="{% static 'user_view/images/not1.jpg' %}"
-                    alt="content"
-                  />
-                  <h3
-                    class="tracking-widest text-indigo-500 text-xs font-medium title-font"
-                  >
-                    Notice 1
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Sub-Title
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, minima incidunt? Sapiente incidunt iste animi?
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="{% static 'user_view/images/not2.jpg' %}"
-                    alt="content"
-                  />
-                  <h3
-                    class="tracking-widest text-indigo-500 text-xs font-medium title-font"
-                  >
-                    Notice 2
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Sub-Title
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, minima incidunt? Sapiente incidunt iste animi?
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="{% static 'user_view/images/not3.jpg' %}"
-                    alt="content"
-                  />
-                  <h3
-                    class="tracking-widest text-indigo-500 text-xs font-medium title-font"
-                  >
-                    Notice 3
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Sub-Title
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, minima incidunt? Sapiente incidunt iste animi?
-                  </p>
-                </div>
-              </div>
-              <div class="xl:w-1/4 md:w-1/2 p-4">
-                <div class="bg-gray-100 p-6 rounded-lg">
-                  <img
-                    class="h-40 rounded w-full object-cover object-center mb-6"
-                    src="{% static 'user_view/images/not4.jpg' %}"
-                    alt="content"
-                  />
-                  <h3
-                    class="tracking-widest text-indigo-500 text-xs font-medium title-font"
-                  >
-                    Notice 4
-                  </h3>
-                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
-                    Sub-Title
-                  </h2>
-                  <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, minima incidunt? Sapiente incidunt iste animi?
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6"
+                src="{% static 'user_view/images/not2.jpg' %}" alt="content" />
+              <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                Notice 2
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Sub-Title
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum, minima incidunt? Sapiente incidunt iste animi?
+              </p>
             </div>
           </div>
-        </section>
-      </div>
-
-      <!-- Notices part ends -->
-
-      <div class="row">
-        <div class="leftcolumn">
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height: 200px">Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6"
+                src="{% static 'user_view/images/not3.jpg' %}" alt="content" />
+              <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                Notice 3
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Sub-Title
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum, minima incidunt? Sapiente incidunt iste animi?
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height: 200px">Image</div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
-          </div>
-        </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h2>About Me</h2>
-            <div class="fakeimg" style="height: 100px">Image</div>
-            <p>
-              Some text about me in culpa qui officia deserunt mollit anim..
-            </p>
-          </div>
-          <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg">Image</div>
-            <br />
-            <div class="fakeimg">Image</div>
-            <br />
-            <div class="fakeimg">Image</div>
-          </div>
-          <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text..</p>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center mb-6"
+                src="{% static 'user_view/images/not4.jpg' %}" alt="content" />
+              <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                Notice 4
+              </h3>
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Sub-Title
+              </h2>
+              <p class="leading-relaxed text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum, minima incidunt? Sapiente incidunt iste animi?
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Facts Start, i.e. 3 NUMBERS-->
-    <div class="container-fluid bg-primary my-5 py-5 text-center">
-      <div class="row pt-5">
-        <div class="col-lg-3 col-sm-6 mb-5">
-          <h5
-            class="fa fa-user-shield mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
-            style="width: 50px; height: 50px"
-          ></h5>
-          <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
-            5
-          </h4>
-          <h6 class="text-white m-0">Employee Number</h6>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-5">
-          <h5
-            class="fa fa-users mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
-            style="width: 50px; height: 50px"
-          ></h5>
-          <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
-            5
-          </h4>
-          <h6 class="text-white m-0">Total Users</h6>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-5">
-          <h5
-            class="fa fa-shield-alt mb-4 d-inline-flex align-items-center justify-content-center border rounded-circle text-white"
-            style="width: 50px; height: 50px"
-          ></h5>
-          <h4 class="display-4 text-white mb-3" data-toggle="counter-up">
-            5
-          </h4>
-          <h6 class="text-white m-0">Total Officers</h6>
-        </div>
-      </div>
-      
-      <!-- <div class="carousel-item">
-        <img src="..." alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>...AAA</h5>
-          <p>...</p>
-        </div>
-      </div> -->
-
-    </div>
-    <!-- Facts End -->
-
-
-
-    {% endblock %}
-    
   </div>
-
-  <!-- Notices part ends -->
-
-  <!-- <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height: 200px">Image</div>
-        <p>Some text..</p>
-        <p>
-          Sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco.
-        </p>
-      </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height: 200px">Image</div>
-        <p>Some text..</p>
-        <p>
-          Sunt in culpa qui officia deserunt mollit anim id est laborum
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco.
-        </p>
-      </div>
-    </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>About Me</h2>
-        <div class="fakeimg" style="height: 100px">Image</div>
-        <p>
-          Some text about me in culpa qui officia deserunt mollit anim..
-        </p>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div>
-        <br />
-        <div class="fakeimg">Image</div>
-        <br />
-        <div class="fakeimg">Image</div>
-      </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
-    </div>
-  </div> -->
-
-      <!-- News Carousel starts -->
-
-      <!-- <div class="home-demo">
-      <div class="row">
-
-
-        <div class="large-12 columns">
-          <h3>Demo</h3>
-          <div class="owl-carousel">
-            <div class="item">
-              <h2>Swipe</h2>
-            </div>
-            <div class="item">
-              <h2>Drag</h2>
-            </div>
-            <div class="item">
-              <h2>Responsive</h2>
-            </div>
-            <div class="item">
-              <h2>CSS3</h2>
-            </div>
-            <div class="item">
-              <h2>Fast</h2>
-            </div>
-            <div class="item">
-              <h2>Easy</h2>
-            </div>
-            <div class="item">
-              <h2>Free</h2>
-            </div>
-            <div class="item">
-              <h2>Upgradable</h2>
-            </div>
-            <div class="item">
-              <h2>Tons of options</h2>
-            </div>
-            <div class="item">
-              <h2>Infinity</h2>
-            </div>
-            <div class="item">
-              <h2>Auto Width</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <script>
-      var crs = $('.crs-carousel');
-      crs.owlCarousel({
-        margin: 10,
-        loop: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 2
-          },
-          1000: {
-            items: 3
-          }
-        }
-      })
-    </script> -->
-
-      <!-- News Carousel ends -->
-      
 </div>
-      
-<!-- calendar ends -->
-<!-- <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script> -->
 
-    {% endblock %} 
-  </body>
+{% endblock %}
+
+{% endblock %}
+
+</body>
+
 </html>

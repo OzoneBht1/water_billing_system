@@ -1,12 +1,11 @@
 body {
-  background-image: url("../images/bg.png");
-
-  background-repeat: no-repeat;
-  height: 80%;
-  width: 100%;
+  
+  
+  
+  
   padding: 0;
   margin: 0;
-  background-size: cover;
+  
   font-family: Arial;
   overflow-x: hidden;
 }
@@ -20,7 +19,7 @@ body {
   font-size: 50px;
   text-align: center;
   font-weight: bolder;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   color: rgb(0, 0, 0);
 }
 
@@ -30,78 +29,26 @@ body {
 }
 
 .Bx {
+  
   width: 100%;
   padding: 10px;
   height: 786px;
-  margin: 0;
-  background-color: #0c4f9d;
+  
+  background-color: #2384eb;
   
 }
 .notices {
-  top: 129%;
-  position: absolute;
-  background-color: yellowgreen;
+  border-top: 10px solid white;
+  
+  background-color: rgb(71, 71, 71);
 }
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  padding-left: 70px;
-  float: left;
-  width: 69%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 30px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* NOTICES */
-.col-lg-3 {
-  padding-left: 23%;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.row {
-  align-content: center;
-}
-
-/* 3 DOTS starts */
-/* .container-fluid bg-primary my-5 py-5 text-center{
-  margin-top: 120px;
-} */
-/* 3 DOTS ends */
 
 /* Footer */
 .footer {
+  
   padding: 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
-  /* margin-top: 120px; */
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
