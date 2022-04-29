@@ -178,7 +178,7 @@
                                            <strong>Late Fees: </strong>
                                        </p>
                                        <p>
-                                           <strong>Discount(%): </strong>
+                                           <strong>Discount(%):{{context.discount_amount}} </strong>
                                        </p>                                      
                                        </td>
                                        <td>
@@ -186,7 +186,7 @@
                                            <strong><i class="fa fa-inr"></i> {{context.bill_amount}}/-</strong>
                                        </p>
                                        <p>
-                                           <strong><i class="fa fa-inr"></i> {{context.penalty_amount}}</strong>
+                                           <strong><i class="fa fa-inr"></i> {{context.penalty}}</strong>
                                        </p>
                                        <p>
                                            <strong><i class="fa fa-inr"></i> {{context.discount_amount}}</strong>
@@ -207,7 +207,7 @@
                            <div class="receipt-header receipt-header-mid receipt-footer">
                                <div class="col-xs-8 col-sm-8 col-md-8 text-left">
                                    <div class="receipt-right">
-                                       <p><b>Payment time: {{context.time}}</p>
+                                       <p><b>Payment time: {{context.timestamp}}</p>
                                        <h5 style="color: rgb(140, 140, 140);">{{context.office}}</h5>
                                    </div>
                                </div>

@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from .forms import CreateUserForm
+from .models import Profile
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -27,7 +28,7 @@ def register(request):
                     request, "Account was successfully created for " + fn + " " + ln
                 )
                 return redirect("accounts:userLogin")
-        
+
         return render(request, "accounts/register.html", {"form": form})
 
 
@@ -61,3 +62,8 @@ def logoutUser(request):
 @login_required(login_url="accounts:userLogin")
 def home(request):
     return render(request, "user_view/homepage.html", {})
+
+
+def profile(request):
+    form = Profile()
+    return render(request, "accounts/profile.html", {"form": form})

@@ -11,7 +11,6 @@ from django.contrib.auth import password_validation
 # This is form created for the user to sign up. It uses the UserCreationForm from Django.
 class CreateUserForm(UserCreationForm):
 
-   
     first_name = forms.CharField(
         max_length=12,
         min_length=4,
@@ -100,6 +99,20 @@ class CreateUserForm(UserCreationForm):
     #         }
     #     ),
     # )
+    def save(self, commit=True):
+        user = super(CreateUserForm, self).save(commit=False)
+        user.first_name = self.cleaned_data["first_name"]
+        user.last_name = self.cleaned_data["last_name"]
+        user.email = self.cleaned_data["email"]
+
+        # user has to be saved to add profile
+        user.save()
+        user.create_profile()
+        user.profile_img = self.cleaned_data.get("profile_image")
+        user.profile.save()
+
+        if commit:
+            user.save()
 
     class Meta:
         model = User

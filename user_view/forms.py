@@ -2,8 +2,8 @@ from cProfile import label
 from calendar import c
 
 from typing import Text
-from user_view.models import Payment, NewTap
-from django.forms import ModelForm, NumberInput, Textarea
+from user_view.models import BlankInp, Payment, NewTap
+from django.forms import HiddenInput, ModelForm, NumberInput, Textarea
 from django.forms import ModelForm
 from django import forms
 
@@ -117,11 +117,11 @@ class PaymentForm(ModelForm):
 
     customer_name = forms.CharField(label="Customer Name")
 
-    def __init__(self, *args, **kwargs):
-        super(PaymentForm, self).__init__(*args, **kwargs)
-        sorted_choices = sorted(Payment.MONTH_CHOICES, key=lambda x: x[1])
-        print(sorted_choices)
-        self.fields["reading_month"].choices = sorted_choices
+    # def __init__(self, *args, **kwargs):
+    #     super(PaymentForm, self).__init__(*args, **kwargs)
+    #     sorted_choices = sorted(Payment.MONTH_CHOICES, key=lambda x: x[1])
+    #     print(sorted_choices)
+    #     self.fields["reading_month"].choices = sorted_choices
 
     class Meta:
         model = Payment
@@ -180,3 +180,13 @@ class NewTapForm(ModelForm):
             "email",
             "citizenship",
         )
+
+
+class BlankInpForm(ModelForm):
+    class Meta:
+        model = BlankInp
+        fields = ["blankField"]
+
+        widgets = {
+            "blankField": HiddenInput(),
+        }

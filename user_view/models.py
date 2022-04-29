@@ -17,6 +17,10 @@ class Payment(models.Model):
         ("November", "November"),
         ("December", "December"),
     }
+
+    timestamp = models.CharField(max_length=100, blank=True, null=True)
+    phone_num = models.CharField(max_length=10, blank=True, null=True)
+    email = models.CharField(max_length=100, blank=True, null=True)
     reading_month = models.CharField(max_length=10, choices=MONTH_CHOICES)
     province = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
@@ -53,3 +57,7 @@ class NewTap(models.Model):
     contact_no = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     citizenship = models.ImageField()
+
+
+class BlankInp(models.Model):
+    blankField = models.CharField(max_length=5, blank=True, null=True)

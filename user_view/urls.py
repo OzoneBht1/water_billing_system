@@ -11,6 +11,6 @@ urlpatterns = [
     path("about/", views.about, name="about"),
     path("newtap/", views.newtap, name="newtap"),
     # path("generate/", views.generate, name="generate"),
-    path("gateway/", views.gateway, name="gateway"),
+    path("gateway/<int:pk>", views.gateway, name="gateway"),
     path("result", views.result, name="result"),
 ]
