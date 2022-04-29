@@ -17,6 +17,10 @@ class Payment(models.Model):
         ("November", "November"),
         ("December", "December"),
     }
+
+    timestamp = models.CharField(max_length=100, blank=True, null=True)
+    phone_num = models.CharField(max_length=10, blank=True, null=True)
+    email = models.CharField(max_length=100, blank=True, null=True)
     reading_month = models.CharField(max_length=10, choices=MONTH_CHOICES)
     province = models.CharField(max_length=100)
     district = models.CharField(max_length=100)
@@ -25,14 +29,15 @@ class Payment(models.Model):
     customer_name = models.CharField(max_length=100)
     previous_unit = models.IntegerField()
     current_unit = models.IntegerField()
-    saving_unit = models.IntegerField()
+    consumed_unit = models.IntegerField()
     meter_status = models.CharField(
         max_length=100, default="green", blank=True, null=True
     )
     bill_amount = models.DecimalField(max_digits=10, decimal_places=2)
-    discount_amount = models.DecimalField(max_digits=10, decimal_places=2)
-    penalty = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    discount_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    penalty = models.DecimalField(max_digits=10, decimal_places=2, default=0, null=True)
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
+
     # kun mahina samma ko bill ako
     # previous unit bhaneko pahila mahina kati uthyo
     # current unit bhaneko ahile kati uthyo
@@ -52,3 +57,7 @@ class NewTap(models.Model):
     contact_no = models.CharField(max_length=100)
     email = models.EmailField(max_length=100)
     citizenship = models.ImageField()
+
+
+class BlankInp(models.Model):
+    blankField = models.CharField(max_length=5, blank=True, null=True)

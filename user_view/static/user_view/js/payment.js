@@ -165,7 +165,7 @@ function penaltyCalc(diffDays, early) {
     if (diffDays <= 10) {
       penalty.value = 0;
     } else {
-      penalty.value = diffDays * 0.5;
+      penalty.value = parseFloat((diffDays * 0.2).toFixed(2));
       discount = 0;
       discountAmount.value = 0;
       console.log(discount);

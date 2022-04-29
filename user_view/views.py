@@ -1,9 +1,17 @@
+from datetime import datetime
+import re
 from django.http import JsonResponse
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.urls import reverse_lazy
 import json
-from .forms import PaymentForm, NewTapForm, PaymentForm2
+from .forms import PaymentForm, NewTapForm, PaymentForm2, BlankInpForm
 from django.contrib import messages
+import io
+from django.http import FileResponse
+from reportlab.pdfgen import canvas
+from .process import html_to_pdf
+from django.views.generic import View
+from .models import Payment
 
 
 def home(request):
@@ -18,23 +26,63 @@ def payment(request):
 
     if request.method == "POST":
         form = PaymentForm2(request.POST)
-        print(form)
 
         login_data = request.POST.dict()
-        print(login_data)
+
         # username = login_data.get("province")
         # password = login_data.get("municipality")
         # user_type = login_data.get("district")
         # print(user_type, username, password)
         if form.is_valid():
-            temp = form.cleaned_data.get("customer_id")
-            print(temp)
+            timestamp = datetime.now()
+            dt_string = timestamp.strftime("%d/%m/%Y %H:%M:%S")
+            phone_num = request.user.username
+            email = request.user.email
+
+            obj = form.save()
+            obj.timestamp = dt_string
+            obj.phone_num = phone_num
+            obj.email = email
+            obj.save()
+            print(obj.customer_id)
+            print(obj.timestamp)
+            print(obj.phone_num)
+            print(obj.discount_amount)
+
+            office = form.cleaned_data["municipality"]
+            month = form.cleaned_data["reading_month"]
+            customer_id = form.cleaned_data["customer_id"]
+            customer_name = form.cleaned_data["customer_name"]
+            consumed_unit = form.cleaned_data["consumed_unit"]
+            bill_amount = form.cleaned_data["bill_amount"]
+            discount_amount = form.cleaned_data["discount_amount"]
+            penalty_amount = form.cleaned_data["penalty"]
+            total_amount = form.cleaned_data["total_amount"]
+            context = {
+                "phone_num": phone_num,
+                "email": email,
+                "time": dt_string,
+                "office": office,
+                "month": month,
+                "customer_id": customer_id,
+                "customer_name": customer_name,
+                "consumed_unit": consumed_unit,
+                "bill_amount": bill_amount,
+                "discount_amount": discount_amount,
+                "penalty_amount": penalty_amount,
+                "total_amount": total_amount,
+            }
+            # request.session["form_data"] = context
+            # return redirect("generate/")
             # obj = form.save()
             # obj.province = login_data.get("province")
             # obj.save()
-            form.save()
+
+            # request.session["form_data"] = context
             messages.success(request, "Data saved successfully")
-            return redirect("accounts:userLogin")
+
+            # return gateway(request, obj.pk)
+            return redirect("user_view:gateway", pk=obj.customer_id)
         else:
             messages.info(request, "Invalid Fields")
 
@@ -61,12 +109,39 @@ def newtap(request):
         # user_type = login_data.get("district")
         # print(user_type, username, password)
         if form.is_valid():
+
             # obj = form.save()
             # obj.province = login_data.get("province")
             # obj.save()
             form.save()
-            messages.success(request, "Data saved successfully")
-            return redirect("accounts:userLogin")
 
-    form = NewTapForm()
-    return render(request, "user_view/newtap.html", {"form": form})
+            messages.success(request, "Data saved successfully")
+
+        form = NewTapForm()
+        return render(request, "user_view/newtap.html", {"form": form})
+
+
+def result(request, context):
+    obj = Payment.objects.get(customer_id=context)
+    print(obj.timestamp)
+    print(obj.phone_num)
+    print(obj.discount_amount)
+    print("Hello")
+    print(obj)
+
+    # return html_to_pdf(
+    #     "user_view/result.html", {"pagesize": "auto", "context": context}
+    # )
+    return render(request, "user_view/result.html", {"context": obj})
+
+
+def gateway(request, pk):
+    form = BlankInpForm()
+    if request.method == "POST":
+        print("test", request.POST)
+        obj = request.POST.get("pk", None)
+        if obj:
+            print(obj)
+            return result(request, obj)
+
+    return render(request, "user_view/gateway.html", {"form": form, "pk": pk})
