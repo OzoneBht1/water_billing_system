@@ -44,34 +44,34 @@ def payment(request):
             obj.phone_num = phone_num
             obj.email = email
             obj.save()
-            print(obj.customer_id)
-            print(obj.timestamp)
-            print(obj.phone_num)
-            print(obj.discount_amount)
+            # print(obj.customer_id)
+            # print(obj.timestamp)
+            # print(obj.phone_num)
+            # print(obj.discount_amount)
 
-            office = form.cleaned_data["municipality"]
-            month = form.cleaned_data["reading_month"]
-            customer_id = form.cleaned_data["customer_id"]
-            customer_name = form.cleaned_data["customer_name"]
-            consumed_unit = form.cleaned_data["consumed_unit"]
-            bill_amount = form.cleaned_data["bill_amount"]
-            discount_amount = form.cleaned_data["discount_amount"]
-            penalty_amount = form.cleaned_data["penalty"]
-            total_amount = form.cleaned_data["total_amount"]
-            context = {
-                "phone_num": phone_num,
-                "email": email,
-                "time": dt_string,
-                "office": office,
-                "month": month,
-                "customer_id": customer_id,
-                "customer_name": customer_name,
-                "consumed_unit": consumed_unit,
-                "bill_amount": bill_amount,
-                "discount_amount": discount_amount,
-                "penalty_amount": penalty_amount,
-                "total_amount": total_amount,
-            }
+            # office = form.cleaned_data["municipality"]
+            # month = form.cleaned_data["reading_month"]
+            # customer_id = form.cleaned_data["customer_id"]
+            # customer_name = form.cleaned_data["customer_name"]
+            # consumed_unit = form.cleaned_data["consumed_unit"]
+            # bill_amount = form.cleaned_data["bill_amount"]
+            # discount_amount = form.cleaned_data["discount_amount"]
+            # penalty_amount = form.cleaned_data["penalty"]
+            # total_amount = form.cleaned_data["total_amount"]
+            # context = {
+            #     "phone_num": phone_num,
+            #     "email": email,
+            #     "time": dt_string,
+            #     "office": office,
+            #     "month": month,
+            #     "customer_id": customer_id,
+            #     "customer_name": customer_name,
+            #     "consumed_unit": consumed_unit,
+            #     "bill_amount": bill_amount,
+            #     "discount_amount": discount_amount,
+            #     "penalty_amount": penalty_amount,
+            #     "total_amount": total_amount,
+            # }
             # request.session["form_data"] = context
             # return redirect("generate/")
             # obj = form.save()
