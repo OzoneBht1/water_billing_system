@@ -14,6 +14,7 @@ from django.views.generic import View
 from .models import Payment
 from django.views.generic import ListView, DetailView
 from admin_view.models import Post
+from django.contrib import messages
 
 
 def payment(request):
