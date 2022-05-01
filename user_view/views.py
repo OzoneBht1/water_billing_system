@@ -12,10 +12,8 @@ from reportlab.pdfgen import canvas
 from .process import html_to_pdf
 from django.views.generic import View
 from .models import Payment
-
-
-def home(request):
-    return render(request, "user_view/homepage.html", {})
+from django.views.generic import ListView, DetailView
+from admin_view.models import Post
 
 
 def payment(request):
@@ -44,34 +42,34 @@ def payment(request):
             obj.phone_num = phone_num
             obj.email = email
             obj.save()
-            print(obj.customer_id)
-            print(obj.timestamp)
-            print(obj.phone_num)
-            print(obj.discount_amount)
+            # print(obj.customer_id)
+            # print(obj.timestamp)
+            # print(obj.phone_num)
+            # print(obj.discount_amount)
 
-            office = form.cleaned_data["municipality"]
-            month = form.cleaned_data["reading_month"]
-            customer_id = form.cleaned_data["customer_id"]
-            customer_name = form.cleaned_data["customer_name"]
-            consumed_unit = form.cleaned_data["consumed_unit"]
-            bill_amount = form.cleaned_data["bill_amount"]
-            discount_amount = form.cleaned_data["discount_amount"]
-            penalty_amount = form.cleaned_data["penalty"]
-            total_amount = form.cleaned_data["total_amount"]
-            context = {
-                "phone_num": phone_num,
-                "email": email,
-                "time": dt_string,
-                "office": office,
-                "month": month,
-                "customer_id": customer_id,
-                "customer_name": customer_name,
-                "consumed_unit": consumed_unit,
-                "bill_amount": bill_amount,
-                "discount_amount": discount_amount,
-                "penalty_amount": penalty_amount,
-                "total_amount": total_amount,
-            }
+            # office = form.cleaned_data["municipality"]
+            # month = form.cleaned_data["reading_month"]
+            # customer_id = form.cleaned_data["customer_id"]
+            # customer_name = form.cleaned_data["customer_name"]
+            # consumed_unit = form.cleaned_data["consumed_unit"]
+            # bill_amount = form.cleaned_data["bill_amount"]
+            # discount_amount = form.cleaned_data["discount_amount"]
+            # penalty_amount = form.cleaned_data["penalty"]
+            # total_amount = form.cleaned_data["total_amount"]
+            # context = {
+            #     "phone_num": phone_num,
+            #     "email": email,
+            #     "time": dt_string,
+            #     "office": office,
+            #     "month": month,
+            #     "customer_id": customer_id,
+            #     "customer_name": customer_name,
+            #     "consumed_unit": consumed_unit,
+            #     "bill_amount": bill_amount,
+            #     "discount_amount": discount_amount,
+            #     "penalty_amount": penalty_amount,
+            #     "total_amount": total_amount,
+            # }
             # request.session["form_data"] = context
             # return redirect("generate/")
             # obj = form.save()
@@ -136,7 +134,6 @@ def result(request, context):
 
 
 def gateway(request, pk):
-    form = BlankInpForm()
     if request.method == "POST":
         print("test", request.POST)
         obj = request.POST.get("pk", None)
@@ -144,4 +141,17 @@ def gateway(request, pk):
             print(obj)
             return result(request, obj)
 
-    return render(request, "user_view/gateway.html", {"form": form, "pk": pk})
+    return render(request, "user_view/gateway.html", {"pk": pk})
+
+
+class PostList(ListView):
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
+    print(queryset)
+    # queryset = Post.objects.filter(status=1).order_by("-created_on")
+    model = Post
+    template_name = "user_view/homepage.html"
+
+
+class PostDetail(DetailView):
+    model = Post
+    template_name = "user_view/post_detail.html"
