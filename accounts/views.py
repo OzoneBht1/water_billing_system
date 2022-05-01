@@ -6,6 +6,8 @@ from .models import Profile
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.views.generic import ListView, DetailView
+from admin_view.models import Post
 
 # Create your views here.
 
@@ -59,11 +61,25 @@ def logoutUser(request):
     return redirect("accounts:userLogin")
 
 
-@login_required(login_url="accounts:userLogin")
-def home(request):
-    return render(request, "user_view/homepage.html", {})
-
-
 def profile(request):
     form = Profile()
     return render(request, "accounts/profile.html", {"form": form})
+
+
+@login_required(login_url="accounts:userLogin")
+class PostList(ListView):
+
+    # queryset = Post.objects.filter(status=1).order_by("-created_on")
+    model = Post
+    template_name = "user_view/homepage.html"
+
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context["posts"] = Post.objects.filter(status=1).order_by("-created_on")
+    #     return context
+
+
+@login_required(login_url="accounts:userLogin")
+class PostDetail(DetailView):
+    model = Post
+    template_name = "user_view/post_detail.html"

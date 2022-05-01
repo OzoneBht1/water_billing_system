@@ -59,3 +59,18 @@ body {
     padding: 0;
   }
 }
+
+
+ 
+
+
+  .head_text {
+    color: white;
+  }
+
+  .card {
+    box-shadow: 0 16px 48px #e3e7eb;
+  }
+  .masthead{
+    background-color: #2384eb;
+  }

@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% load static %} {% block css_files %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block css_files %}
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -6,29 +8,15 @@
   crossorigin="anonymous"
 />
 
-<link
-  href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-  rel="stylesheet"
-/>
+
 <link rel="stylesheet" href="{% static 'user_view/css/homepage.css' %}" />
-{% endblock %} {% block title %} Water Billing System {% endblock %}
+
+
+{% endblock %}
+ {% block title %} Water Billing System {% endblock %}
+
  {% block content %}
 
-<style>
-  body {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    background-color: #fdfdfd;
-  }
-
-  .head_text {
-    color: white;
-  }
-
-  .card {
-    box-shadow: 0 16px 48px #e3e7eb;
-  }
-</style>
 <!-- Notices part starts -->
 
 <div
@@ -68,7 +56,7 @@
           </p>
           <p class="card-text">{{post.content|slice:":200" }}</p>
           <a
-            href="{% url 'admin_view:post_detail' post.slug  %}"
+            href="{% url 'user_view:post_detail' post.slug  %}"
             class="btn btn-primary"
             >Read More &rarr;</a
           >
@@ -76,6 +64,7 @@
       </div>
       {% endfor %}
     </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock %}
   </div>
 </div>
 {%endblock%}

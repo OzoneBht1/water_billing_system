@@ -145,11 +145,15 @@ def gateway(request, pk):
 
 
 class PostList(ListView):
-    queryset = Post.objects.filter(status=1).order_by("-created_on")
-    print(queryset)
+
     # queryset = Post.objects.filter(status=1).order_by("-created_on")
     model = Post
     template_name = "user_view/homepage.html"
+
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context["posts"] = Post.objects.filter(status=1).order_by("-created_on")
+    #     return context
 
 
 class PostDetail(DetailView):
