@@ -1,4 +1,22 @@
-{% extends 'baseAdmin.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+
+</head>
+<body>
+  
+</body>
+</html>
 <div class="container">
     <div class="row">
       <!-- Blog Entries Column -->
@@ -8,14 +26,18 @@
           <div class="card-body">
             <h2 class="card-title">{{ post.title }}</h2>
             <p class="card-text text-muted h6">
-              {{ post.author }} | {{ post.created_on}}
+              {{ post.author }} | {{ post.created_on}} <a href="{% url 'admin_view:post_updateview' post.slug  %}" class="btn btn-secondary">Update &rarr;</a>
             </p>
             <p class="card-text">{{post.content|slice:":200" }}</p>
             <a
-              href="{% url 'user_view:post_detail' post.slug  %}"
+              href="{% url 'admin_view:post_detailview' post.slug  %}"
               class="btn btn-primary"
-              >Read More &rarr;</a
+              >Read More</a
             >
+            <a
+            href="{% url 'admin_view:post_deleteview' post.slug  %}"
+            class="btn btn-danger"
+            >Delete</a>
           </div>
         </div>
         {% endfor %}
