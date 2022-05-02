@@ -1,1 +1,140 @@
-{% extends 'base.html' %} {% block content %}{{form}} {% endblock %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user_profile.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2384eb;
+        }
+
+        /* Form  box starts here */
+        .box {
+            background-color: #fff;
+            position: relative;
+            margin-top: 55px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            justify-content: center;
+            border: 3px solid;
+            width: 80%;
+            height: auto;
+            left: 10%;
+            box-shadow: 5px 7px;
+            padding-left: 20px;
+        }
+
+
+        label {
+            float: left;
+            width: 150px;
+            padding-top: 10px;
+
+        }
+
+        input {
+            float: left;
+            width: calc(80% - 150px);
+            height: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+
+            height: 100%;
+
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        /* Radio Button starts */
+        /* The container */
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* submit button starts */
+        .button {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #2384eb;
+        }
+
+        /* submit button ends */
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h3><a href="">User Profile</a> > Update details</h3>
+
+        <div class="row">
+            <div class="column">
+                <div class="form-group">
+
+                    <label>Name</label>
+                    <input placeholder="Name">
+
+                    <label>Customer Id</label>
+                    <input placeholder="Customer Id">
+
+                    <label>Contact number</label>
+                    <input placeholder="Contact no. ">
+
+                    <label>House number</label>
+                    <input placeholder="House no. ">
+
+                    <label>Address</label>
+                    <input placeholder="Address">
+
+                    <div class="column">
+                        <div class="form-group">
+                            <button class="button">Save changes</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
