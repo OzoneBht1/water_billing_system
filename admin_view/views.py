@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from user_view.models import Payment
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView, DeleteView, ListView
 from .models import Post
 from django.contrib import messages
 
@@ -22,4 +22,11 @@ from django.contrib import messages
 class AddPostView(CreateView):
     model = Post
     template_name = "admin_view/add_post.html"
-    fields = "__all__"
+    fields = ["title", "content", "status", "author"]
+
+
+class PostList(ListView):
+
+    # queryset = Post.objects.filter(status=1).order_by("-created_on")
+    model = Post
+    template_name = "admin_view/all_post_list.html"

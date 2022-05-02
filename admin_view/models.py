@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.text import slugify
+from django.urls import reverse
 
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Publish"))
@@ -8,8 +9,10 @@ STATUS = ((0, "Draft"), (1, "Publish"))
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    slug = models.SlugField(max_length=200, unique=True, blank=True, null=True)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, limit_choices_to={"is_staff": True}
+    )
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
@@ -24,3 +27,6 @@ class Post(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+    def get_absolute_url(self):
+        return reverse("user_view:home")
