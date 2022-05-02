@@ -16,6 +16,18 @@
   padding-left: 20px;
 }
 
+h1{
+  text-align: center;
+  padding-bottom:30px;
+}
+
+h2{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 label {
   float: left;
   width: 150px;
@@ -50,9 +62,9 @@ input,
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   cursor: pointer;
-  font-size: 22px;
+  /* font-size: 16px; */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
