@@ -1,3 +1,4 @@
+from cProfile import Profile
 from xml.dom import ValidationErr
 from xml.etree.ElementInclude import include
 from django import forms
@@ -6,7 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.utils.translation import gettext_lazy
 from django.contrib.auth import password_validation
-
+from accounts.models import Profile
 
 # This is form created for the user to sign up. It uses the UserCreationForm from Django.
 class CreateUserForm(UserCreationForm):
@@ -99,20 +100,6 @@ class CreateUserForm(UserCreationForm):
     #         }
     #     ),
     # )
-    def save(self, commit=True):
-        user = super(CreateUserForm, self).save(commit=False)
-        user.first_name = self.cleaned_data["first_name"]
-        user.last_name = self.cleaned_data["last_name"]
-        user.email = self.cleaned_data["email"]
-
-        # user has to be saved to add profile
-        user.save()
-        user.create_profile()
-        user.profile_img = self.cleaned_data.get("profile_image")
-        user.profile.save()
-
-        if commit:
-            user.save()
 
     class Meta:
         model = User
@@ -124,3 +111,30 @@ class CreateUserForm(UserCreationForm):
             "password1",
             "password2",
         ]
+
+
+class UserUpdateForm(forms.ModelForm):
+    username = forms.CharField(
+        required=True,
+        label="Phone Number",
+        widget=forms.TextInput(
+            attrs={
+                "class": "user-input",
+                "autocomplete": "off",
+                "pattern": "[0-9]+",
+                "title": "Enter numbers Only ",
+                "placeholder": "Phone Number",
+            }
+        ),
+    )
+    email = forms.EmailField()
+
+    class Meta:
+        model = User
+        fields = ["username", "email"]
+
+
+class ProfileUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ["image", "house_no", "customer_id", "address"]

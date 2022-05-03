@@ -1,0 +1,35 @@
+{% extends 'baseAdmin.html' %}
+
+{%block title%} Office Details {% endblock %}
+{% block content %}
+<h1 class="display-4">Office Details</h1>    
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Province</th>
+          <th scope="col">District</th>
+          <th scope="col">Office Branch</th>
+        
+          <th scope="col">Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for location in data %}
+       
+        
+        <tr>
+          <th scope="row">{{location.Province}}</th>
+          <td>{{location.District}}</td>
+          <td>{{location.Local_Body}}</td>        
+          <td>{{location.Code}}</td>
+        </tr>
+        
+        {% endfor %}
+        
+      </tbody>
+    </table>
+
+
+{% endblock %}
+

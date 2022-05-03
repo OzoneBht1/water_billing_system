@@ -19,4 +19,7 @@ urlpatterns = [
         views.PostDelete.as_view(),
         name="post_deleteview",
     ),
+    path("users", views.UserList.as_view(), name="user_list"),
+    path("office_details", views.officeDetail, name="office_details"),
+    path("payment_details", views.PaymentList.as_view(), name="payment_details"),
 ]

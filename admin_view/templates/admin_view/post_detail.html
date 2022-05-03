@@ -9,6 +9,10 @@
         <p class="text-muted">{{ post.author }} | {{ post.created_on }}</p>
         <p class="card-text">{{ object.content | safe }}</p>
         <a href="{% url 'admin_view:post_updateview' post.slug  %}" class="btn btn-secondary">Update &rarr;</a>
+        <a
+            href="{% url 'admin_view:post_deleteview' post.slug  %}"
+            class="btn btn-danger"
+            >Delete</a>
     </form>
       </div>
     </div>

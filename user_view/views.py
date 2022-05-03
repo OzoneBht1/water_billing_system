@@ -83,7 +83,10 @@ def payment(request):
             # return gateway(request, obj.pk)
             return redirect("user_view:gateway", pk=obj.customer_id)
         else:
-            messages.info(request, "Invalid Fields")
+            messages.info(
+                request,
+                "A payment with the given ID already exists. Please check again",
+            )
 
     form = PaymentForm()
 
