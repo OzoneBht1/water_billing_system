@@ -119,7 +119,7 @@ class UserUpdateForm(forms.ModelForm):
         label="Phone Number",
         widget=forms.TextInput(
             attrs={
-                "class": "user-input",
+                "class": "form-control",
                 "autocomplete": "off",
                 "pattern": "[0-9]+",
                 "title": "Enter numbers Only ",
@@ -127,7 +127,15 @@ class UserUpdateForm(forms.ModelForm):
             }
         ),
     )
-    email = forms.EmailField()
+    email = forms.EmailField(
+        label="Email", widget=forms.TextInput(attrs={"class": "form-control"})
+    )
+    first_name = forms.CharField(
+        label="First Name", widget=forms.TextInput(attrs={"class": "form-control"})
+    )
+    last_name = forms.CharField(
+        label="Last Name", widget=forms.TextInput(attrs={"class": "form-control"})
+    )
 
     class Meta:
         model = User
@@ -135,6 +143,17 @@ class UserUpdateForm(forms.ModelForm):
 
 
 class ProfileUpdateForm(forms.ModelForm):
+    house_no = forms.CharField(
+        label="House Number", widget=forms.TextInput(attrs={"class": "form-control"})
+    )
+    customer_id = forms.CharField(
+        label="Customer ID",
+        widget=forms.TextInput(attrs={"class": "form-control"}),
+    )
+    address = forms.CharField(
+        label="Address", widget=forms.TextInput(attrs={"class": "form-control"})
+    )
+
     class Meta:
         model = Profile
         fields = ["image", "house_no", "customer_id", "address"]
