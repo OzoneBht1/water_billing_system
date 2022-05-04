@@ -24,3 +24,5 @@ urlpatterns = [
     path("", include("admin_view.urls", namespace="admins")),
     path("", include("user_view.urls", namespace="users")),
 ]
+if settings.DEBUG is True:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

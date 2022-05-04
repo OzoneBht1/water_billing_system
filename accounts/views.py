@@ -93,12 +93,12 @@ def profile(request):
             u_form.save()
             p_form.save()
             messages.success(request, f"Your account has been updated!")
-            return redirect("profile")  # Redirect back to profile page
+            return redirect("accounts:profile")  # Redirect back to profile page
 
     else:
         u_form = UserUpdateForm(instance=request.user)
         p_form = ProfileUpdateForm(instance=request.user.profile)
 
-    context = {"u_form": u_form, "p_form": p_form}
-
-    return render(request, "accounts/profile.html", {"context": context})
+    return render(
+        request, "accounts/profile.html", {"u_form": u_form, "p_form": p_form}
+    )

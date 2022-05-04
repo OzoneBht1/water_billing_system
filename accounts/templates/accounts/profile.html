@@ -145,9 +145,9 @@
 {% block content %}
     <div class="content-section">
       <div class="media">
-        {% if user.image %}
+       {% if user.profile.image %}
         <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
-        {% endif %}
+       {% endif %}
         <div class="media-body">
           <h2 class="account-heading">{{ user.username }}</h2>
           <p class="text-secondary">{{ user.email }}</p>

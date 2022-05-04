@@ -88,7 +88,12 @@ def payment(request):
                 "A payment with the given ID already exists. Please check again",
             )
 
-    form = PaymentForm()
+    form = PaymentForm(
+        {
+            "customer_id": request.user.profile.customer_id,
+            "customer_name": request.user.first_name + " " + request.user.last_name,
+        }
+    )
 
     # Passing the form from forms.py to the template, and also the data from the json file
     return render(request, "user_view/payment.html", {"data": data, "form": form})

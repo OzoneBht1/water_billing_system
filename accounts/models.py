@@ -22,13 +22,13 @@ class Profile(models.Model):
 
     # Override the save method of the model
 
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
 
         img = Image.open(self.image.path)  # Open image
 
         # resize image
-        if img.height > 300 or img.width > 300:
+        if img.height >= 300 or img.width > 300:
             output_size = (300, 300)
             img.thumbnail(output_size)  # Resize image
             img.save(self.image.path)  # Save it again and override the larger image
