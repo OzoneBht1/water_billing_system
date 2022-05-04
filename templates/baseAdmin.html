@@ -1,90 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Django Central</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-      rel="stylesheet"
-    />
-    <meta name="google" content="notranslate" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
+
+<head>
+  {% block css_files %}
+  <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-  </head>
-
-  <body>
+  {% endblock %}
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        font-size: 17px;
-        background-color: #fdfdfd;
-      }
-      .shadow {
-        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
-      }
-      .btn-danger {
-        color: #fff;
-        background-color: #f00000;
-        border-color: #dc281e;
-      }
-      .masthead {
-        background: #3398e1;
-        height: auto;
-        padding-bottom: 15px;
-        box-shadow: 0 16px 48px #e3e7eb;
-        padding-top: 10px;
-      }
-    </style>
+        body {
+            margin: 0;
+        }
 
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light shadow"
-      id="mainNav"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'user_view:home' %}"
-          >Django central</a
-        >
-        <button
-          class="navbar-toggler navbar-toggler-right"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item text-black">
-              <a class="nav-link text-black font-weight-bold" href="#">About</a>
-            </li>
-            <li class="nav-item text-black">
-              <a class="nav-link text-black font-weight-bold" href="#"
-                >Policy</a
-              >
-            </li>
-            <li class="nav-item text-black">
-              <a class="nav-link text-black font-weight-bold" href="#"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    {% block content %}
-    <!-- Content Goes here -->
-    {% endblock content %}
-    <!-- Footer -->
-    <footer class="py-3 bg-grey">
-      <p class="m-0 text-dark text-center">Copyright &copy; Django Central</p>
-    </footer>
-  </body>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: #888888;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #04aa6d;
+            color: white;
+        }
+        .content{
+          margin-left:15%;
+          padding:1px 16px;
+          height:1000px;
+      }
+
+
+
+       
+
+    </style>
+    <title>{% block page_title %} {% endblock %}</title>
+</head>
+
+<body>
+
+    <ul>
+        <h2 style="margin-left: 8%;">Dashboard</h2>
+        <hr>
+        <li><a href="#">Admin User</a></li>
+        <li><a href="{% url 'admin_view:user_list' %}">Users</a></li>
+        <li><a href="#">New Dhara Applicaton</a></li>
+        <li><a href="#">Report</a></li>
+        <li><a href="{% url 'admin_view:office_details' %}">Office Details</a></li>
+        <li><a href="{% url 'admin_view:allposts' %}">Posts</a></li>
+        <li><a href="#">Routine</a></li>
+    </ul>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+
 </html>

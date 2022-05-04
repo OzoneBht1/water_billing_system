@@ -1,0 +1,41 @@
+{% extends 'baseAdmin.html' %}
+{% block css_files %}
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+{% endblock %}
+{% block content %}
+<h1 class="display-4">Display 4</h1>
+    <p>test</p>
+   
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for object in object_list %}
+        {% if not object.is_staff %}
+        
+        <tr>
+          <th scope="row">{{object.first_name}}</th>
+          <td>{{object.last_name}}</td>
+          <td>{{object.email}}</td>
+          <td>{{object.username}}</td>
+        </tr>
+        {%endif %}
+        {% endfor %}
+        
+      </tbody>
+    </table>
+
+    {% endblock %}

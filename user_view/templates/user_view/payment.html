@@ -22,6 +22,11 @@
       {% csrf_token %}
       <div class="box">
         <h2>Bill Payment</h2>
+        {% if message %}
+          <div class="alert alert-danger">
+            {{ message }}
+          </div>
+        {% endif %}
         <div class="row">
           <div class="column">
             <div class="form-group">

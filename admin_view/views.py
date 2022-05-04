@@ -11,6 +11,8 @@ from django.views.generic import (
 from .models import Post
 from django.contrib import messages
 from django.urls import reverse_lazy
+import json
+from django import template
 
 # Create your views here.
 
@@ -54,3 +56,26 @@ class PostDelete(DeleteView):
     model = Post
     template_name = "admin_view/post_delete.html"
     success_url = reverse_lazy("admin_view:allposts")
+
+
+class UserList(ListView):
+    model = User
+    template_name = "admin_view/user_list.html"
+
+
+class UserDetail(DetailView):
+    model = User
+    template_name = "admin_view/user_detail.html"
+
+
+class PaymentList(ListView):
+    model = Payment
+    template_name = "admin_view/payment_list.html"
+
+
+def officeDetail(request):
+
+    with open("data.json") as f:
+        data = json.load(f)
+
+        return render(request, "admin_view/office_view.html", {"data": data})

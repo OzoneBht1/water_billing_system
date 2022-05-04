@@ -42,6 +42,7 @@ e.addEventListener("click", function () {
 console.log(js_variable[0]["Province"]);
 
 e.addEventListener("change", function () {
+  
   // district.innerHTML = "--Select District--";
   // municipality.innerHTML = "--Select Municipality--";
   const selectedProvince = e.options[e.selectedIndex].value;
@@ -58,13 +59,13 @@ e.addEventListener("change", function () {
           '">' +
           js_variable[i]["District"] +
           "</option>";
-        municipality.innerHTML =
-          municipality.innerHTML +
-          '<option value="' +
-          js_variable[i]["Local Body"] +
-          '">' +
-          js_variable[i]["Local Body"] +
-          "</option>";
+        // municipality.innerHTML =
+        //   municipality.innerHTML +
+        //   '<option value="' +
+        //   js_variable[i]["Local_Body"] +
+        //   '">' +
+        //   js_variable[i]["Local_Body"] +
+        //   "</option>";
       }
     }
   }
@@ -90,9 +91,9 @@ f.addEventListener("change", function () {
       municipality.innerHTML =
         municipality.innerHTML +
         '<option value="' +
-        js_variable[i]["Local Body"] +
+        js_variable[i]["Local_Body"] +
         '">' +
-        js_variable[i]["Local Body"] +
+        js_variable[i]["Local_Body"] +
         "</option>";
     }
   }

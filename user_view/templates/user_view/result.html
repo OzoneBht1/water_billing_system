@@ -122,8 +122,10 @@
                            <div class="receipt-header">
                                <div class="col-xs-6 col-sm-6 col-md-6">
                                    <div class="receipt-left">
-                                       <img class="img-responsive" alt="iamgurdeeposahan" src="{% static 'user_view/images/human.png' %}" style="width: 71px; border-radius: 43px;">
-                                   </div>
+                                       {% if user.profile.image %}
+                                       <img class="img-responsive" alt="userImage" src="{{ user.profile.image.url }}" style="width: 71px; border-radius: 43px;">
+                                        {% endif %}
+                                    </div>
                                </div>
                                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
                                    <div class="receipt-right">

@@ -2,12 +2,14 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from .forms import CreateUserForm
-from .models import Profile
+
+# from .models import Profile
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, DetailView
 from admin_view.models import Post
+from accounts.forms import UserUpdateForm, ProfileUpdateForm
 
 # Create your views here.
 
@@ -61,11 +63,6 @@ def logoutUser(request):
     return redirect("accounts:userLogin")
 
 
-def profile(request):
-    form = Profile()
-    return render(request, "accounts/profile.html", {"form": form})
-
-
 @login_required(login_url="accounts:userLogin")
 class PostList(ListView):
 
@@ -83,3 +80,25 @@ class PostList(ListView):
 class PostDetail(DetailView):
     model = Post
     template_name = "user_view/post_detail.html"
+
+
+@login_required
+def profile(request):
+    if request.method == "POST":
+        u_form = UserUpdateForm(request.POST, instance=request.user)
+        p_form = ProfileUpdateForm(
+            request.POST, request.FILES, instance=request.user.profile
+        )
+        if u_form.is_valid() and p_form.is_valid():
+            u_form.save()
+            p_form.save()
+            messages.success(request, f"Your account has been updated!")
+            return redirect("accounts:profile")  # Redirect back to profile page
+
+    else:
+        u_form = UserUpdateForm(instance=request.user)
+        p_form = ProfileUpdateForm(instance=request.user.profile)
+
+    return render(
+        request, "accounts/profile.html", {"u_form": u_form, "p_form": p_form}
+    )
