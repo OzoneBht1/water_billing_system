@@ -1,142 +1,106 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %}
+{%  block css_files %}
 
-<head>
-    <title>User Profile</title>
-    <link rel="stylesheet" href="user_profile.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+{% endblock %}
+{% block content %}
+<hr>
+<div class="container bootstrap snippet">
+    <div class="row">
+  		<div class="col-sm-10"><h1>{{request.user.first_name}} {{request.user.last_name}}</h1></div>
+    </div>
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+              
 
-        body {
-            background-color: #2384eb;
-        }
+      <div class="text-center">
+        {% if user.profile.image %}
+        <img src="{{ user.profile.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar">
+        {% endif %}
+        {{p_form.image.label_tag}}
+        <!-- <h6>Upload a different photo...</h6>
+        <input type="file" class="text-center center-block file-upload"> -->
+      </div></hr><br>
 
-        /* Form  box starts here */
-        .box {
-            background-color: #fff;
-            position: relative;
-            margin-top: 55px;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            justify-content: center;
-            border: 3px solid;
-            width: 80%;
-            height: auto;
-            left: 10%;
-            box-shadow: 5px 7px;
-            padding-left: 20px;
-        }
+               
+          
+          
+        </div><!--/col-3-->
+    	<div class="col-sm-9">            
+              <form method="POST" enctype="multipart/form-data">{% csrf_token %}
 
-
-        label {
-            float: left;
-            width: 150px;
-            padding-top: 10px;
-
-        }
-
-        input {
-            float: left;
-            width: calc(80% - 150px);
-            height: 32px;
-            margin-bottom: 35px;
-        }
-
-        /* Create two equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 50%;
-
-            height: 100%;
-
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-
-        }
-
-        /* Radio Button starts */
-        /* The container */
-        .container {
-            display: block;
-            position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            font-size: 22px;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        /* submit button starts */
-        .button {
-            background-color: #000000;
-            color: rgb(255, 255, 255);
-            border: none;
-            padding: 15px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #2384eb;
-        }
-
-        /* submit button ends */
-    </style>
-    {% load static %}
-</head>
-
-<body>
-    <div class="box">
-        <h3><a href="">User Profile</a> > Update details</h3>
-
-        <div class="row">
-            <div class="column">
-                <div class="form-group">
-
-                    <img src="https://dummyimage.com/50x50" alt="picture">
-
-                    <label>Name</label>
-                    <input placeholder="Name">
-
-                    <label>Customer Id</label>
-                    <input placeholder="Customer Id">
-
-                    <label>Contact number</label>
-                    <input placeholder="Contact no. ">
-
-                    <label>House number</label>
-                    <input placeholder="House no. ">
-
-                    <label>Address</label>
-                    <input placeholder="Address">
-
-                    <div class="column">
-                        <div class="form-group">
-                            <button class="button">Save changes</button>
+              
+         
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <h4>{{u_form.first_name.label_tag}}</h4>
+                              {{ u_form.first_name}}                                
+                            </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <h4>{{u_form.last_name.label_tag}}</h4>
+                            {{u_form.last_name}}
+                          </div>
+                      </div>
+          
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <h4>{{u_form.username.label_tag}}</h4>
+                              {{u_form.username}}
+                          </div>
+                      </div>
+          
+                      
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <h4>{{u_form.email.label_tag}}</h4>
+                              {{u_form.email}}
+                          </div>
+                      </div>
+                     
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                              <h4>{{p_form.house_no.label_tag}}</h4>
+                              {{p_form.house_no}}
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                          <div class="col-xs-6">
+                            <h4>{{p_form.customer_id.label_tag}}</h4>
+                            {{p_form.customer_id}}
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          
+                        <div class="col-xs-6">
+                          <h4>{{p_form.address.label_tag}}</h4>
+                          {{p_form.address}}
                         </div>
                     </div>
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                              	<button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
 
-                </div>
-            </div>
-        </div>
-    </div>
+                               	<!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                            </div>
+                      </div>
+              	</form>
+              </div>
+               
+              </div><!--/tab-pane-->
+          </div><!--/tab-content-->
 
-
-</body>
-
-</html>
+        </div><!--/col-9-->
+    </div><!--/row-->
+</form>
+{% endblock %}
