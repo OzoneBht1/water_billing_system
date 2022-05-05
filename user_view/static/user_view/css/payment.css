@@ -4,6 +4,7 @@
 
 /* Form  box starts here */
 .box {
+  background-color: blue;
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -59,6 +60,7 @@ input,
 /* Radio Button starts */
 /* The container */
 .container {
+  /* background-color: blue; */
   display: block;
   position: relative;
   padding-left: 35px;

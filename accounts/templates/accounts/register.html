@@ -5,13 +5,12 @@
 <head>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta charset="utf-8">
-    <title>नेपाल प्यूने पानी संस्था</title>    
+    <title>नेपाल प्यूने पानी संस्था</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'accounts/register.css' %}"
-    />
+    <link rel="stylesheet" type="text/css" href="{% static 'accounts/register.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,21 +19,24 @@
         <div id="container">
             <h2>नेपाल प्यूने पानी संस्था</h2>
             <div class="form">
-                <form class="signup-form" method = "post"> {% csrf_token %}
-                    <!-- <i class="fa-solid fa-faucet-drip"></i> -->
+                <form class="signup-form" method="post"> {% csrf_token %}
+
+                    <i class="fa-solid fa-droplet"></i>
+
                     {% for field in form %}
                     {{field}}
                     {% endfor %}
                     <input class="btn" type="submit" name="" value="Sign Up">
                     {% for message in messages %}
                     <p> {{message}}</p>
-                
+
                     {% endfor %}
-                    {% for field in form %} {{ field.errors.0 }} {% endfor %} 
+                    {% for field in form %} {{ field.errors.0 }} {% endfor %}
                     <div class="options-02">
-                        <p>Already have an account? <a href="{% url 'accounts:userLogin' %}">Sign In</a></p>
+                        <p style="font-family: 'Open sans', sans-serif;">Already have an account? <a
+                                href="{% url 'accounts:userLogin' %}">Sign In</a></p>
                     </div>
-                    
+
             </div>
             </form>
         </div>

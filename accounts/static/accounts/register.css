@@ -11,14 +11,14 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #2384eb;
+  background-color: #ffffff;
 }
 
 h2 {
   /*height of नेपाल प्यूने पानी संस्था*/
   align-items: center;
   margin-left: 8px;
-  padding-top: 10px;
+  /* padding-top: 5px; */
   height: 85vh;
 }
 
@@ -28,7 +28,7 @@ h2 {
   flex-direction: column;
   left: 50%;
   top: 50%;
-  height: 90%;
+  height: 95%;
   width: 456px;
   justify-content: center;
   align-items: center;
@@ -38,11 +38,9 @@ h2 {
   border: 1px transparent;
   border-radius: 2%;
 
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgb(0, 0, 0, 0.5)
-  );
+  background-image: linear-gradient(to bottom,
+      rgb(35, 132, 235),
+      rgba(35, 132, 235));
 }
 
 .form {
@@ -57,9 +55,10 @@ h2 {
 .form i {
   /*Logo colour*/
   z-index: 1;
-  color: #ccc;
-  font-size: 37px;
-  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .signup-form {
@@ -78,8 +77,10 @@ h2 {
   margin-bottom: 25px;
   outline: none;
   border: none;
-  background: white; /*Box colour*/
-  color: black; /*Input text colour*/
+  background: white;
+  /*Box colour*/
+  color: black;
+  /*Input text colour*/
   font-size: 18px;
   text-align: center;
   border-radius: 5px;
@@ -118,7 +119,7 @@ h2 {
   border: none;
   width: 150px;
   height: 40px;
-  background: #1d4c68;
+  background: #000000;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
@@ -145,6 +146,7 @@ h2 {
   font: 14px;
   margin-top: 30px;
 }
+
 .form .option-2 a {
   color: white;
 }
@@ -152,6 +154,7 @@ h2 {
 /* Responsive CSS */
 
 @media screen and (max-width: 500px) {
+
   /*Fits page according to the screen*/
   .form {
     width: 95%;
@@ -165,6 +168,7 @@ h2 {
     width: 100%;
   }
 }
+
 ol,
 ul,
 li {

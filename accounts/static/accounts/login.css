@@ -8,9 +8,10 @@
 }
 
 body {
+  display: flex;
   color: white;
   height: 100vh;
-  background-color: #2384eb;
+  background-color: #ffffff;
 }
 
 #container {
@@ -30,11 +31,9 @@ body {
   /* border: 5px solid red; */
 
   /* The container*/
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  );
+  background-image: linear-gradient(to bottom,
+      rgb(35, 132, 235),
+      rgba(35, 132, 235));
 
   border: 1px transparent;
   border-radius: 2%;
@@ -57,20 +56,24 @@ h2 {
 .form i {
   /*Logo colour*/
   z-index: 1;
-  color: #ccc;
-  font-size: 65px;
-  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin-top: 50px;
+  /* margin-bottom: 20px; */
 }
 
 .form .user-input {
   /*Input Boxes*/
   width: 320px;
   height: 55px;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   outline: none;
   bottom: none;
-  background: white; /*Box colour*/
-  color: black; /*Input text colour*/
+  background: white;
+  /*Box colour*/
+  color: black;
+  /*Input text colour*/
   font-size: 18px;
   text-align: center;
   border-radius: 5px;
@@ -80,7 +83,7 @@ h2 {
 
 .form.options-01 {
   /*Forget Password*/
-  margin-bottom: 50px;
+  margin-top: 40000px;
 }
 
 .form .form.options-01 input {
@@ -95,15 +98,16 @@ h2 {
   color: #fff;
   font-size: 14px;
   font-style: normal;
+  padding-top: 20px;
 }
 
 .form .btn {
   /*login button*/
-  margin-top: 15px;
+  margin-top: 20px;
   outline: none;
   border: none;
-  width: 320px;
-  height: 55px;
+  width: 150px;
+  height: 40px;
   background: #000000;
   color: #fff;
   font-size: 18px;
@@ -131,6 +135,7 @@ h2 {
   font: 14px;
   margin-top: 30px;
 }
+
 .form .option-2 a {
   color: white;
 }
@@ -138,6 +143,7 @@ h2 {
 /* Responsive CSS */
 
 @media screen and (max-width: 500px) {
+
   /*Fits page according to the screen*/
   .form {
     width: 95%;

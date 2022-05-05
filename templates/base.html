@@ -26,7 +26,7 @@
 
 <body>
   <h1 class="water">
-    <p style="font-family: 'Playfair Display', serif; color: rgb(40, 128, 228);" >
+    <p style="font-family: 'Playfair Display', serif; color: rgb(40, 128, 228);">
       Water Billing System</p>
   </h1>
   <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
@@ -59,23 +59,27 @@
               <a class="dropdown-item" href="#">Report</a>
             </div>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">User Profile</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../accounts/templates/accounts/profile.html">User Profile</a>
+              <a class="dropdown-item" href="{% url 'accounts:logout' %}"><p
+                style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                <i><u>Logout</u></i>
+              </p></a>
+            </div>
+          </li>
+
           <li class="nav-item"><a href="{% url 'accounts:logout' %}" class="nav-link">
               <p
                 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
                 <i><u>Logout</u></i>
               </p>
             </a></li>
-          </li>
-
-          <li>
-            <div id="mySidebar" class="sidebar">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
-            </div>
           </li>
 
         </ul>
