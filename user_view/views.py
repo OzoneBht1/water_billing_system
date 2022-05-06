@@ -4,7 +4,13 @@ from django.http import JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.urls import reverse_lazy
 import json
-from .forms import PaymentForm, NewTapForm, PaymentForm2, BlankInpForm
+from .forms import (
+    PaymentForm,
+    NewTapForm,
+    PaymentForm2,
+    BlankInpForm,
+    MeterReplacementForm,
+)
 from django.contrib import messages
 import io
 from django.http import FileResponse
@@ -168,3 +174,25 @@ class PostList(ListView):
 class PostDetail(DetailView):
     model = Post
     template_name = "user_view/post_detail.html"
+
+
+def meterReplacement(request):
+    with open("data.json") as f:
+        data = json.load(f)
+    form = MeterReplacementForm(
+        {
+            "customer_id": request.user.profile.customer_id,
+            "contact": request.user.username,
+        }
+    )
+    if request.method == "POST":
+        print("hello")
+        form = MeterReplacementForm(request.POST)
+        if form.is_valid():
+            print("hi")
+            form.save()
+            messages.success(request, "Your request has been submitted successfully")
+            return redirect("user_view:home")
+    return render(
+        request, "user_view/meterReplacement.html", {"data": data, "form": form}
+    )

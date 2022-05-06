@@ -1,55 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
-<head>
-    <link rel="stylesheet" href="meterReplacement.css">
-    <title>Meter Replacement</title>
-</head>
+{%  block css_files %}
+    <link rel="stylesheet" href="{% static 'user_view/css/meterReplacement.css' %}">
+    
+{% endblock %}
 
-<body>
+{% block content %}
+{{ data|json_script:'name' }}
+    <form method = "post">{% csrf_token %}
     <div class="box">
         <h3><strong><a href="">Meter Replacement</a></strong></h3>
         <div class="row">
             <div class="column">
                 <div class="form-group">
 
+                    <label>Office Code:</label>
+                    <input name = "office_code" id="office_code">
+                    <br><br>
+
                     <label>Province:</label>
-                    <input placeholder="Province">
+                    <input name = "province" id="Province" readonly>
                     <br><br>
 
                     <label>District:</label>
-                    <input placeholder="District">
+                    <input name="district" id="District" readonly>
                     <br><br>
 
                     <label>Municipality:</label>
-                    <input placeholder="Municipality">
+                    <input name="municipality" id="Municipality" readonly>
                     <br><br>
                     <!-- <hr> -->
 
-                    <label>Customer Id:</label>
-                    <input placeholder="cannot be changed">
+                    {{form.customer_id.label_tag}}
+                    {{form.customer_id}}
                     <br><br>
 
-                    <label>Old meter number:</label>
-                    <input placeholder="cannot be changed">
+                    {{form.contact.label_tag}}
+                    {{form.contact}}
                     <br><br>
 
-                    <label>Address:</label>
-                    <input placeholder="cannot be changed" type="">
+                    {{form.street.label_tag}}
+                    {{form.street}}
+                    {{form.error.0}}
                     <br><br><br><br>
 
-                    <div class="row">
-                        <div class="column">
-                            <div class="form-group">
-                                <button class="button">Submit</button>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class="form-group">
-                                <button class="button">Cancel</button>
-                            </div>
-                        </div>
+                    
+                                <button style="margin-left:15px;margin-bottom:15px;" type="submit" class="btn btn-secondary">Secondary</button>
+                           
+                        
                     </div>
 
                 </div>
@@ -57,8 +59,9 @@
 
 
 
+
         </div>
     </div>
-</body>
-
-</html>
+</form>
+<script src="{% static 'user_view/js/meterReplacement.js' %}"></script>
+{% endblock %}

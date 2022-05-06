@@ -18,7 +18,9 @@
         {% if user.profile.image %}
         <img src="{{ user.profile.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar">
         {% endif %}
-        {{p_form.image.label_tag}}
+       {{p_form.image.label}}
+        {{p_form.image}}
+     
         <!-- <h6>Upload a different photo...</h6>
         <input type="file" class="text-center center-block file-upload"> -->
       </div></hr><br>

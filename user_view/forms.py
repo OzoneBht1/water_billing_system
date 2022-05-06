@@ -2,7 +2,7 @@ from cProfile import label
 from calendar import c
 
 from typing import Text
-from user_view.models import BlankInp, Payment, NewTap
+from user_view.models import BlankInp, Payment, NewTap, MeterReplacement
 from django.forms import HiddenInput, ModelForm, NumberInput, Textarea
 from django.forms import ModelForm
 from django import forms
@@ -190,3 +190,9 @@ class BlankInpForm(ModelForm):
         widgets = {
             "blankField": HiddenInput(),
         }
+
+
+class MeterReplacementForm(ModelForm):
+    class Meta:
+        model = MeterReplacement
+        fields = ["office_code", "customer_id", "contact", "street"]

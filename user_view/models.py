@@ -61,3 +61,16 @@ class NewTap(models.Model):
 
 class BlankInp(models.Model):
     blankField = models.CharField(max_length=5, blank=True, null=True)
+
+
+class MeterReplacement(models.Model):
+    office_code = models.CharField(max_length=100)
+    province = models.CharField(max_length=100)
+    district = models.CharField(max_length=100)
+    municipality = models.CharField(max_length=100)
+    customer_id = models.IntegerField()
+    contact = models.CharField(max_length=100)
+    street = models.CharField(max_length=100)
+
+    def __str__(self) -> int:
+        return str(self.customer_id)

@@ -10,8 +10,8 @@
     <title>Document</title>
 {% endblock %}
 {% block content %}
-<h1 class="display-4">Display 4</h1>
-    <p>test</p>
+<h1 class="display-4">User Details</h1>
+
    
     <table class="table">
       <thead>
@@ -20,17 +20,28 @@
           <th scope="col">Last Name</th>
           <th scope="col">Email</th>
           <th scope="col">Phone Number</th>
+          <th scope="col">House No.</th>
+          <th scope="col">Customer ID</th>
+          <th scope="col">Address</th>
+          <th scope="col">Last Login</th>
+          <th scope="col">Profile Image</th>
+
         </tr>
       </thead>
       <tbody>
         {% for object in object_list %}
-        {% if not object.is_staff %}
+        {% if not object.user.is_superuser %}
         
         <tr>
-          <th scope="row">{{object.first_name}}</th>
-          <td>{{object.last_name}}</td>
-          <td>{{object.email}}</td>
-          <td>{{object.username}}</td>
+          <th scope="row">{{object.user.first_name}}</th>
+          <td>{{object.user.last_name}}</td>
+          <td>{{object.user.email}}</td>
+          <td>{{object.user.username}}</td>
+          <td>{{object.house_no}}</td>
+          <td>{{object.customer_id}}</td>
+          <td>{{object.address}}</td>
+          <td>{{object.user.last_login}}</td>
+          <td><img src="{{ object.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar"></td>
         </tr>
         {%endif %}
         {% endfor %}

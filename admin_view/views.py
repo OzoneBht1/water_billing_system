@@ -13,6 +13,7 @@ from django.contrib import messages
 from django.urls import reverse_lazy
 import json
 from django import template
+from accounts.models import Profile
 
 # Create your views here.
 
@@ -59,12 +60,12 @@ class PostDelete(DeleteView):
 
 
 class UserList(ListView):
-    model = User
+    model = Profile
     template_name = "admin_view/user_list.html"
 
 
 class UserDetail(DetailView):
-    model = User
+    model = Profile
     template_name = "admin_view/user_detail.html"
 
 
