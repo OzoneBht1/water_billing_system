@@ -50,7 +50,10 @@ def loginPage(request):
             if user is not None:
                 login(request, user)
                 # logs the user in if the user is found
-                return redirect(reverse_lazy("users:home"))
+                if user.is_superuser:
+                    return redirect(reverse_lazy("admin_view:user_list"))
+                else:
+                    return redirect(reverse_lazy("users:home"))
             else:
                 messages.info(request, "Invalid Login")
 

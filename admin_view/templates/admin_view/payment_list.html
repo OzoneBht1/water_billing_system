@@ -1,46 +1,54 @@
 {% extends 'baseAdmin.html' %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="display-4">Display 4</h1>
+ 
+
+{% block content %}
+    <h1 class="display-4"> Payment History</h1>
     
    
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">First Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Email</th>
+          <th scope="col">Customer ID</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Month</th>
           <th scope="col">Phone Number</th>
+          <th scope="col">Consumed Unit</th>
+          <th scope="col">Bill Amount</th>
+          <th scope="col">Discount</th>
+          <th scope="col">Penalty</th>
+          <th scope="col">Payment Time</th>
+          <th scope="col">Total Amount</th>
+       
         </tr>
       </thead>
       <tbody>
         {% for object in object_list %}
-        {% if not object.is_staff %}
+        
         
         <tr>
-          <th scope="row">{{object.first_name}}</th>
-          <td>{{object.last_name}}</td>
-          <td>{{object.email}}</td>
-          <td>{{object.username}}</td>
+          <th scope="row">{{object.customer_id}}</th>
+          <td>{{object.customer_name}}</td>
+          <td>{{object.reading_month}}</td>
+          <td>{{object.phone_num}}</td>
+          <td>{{object.consumed_unit}}</td>
+          <td>{{object.bill_amount}}</td>
+          <td>{{object.discount_amount}} %</td>
+          <td>{{object.penalty}}</td>
+          <td>{{object.timestamp}}</td>
+          <td style="color:red;">{{object.total_amount}}</td>
+         
         </tr>
-        {%endif %}
+      
         {% endfor %}
         
       </tbody>
     </table>
     
-</body>
-</html>
+{% endblock %}

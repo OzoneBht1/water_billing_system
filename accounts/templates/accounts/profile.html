@@ -13,12 +13,12 @@
     <div class="row">
   		<div class="col-sm-3"><!--left col-->
               
-
+        <form method="POST" enctype="multipart/form-data">{% csrf_token %}  
       <div class="text-center">
         {% if user.profile.image %}
         <img src="{{ user.profile.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar">
-        {% endif %}
-       {{p_form.image.label}}
+        {% endif %}       
+        {{p_form.image.label}}
         {{p_form.image}}
      
         <!-- <h6>Upload a different photo...</h6>
@@ -30,7 +30,8 @@
           
         </div><!--/col-3-->
     	<div class="col-sm-9">            
-              <form method="POST" enctype="multipart/form-data">{% csrf_token %}
+        
+              
 
               
          
@@ -38,7 +39,7 @@
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <h4>{{u_form.first_name.label_tag}}</h4>
+                              <h4 style="margin-top:25px;">{{u_form.first_name.label_tag}}</h4>
                               {{ u_form.first_name}}                                
                             </div>
                       </div>
