@@ -69,6 +69,12 @@ class UserDetail(DetailView):
     template_name = "admin_view/user_detail.html"
 
 
+class UserDelete(DeleteView):
+    model = Profile
+    template_name = "admin_view/user_delete.html"
+    success_url = reverse_lazy("admin_view:user_list")
+
+
 class PaymentList(ListView):
     model = Payment
     template_name = "admin_view/payment_list.html"
