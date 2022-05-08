@@ -84,15 +84,9 @@ def payment(request):
             # obj.save()
 
             # request.session["form_data"] = context
-            messages.success(request, "Data saved successfully")
 
             # return gateway(request, obj.pk)
             return redirect("user_view:gateway", pk=obj.customer_id)
-        else:
-            messages.info(
-                request,
-                "A payment with the given ID already exists. Please check again",
-            )
 
     form = PaymentForm(
         {
@@ -141,7 +135,7 @@ def result(request, context):
     print(obj.discount_amount)
     print("Hello")
     print(obj)
-
+    messages.success(request, "Payment Successful! Thank you.")
     # return html_to_pdf(
     #     "user_view/result.html", {"pagesize": "auto", "context": context}
     # )
@@ -192,7 +186,7 @@ def meterReplacement(request):
             print("hi")
             form.save()
             messages.success(request, "Your request has been submitted successfully")
-            return redirect("user_view:home")
+            return redirect("user_view:meter_replacement")
     return render(
         request, "user_view/meterReplacement.html", {"data": data, "form": form}
     )

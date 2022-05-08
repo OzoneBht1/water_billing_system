@@ -114,6 +114,12 @@
             
     </head>
     <body>
+      {%for message in messages%}
+      <div class="alert-alert success">  
+      {{message}}
+      </div>
+      {%endfor%}
+
         <div class="col-md-12" id="results">   
             <div class="row">
                    

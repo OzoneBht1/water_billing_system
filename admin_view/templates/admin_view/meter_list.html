@@ -1,0 +1,55 @@
+{% extends 'baseAdmin.html' %} {% block css_files %}
+
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<title>Document</title>
+{% endblock %} {% block content %}
+<h1 class="display-4">Meter Replacement Requests</h1>
+<div class="container p-3 my-3 bg-white text-black">
+  Pending Requests: {{object_list.count}}
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Customer ID</th>
+      <th scope="col">Office Code</th>
+      <th scope="col">Province</th>
+      <th scope="col">District</th>
+      <th scope="col">Municipality</th>
+      <th scope="col">Contact</th>
+      <th scope="col">Street</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for object in object_list %} {% if not object.user.is_superuser %}
+
+    <tr>
+      <th scope="row">{{object.customer_id}}</th>
+      <td>{{object.office_code}}</td>
+      <td>{{object.province}}</td>
+      <td>{{object.district}}</td>
+      <td>{{object.municipality}}</td>
+      <td>{{object.contact}}</td>
+      <td>{{object.street}}</td>
+
+      <td>
+        <a
+          href="{% url 'admin_view:meter_replacement_delete' object.pk %}"
+          class="btn btn-danger"
+          ><button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button></a
+        >
+      </td>
+    </tr>
+    {%endif %} {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

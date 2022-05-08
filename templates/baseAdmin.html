@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  {% block css_files %}
-  <link
+  <head>
+    {% block css_files %}
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-  {% endblock %}
+    {% endblock %}
     <style>
-        body {
-            margin: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 15%;
-            background-color: #888888;
-            position: fixed;
-            height: 100%;
-            overflow: auto;
-        }
-
-        li a {
-            display: block;
-            color: #000;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #04aa6d;
-            color: white;
-        }
-        .content{
-          margin-left:15%;
-          padding:1px 16px;
-          height:1000px;
+      body {
+        margin: 0;
       }
 
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 15%;
+        background-color: #888888;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
 
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
 
-       
-
+      li a:hover:not(.active) {
+        background-color: #04aa6d;
+        color: white;
+      }
+      .content {
+        margin-left: 15%;
+        padding: 1px 16px;
+        height: 1000px;
+      }
     </style>
     <title>{% block page_title %} {% endblock %}</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <ul>
-        <h2 style="margin-left: 8%;">Dashboard</h2>
-        <hr>
-        <li><a href="#">Admin User</a></li>
-        <li><a href="{% url 'admin_view:user_list' %}">Users</a></li>
-        <li><a href="#">New Dhara Applicaton</a></li>
-        <li><a href="#">Report</a></li>
-        <li><a href="{% url 'admin_view:office_details' %}">Office Details</a></li>
-        <li><a href="{% url 'admin_view:allposts' %}">Posts</a></li>
-        <li><a href="#">Routine</a></li>
+      <h2 style="margin-left: 8%">Dashboard</h2>
+      <hr />
+      <li><a href="{% url 'admin_view:user_list' %}">Users</a></li>
+      <li><a href="#">New Dhara Applicaton</a></li>
+      <li><a href="#">Report</a></li>
+      <li>
+        <a href="{% url 'admin_view:office_details' %}">Office Details</a>
+      </li>
+      <li><a href="{% url 'admin_view:allposts' %}">Posts</a></li>
+      <li>
+        <a href="{% url 'admin_view:meter_replacement_list' %}"
+          >Meter Replacement</a
+        >
+      </li>
     </ul>
-    <div class="content">
-        {% block content %}
-        {% endblock %}
-    </div>
-
-</body>
-
+    <div class="content">{% block content %} {% endblock %}</div>
+  </body>
 </html>

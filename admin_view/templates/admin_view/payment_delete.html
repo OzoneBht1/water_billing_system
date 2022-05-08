@@ -1,0 +1,22 @@
+{% extends 'baseAdmin.html' %} {% block content %}
+
+<h3>Delete Payment</h3>
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4 mt-3 left top">
+      <div class="card-body">
+        <form method="post">
+          {%csrf_token %}
+
+          <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+          <strong> Are you sure you want to delete?</strong>
+          <button class="btn btn-danger" type="submit">Delete</button>
+        </form>
+      </div>
+    </div>
+    {% block sidebar %} {% endblock %}
+  </div>
+</div>
+
+{% endblock content %}

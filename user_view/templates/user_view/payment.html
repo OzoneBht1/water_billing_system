@@ -22,11 +22,13 @@
       {% csrf_token %}
       <div class="box">
         <h2>Bill Payment</h2>
-        {% if message %}
-          <div class="alert alert-danger">
-            {{ message }}
-          </div>
+        {% if form.errors %}
+        {{form.errors.0}}
+        
+        {{form.errors.0}}
+     
         {% endif %}
+     
         <div class="row">
           <div class="column">
             <div class="form-group">
@@ -108,12 +110,12 @@
         <div class="row">
           <div class="column">                    
             <label class="container">Green
-              <input type="radio" checked="checked" name="radio" class = "radio-button">
+              <input type="radio" checked="checked" name="meter_status" class = "radio-button" value="Green">
               <span class="checkmark"></span>
             </label><br> <br><br>
             
             <label class="container">Red
-              <input type="radio" checked="checked" name="radio" class = "radio-button">
+              <input type="radio" checked="checked" name="meter_status" class = "radio-button" value="Red">
               <span class="checkmark"></span>
             </label>
             <!-- <label class="container">Green

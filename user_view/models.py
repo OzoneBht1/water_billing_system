@@ -31,7 +31,7 @@ class Payment(models.Model):
     current_unit = models.IntegerField()
     consumed_unit = models.IntegerField()
     meter_status = models.CharField(
-        max_length=100, default="green", blank=True, null=True
+        max_length=100, default="Green", blank=True, null=True
     )
     bill_amount = models.DecimalField(max_digits=10, decimal_places=2)
     discount_amount = models.DecimalField(max_digits=10, decimal_places=2, null=True)

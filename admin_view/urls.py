@@ -23,4 +23,17 @@ urlpatterns = [
     path("office_details", views.officeDetail, name="office_details"),
     path("payment_details", views.PaymentList.as_view(), name="payment_details"),
     path("users/<int:pk>", views.UserDelete.as_view(), name="user_delete"),
+    path(
+        "payment_details/<int:pk>", views.PaymentDelete.as_view(), name="payment_delete"
+    ),
+    path(
+        "meter_replacement_list",
+        views.MeterReplacementList.as_view(),
+        name="meter_replacement_list",
+    ),
+    path(
+        "meter_replacement_list/<int:pk>",
+        views.MeterReplacementDelete.as_view(),
+        name="meter_replacement_delete",
+    ),
 ]

@@ -1,6 +1,7 @@
+from audioop import reverse
 from django.shortcuts import render
 from django.contrib.auth.models import User
-from user_view.models import Payment
+from user_view.models import MeterReplacement, Payment
 from django.views.generic import (
     CreateView,
     UpdateView,
@@ -78,6 +79,23 @@ class UserDelete(DeleteView):
 class PaymentList(ListView):
     model = Payment
     template_name = "admin_view/payment_list.html"
+
+
+class PaymentDelete(DeleteView):
+    model = Payment
+    template_name = "admin_view/payment_delete.html"
+    success_url = reverse_lazy("admin_view:payment_details")
+
+
+class MeterReplacementList(ListView):
+    model = MeterReplacement
+    template_name = "admin_view/meter_list.html"
+
+
+class MeterReplacementDelete(DeleteView):
+    model = MeterReplacement
+    template_name = "admin_view/meter_delete.html"
+    success_url = reverse_lazy("admin_view:meter_replacement_list")
 
 
 def officeDetail(request):

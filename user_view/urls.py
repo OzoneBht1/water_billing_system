@@ -14,6 +14,6 @@ urlpatterns = [
     path("gateway/<int:pk>", views.gateway, name="gateway"),
     path("result", views.result, name="result"),
     path("", views.PostList.as_view(), name="home"),
-    path("meter_replacement/", views.meterReplacement, name="meter_replcaement"),
+    path("meter_replacement/", views.meterReplacement, name="meter_replacement"),
     path("<slug:slug>/", views.PostDetail.as_view(), name="post_detail"),
 ]

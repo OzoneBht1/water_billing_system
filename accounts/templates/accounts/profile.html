@@ -14,6 +14,12 @@
   		<div class="col-sm-3"><!--left col-->
               
         <form method="POST" enctype="multipart/form-data">{% csrf_token %}  
+          {% for message in messages %}
+          <div class="alert alert-success">
+            
+          {{message}}
+          </div>
+          {% endfor %}
       <div class="text-center">
         {% if user.profile.image %}
         <img src="{{ user.profile.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar">

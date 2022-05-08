@@ -49,6 +49,7 @@ class PaymentForm(ModelForm):
                 "min": 0,
                 "pattern": "[0-9]{,}",
                 "id": "current_unit",
+                "help_text": "The current meter reading(should be more than previous unit)",
             }
         ),
     )
@@ -195,4 +196,12 @@ class BlankInpForm(ModelForm):
 class MeterReplacementForm(ModelForm):
     class Meta:
         model = MeterReplacement
-        fields = ["office_code", "customer_id", "contact", "street"]
+        fields = [
+            "office_code",
+            "province",
+            "district",
+            "municipality",
+            "customer_id",
+            "contact",
+            "street",
+        ]
