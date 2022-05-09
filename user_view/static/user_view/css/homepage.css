@@ -1,27 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-
   font-family: Arial;
   overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.water {
-  padding: 20px;
-  font-size: 50px;
-  text-align: center;
-  font-weight: bolder;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  color: rgb(0, 0, 0);
-}
-
-.navbar {
-  width: auto;
-  left: 10%;
 }
 
 .Bx {
@@ -35,13 +16,6 @@ body {
   border-top: 10px solid white;
 
   background-color: rgb(71, 71, 71);
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
 }
+
 .navbar {
-  width: 80%;
-  left: 10%;
+  width: 100%;
 }
 
 .sidebar {
