@@ -5,4 +5,9 @@ block css_files %}
 endblock %} {% block content %}
 
 <form method="post" class="container">{{form.as_p}}</form>
+ <!--loading-->
+ <div class="loading hidden">
+    <img src="{% static 'user_view/images/loading.gif' %}" alt="loading...">
+  </div>
+    <!--end of loading-->
 {% endblock %}
