@@ -1,44 +1,62 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>खानेपानी कम्पनी</title>
 
-<head>
-  <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-  <meta charset="utf-8" />
-  <title>खानेपानी कम्पनी</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'accounts/login.css' %}"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
-  <link rel="stylesheet" type="text/css" href="{% static 'accounts/login.css' %}" />
-</head>
-
-<body>
-  <div id="container">
-    <h2>खानेपानी कम्पनी</h2>
-    <!-- form area start -->
-    <div class="form">
-      <!-- login form start -->
-      <form class="login-form" action="" method="post">
-        {% csrf_token %}
-        <!-- <i class="fa-solid fa-circle-user"></i> -->
-        <input class="user-input" type="text" name="phone_number" placeholder="Phone Number" required />
-        <input class="user-input" type="password" name="password" placeholder="Password" required />
-        <div class="options-01">
-          <!-- <label class="remember-me"><input type="checkbox" name="">Remember me</label> -->
-          <a href="#">Forgot your password?</a>
-        </div>
-        <input class="btn" type="submit" name="" value="LOGIN" />
-        <div class="options-02">
-          <p>
-            Not Registered?
-            <a href="{% url 'accounts:userRegistration' %}">Create an Account</a>
-          </p>
-        </div>
-      </form>
-      {% for message in messages %}
-      <p>{{message}}</p>
-      {% endfor %}
+  <body>
+    <div id="container">
+      <h2>खानेपानी कम्पनी</h2>
+      <!-- form area start -->
+      <div class="form">
+        <!-- login form start -->
+        <form class="login-form" action="" method="post">
+          {% csrf_token %}
+          <!-- <i class="fa-solid fa-circle-user"></i> -->
+          <input
+            class="user-input"
+            type="text"
+            name="phone_number"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            class="user-input"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <div class="options-01">
+            <!-- <label class="remember-me"><input type="checkbox" name="">Remember me</label> -->
+          </div>
+          <input class="btn" type="submit" name="" value="LOGIN" />
+          <div class="options-02">
+            <p>
+              Not Registered?
+              <a href="{% url 'accounts:userRegistration' %}"
+                >Create an Account</a
+              >
+            </p>
+          </div>
+        </form>
+        {% for message in messages %}
+        <p style="color: red; margin-top: 20px"><b>{{message}}</b></p>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

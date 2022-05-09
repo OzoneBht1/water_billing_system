@@ -23,6 +23,8 @@ urlpatterns = [
     path("office_details", views.officeDetail, name="office_details"),
     path("payment_details", views.PaymentList.as_view(), name="payment_details"),
     path("users/<int:pk>", views.UserDelete.as_view(), name="user_delete"),
+    # path("users/update/<int:pk>", views.UserUpdate.as_view(), name="user_update"),
+    path("users/update/<int:pk>", views.UserUpdate, name="user_update"),
     path(
         "payment_details/<int:pk>", views.PaymentDelete.as_view(), name="payment_delete"
     ),
