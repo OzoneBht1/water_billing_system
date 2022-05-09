@@ -36,4 +36,5 @@ urlpatterns = [
         views.MeterReplacementDelete.as_view(),
         name="meter_replacement_delete",
     ),
+    path("user_csv", views.user_csv, name="user_csv"),
 ]
