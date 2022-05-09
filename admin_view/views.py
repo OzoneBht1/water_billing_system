@@ -1,4 +1,5 @@
 from audioop import reverse
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from user_view.models import MeterReplacement, Payment
@@ -15,6 +16,7 @@ from django.urls import reverse_lazy
 import json
 from django import template
 from accounts.models import Profile
+import csv
 
 # Create your views here.
 
@@ -104,3 +106,33 @@ def officeDetail(request):
         data = json.load(f)
 
         return render(request, "admin_view/office_view.html", {"data": data})
+
+
+def user_csv(request):
+    response = HttpResponse(content_type="text/csv")
+    response["Content-Disposition"] = "attactment; filename: users.csv"
+
+    # create a csv writer
+    writer = csv.writer(response)
+
+    # configure model
+
+    profiles = Profile.objects.all()
+
+    writer.writerow(
+        ["Full Name ", "Phone Number", "Email", "House No", "Customer ID", "Address"]
+    )
+
+    for profile in profiles:
+        writer.writerow(
+            [
+                profile.user.first_name + " " + profile.user.last_name,
+                profile.user.username,
+                profile.user.email,
+                profile.house_no,
+                profile.customer_id,
+                profile.address,
+            ]
+        )
+
+    return response
