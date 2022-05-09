@@ -7,19 +7,14 @@
 
 body {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
-  background-color: #2384eb;
+  background-color: #0000ff;
 }
 
 h2 {
-  /*height of नेपाल प्यूने पानी संस्था*/
-  align-items: center;
-  margin-left: 8px;
-  padding-top: 10px;
-  height: 85vh;
+  color: #000;
+  margin-top: 30px;
+  height: 100vh;
 }
 
 #container {
@@ -37,12 +32,7 @@ h2 {
   transform: translate(-50%, -50%);
   border: 1px transparent;
   border-radius: 2%;
-
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgb(0, 0, 0, 0.5)
-  );
+  background-color: #fff;
 }
 
 .form {
@@ -70,7 +60,6 @@ h2 {
 
 .signup-form .user-input {
   justify-content: center;
-
   margin-right: 3px;
   margin-left: 3px;
   width: 320px;
@@ -78,8 +67,8 @@ h2 {
   margin-bottom: 25px;
   outline: none;
   border: none;
-  background: white; /*Box colour*/
-  color: black; /*Input text colour*/
+  background: #d3d3d3;
+  color: #000;
   font-size: 18px;
   text-align: center;
   border-radius: 5px;
@@ -87,71 +76,43 @@ h2 {
   transition-property: border-left, border-right, box-shadow;
 }
 
-.form.options-01 {
-  /*Forget Password*/
-  margin-bottom: 50px;
-}
-
-.form .form.options-01 input {
-  /*Forget Password*/
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-}
-
-.form .options-01 a {
-  /*Forget Password*/
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
-}
-
 .form .btn {
-  /*login button*/
-  align-items: center;
   justify-content: center;
-  padding-left: 2px;
-  margin-left: 28%;
+  padding: auto;
+  margin-left: 33%;
   margin-top: 1px;
   display: flex;
   outline: none;
   border: none;
-  width: 150px;
+  width: 100px;
   height: 40px;
-  background: #1d4c68;
+  background: #000000;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
   transition-property: border-left, border-right, box-shadow;
 }
 
-.form .options-02 {
-  /*Not registered*/
-  color: black;
+.form .options {
+  font-weight: bold;
+  color: #000;
   font-size: 14px;
   margin-top: 25px;
 }
 
-.form .options-02 a {
-  /*Create Account*/
-  color: #fff;
-}
-
-.form .option-02 {
-  color: black;
-  font: 14px;
-  margin-top: 30px;
-}
-.form .option-2 a {
-  color: white;
+.form .options a {
+  padding-left: 10px;
+  color: #0000FF;
+  text-decoration: underline;
 }
 
 /* Responsive CSS */
 
 @media screen and (max-width: 500px) {
+
   /*Fits page according to the screen*/
   .form {
     width: 95%;
@@ -164,9 +125,4 @@ h2 {
   .form .btn {
     width: 100%;
   }
-}
-ol,
-ul,
-li {
-  color: #1d4c68;
 }

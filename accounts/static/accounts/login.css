@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +8,13 @@
 body {
   color: white;
   height: 100vh;
-  background-color: #2384eb;
+  background-color: #0000ff;
+}
+
+h2 {
+  color: #000;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 #container {
@@ -20,30 +24,15 @@ body {
   left: 50%;
   top: 50%;
   height: 540px;
-  width: 450px;
-  /* padding: 25px 25px 1px 30px; */
+  width: 423px;
   padding: 7px 7px 7px 7px;
   transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* border: 5px solid red; */
-
-  /* The container*/
-  background-image: linear-gradient(
-    to bottom,
-    rgb(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)
-  );
-
+  background-color: #fff;
   border: 1px transparent;
   border-radius: 2%;
-}
-
-h2 {
-  /*height of नेपाल प्यूने पानी संस्था*/
-  height: 85vh;
-  padding-top: 50px;
 }
 
 .form {
@@ -63,14 +52,13 @@ h2 {
 }
 
 .form .user-input {
-  /*Input Boxes*/
   width: 320px;
-  height: 55px;
-  margin-top: 50px;
+  height: 50px;
+  margin-top: 34px;
   outline: none;
   bottom: none;
-  background: white; /*Box colour*/
-  color: black; /*Input text colour*/
+  background: #d3d3d3;
+  color: black;
   font-size: 18px;
   text-align: center;
   border-radius: 5px;
@@ -79,65 +67,51 @@ h2 {
 }
 
 .form.options-01 {
-  /*Forget Password*/
-  margin-bottom: 50px;
-}
-
-.form .form.options-01 input {
-  /*Forget Password*/
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
 }
 
 .form .options-01 a {
-  /*Forget Password*/
-  color: #fff;
-  font-size: 14px;
-  font-style: normal;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0000ff;
+}
+
+
+.form .options-02 {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.form .options-02 a {
+  padding-left: 10px;
+  text-decoration: underline;
+  color: #0000ff;
 }
 
 .form .btn {
-  /*login button*/
   margin-top: 15px;
   outline: none;
   border: none;
-  width: 320px;
+  width: 100px;
   height: 55px;
   background: #000000;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
   transition-property: border-left, border-right, box-shadow;
 }
 
-.form .options-02 {
-  /*Not registered*/
-  color: black;
-  font-size: 14px;
-  margin-top: 30px;
-}
-
-.form .options-02 a {
-  /*Create Account*/
-  color: #fff;
-}
-
-.form .option-02 {
-  color: black;
-  font: 14px;
-  margin-top: 30px;
-}
-.form .option-2 a {
-  color: white;
-}
-
 /* Responsive CSS */
 
 @media screen and (max-width: 500px) {
+
   /*Fits page according to the screen*/
   .form {
     width: 95%;
