@@ -42,7 +42,9 @@ e.addEventListener("click", function () {
 console.log(js_variable[0]["Province"]);
 
 e.addEventListener("change", function () {
-  
+  f.innerText = null;
+  g.innerText = null;
+
   // district.innerHTML = "--Select District--";
   // municipality.innerHTML = "--Select Municipality--";
   const selectedProvince = e.options[e.selectedIndex].value;
@@ -83,6 +85,7 @@ e.addEventListener("change", function () {
 // }
 
 f.addEventListener("change", function () {
+  g.innerText = null;
   // municipality.innerHTML = "--Select Municipality--";
   const selectedDistrict = f.options[f.selectedIndex].value;
   console.log(selectedDistrict);
