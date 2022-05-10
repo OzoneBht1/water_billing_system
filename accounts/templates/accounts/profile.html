@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{%  block css_files %}
+{% block css_files %}
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -7,109 +7,119 @@
 {% block content %}
 <hr>
 <div class="container bootstrap snippet">
-    <div class="row">
-  		<div class="col-sm-10"><h1>{{request.user.first_name}} {{request.user.last_name}}</h1></div>
+  <div class="row">
+    <div class="col-sm-10">
+      <h1>{{request.user.first_name}} {{request.user.last_name}}</h1>
     </div>
-    <div class="row">
-  		<div class="col-sm-3"><!--left col-->
-              
-        <form method="POST" enctype="multipart/form-data">{% csrf_token %}  
-          {% for message in messages %}
-          <div class="alert alert-success">
-            
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <!--left col-->
+
+      <form method="POST" enctype="multipart/form-data">{% csrf_token %}
+        {% for message in messages %}
+        <div class="alert alert-success">
+
           {{message}}
-          </div>
-          {% endfor %}
-      <div class="text-center">
-        {% if user.profile.image %}
-        <img src="{{ user.profile.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar">
-        {% endif %}       
-        {{p_form.image.label}}
-        {{p_form.image}}
-     
-        <!-- <h6>Upload a different photo...</h6>
+        </div>
+        {% endfor %}
+        <div class="text-center">
+          {% if user.profile.image %}
+          <img src="{{ user.profile.image.url }}" class="avatar img-circle img-thumbnail" alt="avatar">
+          {% endif %}
+          {{p_form.image.label}}
+          {{p_form.image}}
+
+          <!-- <h6>Upload a different photo...</h6>
         <input type="file" class="text-center center-block file-upload"> -->
-      </div></hr><br>
+        </div>
+        </hr><br>
 
-               
-          
-          
-        </div><!--/col-3-->
-    	<div class="col-sm-9">            
-        
-              
 
-              
-         
-                  <form class="form" action="##" method="post" id="registrationForm">
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                              <h4 style="margin-top:25px;">{{u_form.first_name.label_tag}}</h4>
-                              {{ u_form.first_name}}                                
-                            </div>
-                      </div>
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                            <h4>{{u_form.last_name.label_tag}}</h4>
-                            {{u_form.last_name}}
-                          </div>
-                      </div>
-          
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                              <h4>{{u_form.username.label_tag}}</h4>
-                              {{u_form.username}}
-                          </div>
-                      </div>
-          
-                      
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                              <h4>{{u_form.email.label_tag}}</h4>
-                              {{u_form.email}}
-                          </div>
-                      </div>
-                     
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                              <h4>{{p_form.house_no.label_tag}}</h4>
-                              {{p_form.house_no}}
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                            <h4>{{p_form.customer_id.label_tag}}</h4>
-                            {{p_form.customer_id}}
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          
-                        <div class="col-xs-6">
-                          <h4>{{p_form.address.label_tag}}</h4>
-                          {{p_form.address}}
-                        </div>
-                    </div>
-                      <div class="form-group">
-                           <div class="col-xs-12">
-                                <br>
-                              	<button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
 
-                               	<!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
-                            </div>
-                      </div>
-              	</form>
-              </div>
-               
-              </div><!--/tab-pane-->
-          </div><!--/tab-content-->
 
-        </div><!--/col-9-->
-    </div><!--/row-->
+    </div>
+    <!--/col-3-->
+    <div class="col-sm-9">
+
+
+
+
+
+      <form class="form" action="##" method="post" id="registrationForm">
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4 style="margin-top:25px;">{{u_form.first_name.label_tag}}</h4>
+            {{ u_form.first_name}}
+          </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4>{{u_form.last_name.label_tag}}</h4>
+            {{u_form.last_name}}
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4>{{u_form.username.label_tag}}</h4>
+            {{u_form.username}}
+          </div>
+        </div>
+
+
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4>{{u_form.email.label_tag}}</h4>
+            {{u_form.email}}
+          </div>
+        </div>
+
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4>{{p_form.house_no.label_tag}}</h4>
+            {{p_form.house_no}}
+          </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4>{{p_form.customer_id.label_tag}}</h4>
+            {{p_form.customer_id}}
+          </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-xs-6">
+            <h4>{{p_form.address.label_tag}}</h4>
+            {{p_form.address}}
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-12">
+            <br>
+            <button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-ok-sign"></i>
+              Save</button>
+
+            <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <!--/tab-pane-->
+</div>
+<!--/tab-content-->
+
+</div>
+<!--/col-9-->
+</div>
+<!--/row-->
 </form>
 {% endblock %}
