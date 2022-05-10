@@ -9,17 +9,17 @@ body {
   width: 100%;
   padding: 10px;
   height: 786px;
-
   background-color: #2384eb;
 }
+
 .notices {
   border-top: 10px solid white;
-
   background-color: rgb(71, 71, 71);
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
+
   .leftcolumn,
   .rightcolumn {
     width: 100%;
@@ -34,6 +34,7 @@ body {
 .card {
   box-shadow: 0 16px 48px #e3e7eb;
 }
+
 .masthead {
   background-color: #2384eb;
 }
