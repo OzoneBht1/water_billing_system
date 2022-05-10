@@ -49,7 +49,11 @@
         />
       </td>
       <td>
-        <button type="button" class="btn btn-primary">Update</button>
+        <a
+          href="{% url 'admin_view:user_update' object.pk %}"
+          class="btn btn-info"
+          >Update</a
+        >
         <a
           href="{% url 'admin_view:user_delete' object.pk %}"
           class="btn btn-danger"

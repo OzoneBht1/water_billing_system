@@ -1,6 +1,6 @@
 from audioop import reverse
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from user_view.models import MeterReplacement, Payment
 from django.views.generic import (
@@ -17,6 +17,8 @@ import json
 from django import template
 from accounts.models import Profile
 import csv
+from accounts.forms import UserUpdateForm, ProfileUpdateForm
+
 
 # Create your views here.
 
@@ -67,15 +69,62 @@ class UserList(ListView):
     template_name = "admin_view/user_list.html"
 
 
-class UserDetail(DetailView):
-    model = Profile
-    template_name = "admin_view/user_detail.html"
-
-
 class UserDelete(DeleteView):
     model = Profile
     template_name = "admin_view/user_delete.html"
     success_url = reverse_lazy("admin_view:user_list")
+
+
+# class UserUpdate(UpdateView):
+#     model = Profile
+#     template_name = "admin_view/user_update.html"
+#     fields = "__all__"
+
+
+def UserUpdate(request, pk):
+
+    currentProfile = Profile.objects.get(id=pk)
+    currentUser = User.objects.get(profile=currentProfile)
+
+    if request.method == "POST":
+        u_form = UserUpdateForm(request.POST, instance=currentUser)
+        p_form = ProfileUpdateForm(request.POST, request.FILES, instance=currentProfile)
+        if p_form.is_valid():
+            u_form.save()
+            p_form.save()
+            messages.success(request, "Your account has been updated!")
+            return redirect("admin_view:user_list")
+    else:
+        u_form = UserUpdateForm(instance=currentUser)
+        p_form = ProfileUpdateForm(instance=currentProfile)
+
+    return render(
+        request,
+        "admin_view/user_update.html",
+        {
+            "u_form": u_form,
+            "p_form": p_form,
+        },
+    )
+
+    #  if request.method == "POST":
+    #     u_form = UserUpdateForm(request.POST, instance=request.user)
+    #     p_form = ProfileUpdateForm(
+    #         request.POST, request.FILES, instance=request.user.profile
+    #     )
+    #     if u_form.is_valid() and p_form.is_valid():
+    #         u_form.save()
+    #         p_form.save()
+    #         messages.success(request, "Your account has been updated!")
+    #         return redirect("accounts:profile")  # Redirect back to profile page
+
+    # else:
+    #     u_form = UserUpdateForm(instance=request.user)
+    #     p_form = ProfileUpdateForm(instance=request.user.profile)
+
+    # return render(
+    #     request, "accounts/profile.html", {"u_form": u_form, "p_form": p_form}
+    # )
 
 
 class PaymentList(ListView):

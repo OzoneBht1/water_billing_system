@@ -22,11 +22,10 @@
                     {{field}}
                     {% endfor %}
                     <input class="btn" type="submit" name="" value="Register">
-                    {% for message in messages %}
-                    <p> {{message}}</p>
-
-                    {% endfor %}
-                    {% for field in form %} {{ field.errors.0 }} {% endfor %}
+                 
+                    {% for field in form %} 
+                    <p style="color: red;"> {{field.errors.0}}</p>
+                     {% endfor %}
                     <div class="options">
                         <p>Already have an account?<a href="{% url 'accounts:userLogin' %}">Sign-in</a></p>
                     </div>

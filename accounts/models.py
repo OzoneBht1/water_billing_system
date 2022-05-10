@@ -8,6 +8,7 @@ from django.conf import settings
 
 from django.contrib import auth
 from PIL import Image
+from django.urls import reverse
 
 
 class Profile(models.Model):
@@ -36,3 +37,6 @@ class Profile(models.Model):
     def delete(self, *args, **kwargs):
         self.user.delete()
         return super(self.__class__, self).delete(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse("admin_view:user_list")
