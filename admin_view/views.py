@@ -18,7 +18,8 @@ from django import template
 from accounts.models import Profile
 import csv
 from accounts.forms import UserUpdateForm, ProfileUpdateForm
-
+from django.contrib.auth.decorators import permission_required
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 
@@ -34,6 +35,7 @@ from accounts.forms import UserUpdateForm, ProfileUpdateForm
 #     return render(request, "admin_view/addPost.html", {"form": form})
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class AddPostView(CreateView):
     model = Post
     template_name = "admin_view/add_post.html"

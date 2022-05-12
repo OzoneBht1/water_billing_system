@@ -137,7 +137,7 @@ currUnit.addEventListener("change", function () {
 function setPenalty() {
   var early = true;
   var val = months[read_month.value];
-  let payDate = new Date(2022, val - 1, 10);
+  let payDate = new Date(2022, val - 1, 11);
   console.log(payDate);
   let currentDate = new Date(2022, today.getMonth(), today.getDate());
   console.log(currentDate);
@@ -166,8 +166,10 @@ function penaltyCalc(diffDays, early) {
     discount = 0.05;
     discountAmount.value = 5;
   } else {
-    if (diffDays <= 10) {
+    if (diffDays < 10) {
       penalty.value = 0;
+      discount = 0.05;
+      discountAmount.value = 5;
     } else {
       penalty.value = parseFloat((diffDays * 0.2).toFixed(2));
       discount = 0;
