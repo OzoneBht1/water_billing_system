@@ -42,6 +42,7 @@ class AddPostView(CreateView):
     fields = ["title", "content", "status", "author"]
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class PostList(ListView):
 
     # queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -49,28 +50,33 @@ class PostList(ListView):
     template_name = "admin_view/all_post_list.html"
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class PostDetail(DetailView):
     model = Post
     template_name = "admin_view/post_detail.html"
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class PostUpdate(UpdateView):
     model = Post
     template_name = "admin_view/post_update.html"
     fields = ["title", "content", "status"]
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class PostDelete(DeleteView):
     model = Post
     template_name = "admin_view/post_delete.html"
     success_url = reverse_lazy("admin_view:allposts")
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class UserList(ListView):
     model = Profile
     template_name = "admin_view/user_list.html"
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class UserDelete(DeleteView):
     model = Profile
     template_name = "admin_view/user_delete.html"
@@ -83,6 +89,7 @@ class UserDelete(DeleteView):
 #     fields = "__all__"
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 def UserUpdate(request, pk):
 
     currentProfile = Profile.objects.get(id=pk)
@@ -129,28 +136,33 @@ def UserUpdate(request, pk):
     # )
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class PaymentList(ListView):
     model = Payment
     template_name = "admin_view/payment_list.html"
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class PaymentDelete(DeleteView):
     model = Payment
     template_name = "admin_view/payment_delete.html"
     success_url = reverse_lazy("admin_view:payment_details")
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class MeterReplacementList(ListView):
     model = MeterReplacement
     template_name = "admin_view/meter_list.html"
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 class MeterReplacementDelete(DeleteView):
     model = MeterReplacement
     template_name = "admin_view/meter_delete.html"
     success_url = reverse_lazy("admin_view:meter_replacement_list")
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 def officeDetail(request):
 
     with open("data.json") as f:
@@ -159,6 +171,7 @@ def officeDetail(request):
         return render(request, "admin_view/office_view.html", {"data": data})
 
 
+@method_decorator(permission_required("is_superuser"), name="dispatch")
 def user_csv(request):
     response = HttpResponse(content_type="text/csv")
     response["Content-Disposition"] = "attactment; filename: users.csv"
