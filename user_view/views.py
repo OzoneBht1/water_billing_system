@@ -34,10 +34,6 @@ def payment(request):
 
         login_data = request.POST.dict()
 
-        # username = login_data.get("province")
-        # password = login_data.get("municipality")
-        # user_type = login_data.get("district")
-        # print(user_type, username, password)
         if form.is_valid():
             timestamp = datetime.now()
             dt_string = timestamp.strftime("%d/%m/%Y %H:%M:%S")
@@ -48,45 +44,11 @@ def payment(request):
             obj.timestamp = dt_string
             obj.phone_num = phone_num
             obj.email = email
+            # Adding the current time, phone number and email to the database
             obj.save()
-            # print(obj.customer_id)
-            # print(obj.timestamp)
-            # print(obj.phone_num)
-            # print(obj.discount_amount)
 
-            # office = form.cleaned_data["municipality"]
-            # month = form.cleaned_data["reading_month"]
-            # customer_id = form.cleaned_data["customer_id"]
-            # customer_name = form.cleaned_data["customer_name"]
-            # consumed_unit = form.cleaned_data["consumed_unit"]
-            # bill_amount = form.cleaned_data["bill_amount"]
-            # discount_amount = form.cleaned_data["discount_amount"]
-            # penalty_amount = form.cleaned_data["penalty"]
-            # total_amount = form.cleaned_data["total_amount"]
-            # context = {
-            #     "phone_num": phone_num,
-            #     "email": email,
-            #     "time": dt_string,
-            #     "office": office,
-            #     "month": month,
-            #     "customer_id": customer_id,
-            #     "customer_name": customer_name,
-            #     "consumed_unit": consumed_unit,
-            #     "bill_amount": bill_amount,
-            #     "discount_amount": discount_amount,
-            #     "penalty_amount": penalty_amount,
-            #     "total_amount": total_amount,
-            # }
-            # request.session["form_data"] = context
-            # return redirect("generate/")
-            # obj = form.save()
-            # obj.province = login_data.get("province")
-            # obj.save()
-
-            # request.session["form_data"] = context
-
-            # return gateway(request, obj.pk)
             return redirect("user_view:gateway", pk=obj.customer_id)
+        # sending the payment data to the gateway page
 
     form = PaymentForm(
         {
@@ -94,6 +56,7 @@ def payment(request):
             "customer_name": request.user.first_name + " " + request.user.last_name,
         }
     )
+    # rendering an empty form with default values of the name and ID from user's profile
 
     # Passing the form from forms.py to the template, and also the data from the json file
     return render(request, "user_view/payment.html", {"data": data, "form": form})
@@ -129,11 +92,13 @@ def newtap(request):
 
 
 def result(request, context):
+    # This is the receipt that will be displayed after the payment is successful
+
     obj = Payment.objects.get(customer_id=context)
+    # Details of the Payee obtained from by choosing the ID from the parameter
     print(obj.timestamp)
     print(obj.phone_num)
     print(obj.discount_amount)
-    print("Hello")
     print(obj)
     messages.success(request, "Payment Successful! Thank you.")
     # return html_to_pdf(
@@ -146,6 +111,7 @@ def gateway(request, pk):
     if request.method == "POST":
         print("test", request.POST)
         obj = request.POST.get("pk", None)
+        # the gateway portal, which isnt functional. We only click the submit button here
         if obj:
             print(obj)
             return result(request, obj)

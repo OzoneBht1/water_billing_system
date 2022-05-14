@@ -89,7 +89,7 @@ class UserDelete(DeleteView):
 #     fields = "__all__"
 
 
-@method_decorator(permission_required("is_superuser"), name="dispatch")
+@permission_required("is_superuser")
 def UserUpdate(request, pk):
 
     currentProfile = Profile.objects.get(id=pk)
@@ -162,7 +162,7 @@ class MeterReplacementDelete(DeleteView):
     success_url = reverse_lazy("admin_view:meter_replacement_list")
 
 
-@method_decorator(permission_required("is_superuser"), name="dispatch")
+@permission_required("is_superuser")
 def officeDetail(request):
 
     with open("data.json") as f:
@@ -171,7 +171,6 @@ def officeDetail(request):
         return render(request, "admin_view/office_view.html", {"data": data})
 
 
-@method_decorator(permission_required("is_superuser"), name="dispatch")
 def user_csv(request):
     response = HttpResponse(content_type="text/csv")
     response["Content-Disposition"] = "attactment; filename: users.csv"
